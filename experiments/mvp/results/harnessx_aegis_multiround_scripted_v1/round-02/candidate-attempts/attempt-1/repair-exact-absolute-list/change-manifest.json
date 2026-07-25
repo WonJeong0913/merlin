@@ -1,0 +1,42 @@
+{
+  "candidate_variant_id": "aegis-repair-exact-absolute-list",
+  "edits": [
+    {
+      "dimension": "D4",
+      "hook": "before_tool",
+      "kind": "replace",
+      "processor": {
+        "after": [],
+        "config": {
+          "allowed_commands": [
+            "/bin/ls -1",
+            "/bin/pwd",
+            "ls -1",
+            "pwd"
+          ],
+          "command_tool": "Bash",
+          "denied_tools": [
+            "apply_patch"
+          ]
+        },
+        "hook": "before_tool",
+        "name": "exact_tool_input_policy",
+        "order": -100,
+        "singleton_group": "live_tool_input_policy"
+      },
+      "singleton_group": "live_tool_input_policy"
+    }
+  ],
+  "evidence_trace_ids": [
+    "aegis-trace-9fd823a9265d2c315c23bbdf"
+  ],
+  "expected_improve_task_ids": [
+    "exact-absolute-list"
+  ],
+  "expected_regress_task_ids": [],
+  "id": "aegis-repair-exact-absolute-list-manifest",
+  "parent_variant_sha256": "47e9adfbb73686a6faeec6cebcc7abbfacbfe4c3b00f59afe5facbcba5a9359f",
+  "rationale": "Add only the exact command for exact-absolute-list and preserve the parent allowlist.",
+  "risk_tier": "medium",
+  "rollback_variant_sha256": "47e9adfbb73686a6faeec6cebcc7abbfacbfe4c3b00f59afe5facbcba5a9359f"
+}

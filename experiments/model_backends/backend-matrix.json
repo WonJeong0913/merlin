@@ -1,0 +1,59 @@
+{
+  "created": "2026-07-09",
+  "purpose": "Primary account-auth CLI comparison group for Merlin model-backed experiments.",
+  "fixed_controls": {
+    "backend_type": "B_cli",
+    "auth_mode": "user_owned_account",
+    "api_keys_required": false,
+    "credentials_forwarded_to_container": false,
+    "effort": "high",
+    "temperature": "provider_default_or_unset",
+    "claim_rule": "Make C0-C10 claims within each backend/model first; cross-model comparisons are robustness and operational evidence."
+  },
+  "conditions": [
+    {
+      "id": "claude_sonnet5_high",
+      "backend": "claude",
+      "cli_provider": "claude-code",
+      "display_model": "Claude Sonnet 5",
+      "model_id": "claude-sonnet-5",
+      "effort": "high",
+      "runtime_effort": "high",
+      "status": "account_authenticated_on_ONE_model_unverified",
+      "auth_verified_date": "2026-07-10"
+    },
+    {
+      "id": "claude_opus48_high",
+      "backend": "claude",
+      "cli_provider": "claude-code",
+      "display_model": "Claude Opus 4.8",
+      "model_id": "claude-opus-4-8",
+      "effort": "high",
+      "runtime_effort": "high",
+      "status": "account_authenticated_on_ONE_model_unverified",
+      "auth_verified_date": "2026-07-10"
+    },
+    {
+      "id": "claude_opus47_high",
+      "backend": "claude",
+      "cli_provider": "claude-code",
+      "display_model": "Claude Opus 4.7",
+      "model_id": "claude-opus-4-7",
+      "effort": "high",
+      "runtime_effort": "high",
+      "status": "account_authenticated_on_ONE_model_unverified",
+      "auth_verified_date": "2026-07-10"
+    },
+    {
+      "id": "codex_gpt55_high",
+      "backend": "codex",
+      "cli_provider": "codex-cli",
+      "display_model": "GPT-5.5",
+      "model_id": "gpt-5.5",
+      "effort": "high",
+      "runtime_effort": "high",
+      "status": "account_authenticated_on_ONE_model_unverified",
+      "auth_verified_date": "2026-07-10"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "add_exact_commands": [
+    "ls -1"
+  ],
+  "candidate_id": "repair-directory-list-read",
+  "expected_improve_case_ids": [
+    "directory-list-read"
+  ],
+  "expected_regress_case_ids": [],
+  "rationale": "Add only the exact command for directory-list-read and preserve the parent allowlist.",
+  "remove_exact_commands": []
+}

@@ -1,0 +1,1202 @@
+{
+  "campaign_id": "merlin-personal-workload-50-longitudinal-v1",
+  "conditions": {
+    "actual_invocation_evidence_required": true,
+    "api_billing_required": false,
+    "baseline": "same agent without Merlin managed skill-harness assistance",
+    "clean_input_snapshot_required": true,
+    "low_cost_model_comparison_included": false,
+    "managed": "same agent with Merlin provisioning, lifecycle, and HarnessX controls",
+    "provider_mode": "account-auth",
+    "same_provider_model_effort_required": true,
+    "same_verifier_epoch_required": true
+  },
+  "evidence_boundary": {
+    "future_results_must_be_appended": true,
+    "level_7_achieved_at_freeze": false,
+    "matched_observations_at_freeze": 0,
+    "task_contracts_frozen": true,
+    "task_executions_completed_at_freeze": 0
+  },
+  "execution_window": {
+    "minimum_elapsed_days": 14,
+    "phase_1_matched_pairs": 50,
+    "phase_2_matched_pairs": 50,
+    "target_elapsed_days": 28,
+    "target_matched_pairs": 100
+  },
+  "family_counts": {
+    "apple-apps": 8,
+    "backend-automation": 6,
+    "figures-presentations": 8,
+    "king-engineering": 10,
+    "ml-data": 6,
+    "research-docs": 12
+  },
+  "frozen_on": "2026-07-24",
+  "level_7_acceptance": {
+    "actual_invocation_evidence_complete": true,
+    "g_over_s_or_turn_equivalent_required": true,
+    "matched_baseline_required": true,
+    "minimum_elapsed_days": 14,
+    "minimum_lifecycle_changes": 10,
+    "promotion_observed": true,
+    "rollback_observed": true,
+    "target_matched_observations": 100,
+    "unique_task_contracts_completed": 50
+  },
+  "manifest_sha256": "a82244246c0cfa2a3f125805119bf753fa7508e5e25afb12c78d430e857fe46c",
+  "primary_endpoints": [
+    "matched verifier pass rate",
+    "verified provider-turn savings",
+    "governance provider turns",
+    "governance-to-savings ratio",
+    "selection and invocation error rates",
+    "lifecycle promotions rollbacks and regressions"
+  ],
+  "schema_version": "merlin-personal-workload-manifest-v1",
+  "tasks": [
+    {
+      "cadence": "weekly",
+      "contract_sha256": "deeffae1c125ab837a447329c23921b72b11c28502da7c3b2756725a4c1d5be9",
+      "family": "research-docs",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Reconcile implementation, tests, evidence boundaries, and readiness in a dated report.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-rd-01",
+      "title": "Current-state evidence report",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "ee2dcb25f62b1218492e26fc839ec0d87eb38bc4dcd1812f75eae680a8e7230d",
+      "family": "research-docs",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Revise one method section while preserving frozen definitions and implementation mappings.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-rd-02",
+      "title": "Paper method revision",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "14d2e558f3aceb5126ee1b686ce72427947ff5009fcbadcbb32db6596755c8c1",
+      "family": "research-docs",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Check symbols, denominators, and implementation references across the paper notes.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-rd-03",
+      "title": "Metric and equation consistency audit",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "0cd4c003d8c820681da1637c01f7de511657ec88261026d198fd6114e723ae52",
+      "family": "research-docs",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Update a bounded comparison without turning design differences into empirical claims.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-rd-04",
+      "title": "Related-work comparison matrix",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "f3d335b33c88a140b9956aa4e98c3c6d620432b7fff1b5c9697a45ec53f6bf23",
+      "family": "research-docs",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Find unsupported completion, superiority, and invocation claims and propose exact corrections.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-rd-05",
+      "title": "Claim-to-evidence boundary audit",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "217b94ea500fcffafe25c73f0681d12d1858d5557e4d722948bf824604b75334",
+      "family": "research-docs",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Synchronize current verified capabilities, limitations, and reproduction commands.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-rd-06",
+      "title": "README status synchronization",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "1330ec5062a931241d03404bf582948d2d34bcc74e01c7d80a9aec0047b7410f",
+      "family": "research-docs",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Freeze hypotheses, matched conditions, endpoints, exclusions, and stop conditions.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-rd-07",
+      "title": "Experiment preregistration",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "485170b34ad498a4813411120b35e6d9df3010cba4d45786de7032089f039a33",
+      "family": "research-docs",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Answer one substantive critique with evidence, limitation, and a falsifiable follow-up.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-rd-08",
+      "title": "Research critique response",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "8a95467a39f99d7180ee318cdad954f6c91b3a9237543114a9b998a7334d9f00",
+      "family": "research-docs",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "merlin",
+      "request_contract": "Produce a concise handoff with changed files, verification, blockers, and next action.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-rd-09",
+      "title": "Engineering handoff update",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "dec8793e5621b18db1c7e288b0f3f15573a4edd072a6cc12fd56ac097a68d040",
+      "family": "research-docs",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "local-private",
+      "project_id": "merlin",
+      "request_contract": "Reflect one classified thesis, architecture, experiment, or implementation update in canonical notes.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-rd-10",
+      "title": "Canonical wiki synchronization",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "da40612cf06fa2d3f5bfda5510776ef3c4ed17b8595136c646d5ae13348ab717",
+      "family": "research-docs",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Compare a frozen package against current claims without modifying the package or remote repository.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-rd-11",
+      "title": "Judge-package consistency audit",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "4d968d01fe688431fcad5bcd014b354ab23eaeea232491dd3083b0ab79aa02d3",
+      "family": "research-docs",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "local-private",
+      "project_id": "merlin",
+      "request_contract": "Summarize observed progress, failed hypotheses, evidence gaps, and next experiments.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-rd-12",
+      "title": "Weekly research synthesis",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "90adc2f4766087ca48a922d650585461a113e51d35ec7bd8236ccb0bbad604a3",
+      "family": "king-engineering",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "merlin",
+      "request_contract": "Diagnose and repair a bounded failing test set, then rerun only relevant regression checks.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ke-01",
+      "title": "Focused regression repair",
+      "verifier_id": "code-test-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "ac8e41f58a9fa74c1a0bdca59cf62127b724aa679d6dd38694ed652f53fb3f04",
+      "family": "king-engineering",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "merlin",
+      "request_contract": "Run the available test suite and classify failures without merging separate run scopes.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ke-02",
+      "title": "Full-suite regression audit",
+      "verifier_id": "code-test-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "fb888501fbc95247ad42118083fb6a55ac1f157041b323c5c06f36482be906a3",
+      "family": "king-engineering",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "merlin",
+      "request_contract": "Implement one bounded HarnessX processor contract with fail-closed validation.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ke-03",
+      "title": "Typed hook processor change",
+      "verifier_id": "code-test-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "ed3a3c27125381f934562577c3b409eebf83a3f3571c5b4d23a5d578bdf9748f",
+      "family": "king-engineering",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "merlin",
+      "request_contract": "Generate a quarantined skill-contract repair from verifier-backed failure evidence.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ke-04",
+      "title": "Skill repair candidate",
+      "verifier_id": "code-test-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "cf5edede1d10a4a99e5cdb663d2aa342ef4415ec86035dcc6c1da45bebb583a5",
+      "family": "king-engineering",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "merlin",
+      "request_contract": "Evaluate a candidate under same-verifier acceptance criteria and record the decision.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ke-05",
+      "title": "Promotion-gate replay",
+      "verifier_id": "experiment-schema-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "8132b171f4d113cd0f4774c6a4c150a0d32f1c620b835854df54605b682d31ce",
+      "family": "king-engineering",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "merlin",
+      "request_contract": "Reproduce one rejected or regressed candidate and verify copy-on-write rollback.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ke-06",
+      "title": "Rollback replay",
+      "verifier_id": "experiment-schema-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "6e95de105e60ba608ad2498bafba964e45b5c93f7cf5451b32a7d9accf2f1be0",
+      "family": "king-engineering",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "merlin",
+      "request_contract": "Normalize a bounded trace fixture and verify false-deny and false-allow boundaries.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ke-07",
+      "title": "Trace-ingestion validation",
+      "verifier_id": "code-test-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "abc145e27c564c841e6f512cebebeac90f725ea58b58b74defa3e39bad6bc426",
+      "family": "king-engineering",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "merlin",
+      "request_contract": "Append and validate one evidence-bound harness-evolution observation.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ke-08",
+      "title": "Evolution-ledger update",
+      "verifier_id": "experiment-schema-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "b5da2aeea56e48bec1d556d9aa47b545f5607d50f37ae44653bba803318c3c35",
+      "family": "king-engineering",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "merlin",
+      "request_contract": "Replay and hash-validate one frozen campaign artifact bundle.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ke-09",
+      "title": "Campaign artifact validation",
+      "verifier_id": "experiment-schema-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "303c6b783ae89ebf1445bf79c0d79e258126385dabe4cf73ac8503eef7d28684",
+      "family": "king-engineering",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "merlin",
+      "request_contract": "Add or repair one operator command and verify its documented output contract.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ke-10",
+      "title": "CLI and documentation contract",
+      "verifier_id": "code-test-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "8cc10c1b9285faaab7c9dcad6953e5155b2a0ef7d39bd4d49a0ef78649a8c974",
+      "family": "figures-presentations",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Render the current self-managing harness control flow as a publication-ready figure.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-fp-01",
+      "title": "Method architecture figure",
+      "verifier_id": "visual-human-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "eb2e88b4fb6320bc2d10537fc6b3fcc9a6b6f9871614bfdf9add204b3d04b859",
+      "family": "figures-presentations",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Render cumulative governance spend and verified savings without imputing missing values.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-fp-02",
+      "title": "G-over-S longitudinal figure",
+      "verifier_id": "visual-human-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "744987551458508bf0196ffbd601501c51713766e7dd117fc5cb15f956fc7767",
+      "family": "figures-presentations",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Render matched condition results with denominators, uncertainty, and evidence state.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-fp-03",
+      "title": "Ablation comparison chart",
+      "verifier_id": "visual-human-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "4c9efccf3a88345dd43f6fbe1c7b2707d889a7f4d4cedcc3419d21b4355efb6e",
+      "family": "figures-presentations",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Render create, quarantine, validate, promote, repair, hide, retire, and rollback transitions.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-fp-04",
+      "title": "Lifecycle flow diagram",
+      "verifier_id": "visual-human-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "5b45d02c771b1e0e6328a614c5c5138cbeb757864747a33d1a2bb636e43b7b52",
+      "family": "figures-presentations",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Revise one academic slide while preserving claim hierarchy and readable typography.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-fp-05",
+      "title": "Seminar slide revision",
+      "verifier_id": "visual-human-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "3708ba7d24c58617c22eb45917da5f291889b9d741aa28a4b208cad61f97e431",
+      "family": "figures-presentations",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Revise one proof-oriented slide using only frozen implementation evidence.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-fp-06",
+      "title": "Demo or judge deck revision",
+      "verifier_id": "visual-human-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "5ca07b32e22f3ca6bc918514dee766a33a2b932031d7caa9c79cfc9d6aac475d",
+      "family": "figures-presentations",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Align a figure, caption, legend, and source note with the underlying data contract.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-fp-07",
+      "title": "Figure-caption audit",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "602d9e2c9cd7c0a943fc0a4f01c23143a39065ce73086350665727d2e1d43ada",
+      "family": "figures-presentations",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "merlin",
+      "request_contract": "Export and inspect a deck montage for clipping, overflow, font, and layout regressions.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-fp-08",
+      "title": "Deck export visual QA",
+      "verifier_id": "visual-human-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "4721928775d87859dceb5a38bd8bb92d9c6c948fb55ce7748805bce51d15b2ed",
+      "family": "apple-apps",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "dynamicnotch",
+      "request_contract": "Build the configured macOS target and capture the exact build result.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ap-01",
+      "title": "DynamicNotch build smoke",
+      "verifier_id": "apple-build-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "5627ef4eeb4eec173fd355679feaa9ae322bb153081a4a0b46edbcd1f10e23e7",
+      "family": "apple-apps",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "dynamicnotch",
+      "request_contract": "Change one bounded notch-alignment detail and visually verify the accepted baseline.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ap-02",
+      "title": "DynamicNotch visual alignment",
+      "verifier_id": "apple-build-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "9ca7c528821b6f246eee342189a1bc9b37fb1a128d8535d91c861046d0671fb7",
+      "family": "apple-apps",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "dynamicnotch",
+      "request_contract": "Reproduce one runtime issue, inspect logs, and report the evidence-backed cause.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ap-03",
+      "title": "DynamicNotch runtime diagnosis",
+      "verifier_id": "apple-build-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "4c87482e7be174684b4b152f2dfc443b81aa858fcb24b586d5d9e2c420d6ebbe",
+      "family": "apple-apps",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "dynamicnotch",
+      "request_contract": "Run a local release-configuration smoke without publishing or notarizing.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ap-04",
+      "title": "DynamicNotch release smoke",
+      "verifier_id": "apple-build-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "780d4ea1c5d199c04e5db9c6102c993b837e418babe40c03d2cbf40e96080411",
+      "family": "apple-apps",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "vocabmaster-ios",
+      "request_contract": "Build and visually verify the target screen on a compact simulator.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ap-05",
+      "title": "Small-iPhone layout regression",
+      "verifier_id": "apple-build-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "11129f6ba07280e158ccd76fa6bd36000babcffaa796018687a77680b1ffcea2",
+      "family": "apple-apps",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "vocabmaster-ios",
+      "request_contract": "Exercise the wrong-word review flow and verify stored-state transitions.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ap-06",
+      "title": "Wrong-word review flow",
+      "verifier_id": "apple-build-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "01237ad23c606efdceb1b6cfcd33b12fd3fc6f91b02a827e0da78a15024c5a6a",
+      "family": "apple-apps",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "local-private",
+      "project_id": "scanfree",
+      "request_contract": "Build and exercise one scanner input-to-result path with a controlled fixture.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ap-07",
+      "title": "Scanner pipeline smoke",
+      "verifier_id": "apple-build-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "4390c3e1ecc028a953950cbc7a21b7f4080bb31e146832ebbddb835306b01956",
+      "family": "apple-apps",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "local-private",
+      "project_id": "scanfree",
+      "request_contract": "Build, install, and launch on the explicitly selected device without changing signing scope.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ap-08",
+      "title": "Physical-device install check",
+      "verifier_id": "apple-build-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "30aed912a2fbaef46a41b1412428a0ecfb8469a2ee5840cbdfdacf7cf0b308f0",
+      "family": "ml-data",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "sam3-scm",
+      "request_contract": "Freeze dataset split, seed, model configuration, and evaluation metric hashes.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ml-01",
+      "title": "Experiment configuration freeze",
+      "verifier_id": "experiment-schema-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "7aec4074160c0b42bca9756f6b02d0303fa248cd82d4e24b6b18d18a1f0aadd3",
+      "family": "ml-data",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "sam3-scm",
+      "request_contract": "Run one declared ablation and validate the result schema and denominators.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ml-02",
+      "title": "Ablation execution",
+      "verifier_id": "experiment-schema-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "6bc8659ab19dc42cbe8f362beb64c0c30cc715e8fe9b7d57f6cf85058a341afe",
+      "family": "ml-data",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "sam3-scm",
+      "request_contract": "Recompute one reported metric from frozen predictions and compare exact values.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ml-03",
+      "title": "Metric consistency audit",
+      "verifier_id": "experiment-schema-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "1833d4284ddbd7ac1b16c88de42a996d77b2b4cf3c0180e719d4cefc670b6233",
+      "family": "ml-data",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "public-candidate",
+      "project_id": "sam3-scm",
+      "request_contract": "Render a bounded qualitative comparison without cherry-picking undocumented samples.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ml-04",
+      "title": "Qualitative result figure",
+      "verifier_id": "visual-human-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "8707688a8326f30b542faee30f824d6f932897c644abc25a7da9773ce31c0e5f",
+      "family": "ml-data",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "rpi5-ppe",
+      "request_contract": "Run a fixed input corpus and validate output schema, latency, and failure counts.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ml-05",
+      "title": "TFLite inference regression",
+      "verifier_id": "experiment-schema-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "2042dce40e6c3388829a646d7e24dbefb73114f7b8687e42661830fe7d9865ec",
+      "family": "ml-data",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "rpi5-ppe",
+      "request_contract": "Replay a fixed association case set and report identity-switch and miss counts.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ml-06",
+      "title": "Vest-association regression",
+      "verifier_id": "experiment-schema-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "34d865182f8e10fa10b15df1d0e7249442c25af2597e38a0765d786a6bbd323d",
+      "family": "backend-automation",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "spring-learning",
+      "request_contract": "Run bounded create, read, update, and delete tests against an isolated local database.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ba-01",
+      "title": "CRUD endpoint regression",
+      "verifier_id": "code-test-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "5c6eebd40b8068de82688f723c5ce0aa4168f746112b9e387950a0ab497ecfa0",
+      "family": "backend-automation",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "spring-learning",
+      "request_contract": "Reproduce one persistence failure and verify the mapping or seed-data correction.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ba-02",
+      "title": "Hibernate identity diagnosis",
+      "verifier_id": "code-test-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "a3bc917630772115b176b532baea568ea3d8548a3a170b70ac6919f7e8ff44c2",
+      "family": "backend-automation",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "project-private",
+      "project_id": "spring-learning",
+      "request_contract": "Validate status codes and response schema for one controller family.",
+      "risk_tier": "medium",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ba-03",
+      "title": "API response contract",
+      "verifier_id": "code-test-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "6e784969bfdf4c520e47ee9d4d859c84d6bd141b6451be1ba6a676ec00e3fa5d",
+      "family": "backend-automation",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "local-private",
+      "project_id": "inquiry-automation",
+      "request_contract": "Generate reply drafts from fixtures while proving that no message was sent.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ba-04",
+      "title": "Draft-only reply dry run",
+      "verifier_id": "automation-dry-run-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "e9c8085df11ddc95d1f015f7b0deaf24f0a1f246b283b456e68b08d53a119801",
+      "family": "backend-automation",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "local-private",
+      "project_id": "inquiry-automation",
+      "request_contract": "Replay repeated message IDs and verify that later distinct inbound messages remain eligible.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ba-05",
+      "title": "Message deduplication replay",
+      "verifier_id": "automation-dry-run-v1"
+    },
+    {
+      "cadence": "weekly",
+      "contract_sha256": "486badde7f0bb2ed58384898342ec49abe6692b9fd34979abec3f26c26f488bc",
+      "family": "backend-automation",
+      "input_contract": [
+        "frozen source snapshot",
+        "bounded request"
+      ],
+      "output_contract": [
+        "requested artifact",
+        "verification evidence"
+      ],
+      "privacy_class": "local-private",
+      "project_id": "inquiry-automation",
+      "request_contract": "Validate runtime templates, required properties, and safe missing-config behavior.",
+      "risk_tier": "high",
+      "source_basis": "operator-confirmed-active-project",
+      "task_id": "pw-ba-06",
+      "title": "Template and config validation",
+      "verifier_id": "automation-dry-run-v1"
+    }
+  ],
+  "verifier_profiles": [
+    {
+      "automatic_checks": [
+        "required headings present",
+        "referenced local artifacts exist",
+        "forbidden completion claims absent"
+      ],
+      "evidence_required": [
+        "output sha256",
+        "claim-to-evidence checklist",
+        "human review decision"
+      ],
+      "human_review_required": true,
+      "mode": "structure-and-human",
+      "verifier_id": "markdown-evidence-v1"
+    },
+    {
+      "automatic_checks": [
+        "targeted test command exits zero",
+        "changed files are inside task scope",
+        "result artifact is non-empty"
+      ],
+      "evidence_required": [
+        "output sha256",
+        "test command sha256",
+        "test result sha256"
+      ],
+      "human_review_required": false,
+      "mode": "command-and-artifact",
+      "verifier_id": "code-test-v1"
+    },
+    {
+      "automatic_checks": [
+        "rendered artifact exists",
+        "expected dimensions or page count match",
+        "rendered artifact sha256 recorded"
+      ],
+      "evidence_required": [
+        "source sha256",
+        "render sha256",
+        "human visual review decision"
+      ],
+      "human_review_required": true,
+      "mode": "visual-and-human",
+      "verifier_id": "visual-human-v1"
+    },
+    {
+      "automatic_checks": [
+        "configured build exits zero",
+        "bundle or test result exists",
+        "runtime evidence pointer is recorded"
+      ],
+      "evidence_required": [
+        "source snapshot sha256",
+        "build result sha256",
+        "runtime or screenshot sha256"
+      ],
+      "human_review_required": true,
+      "mode": "build-and-runtime",
+      "verifier_id": "apple-build-v1"
+    },
+    {
+      "automatic_checks": [
+        "experiment command exits zero",
+        "result schema validates",
+        "seed and configuration hashes are recorded"
+      ],
+      "evidence_required": [
+        "configuration sha256",
+        "result sha256",
+        "metric summary sha256"
+      ],
+      "human_review_required": false,
+      "mode": "schema-and-metric",
+      "verifier_id": "experiment-schema-v1"
+    },
+    {
+      "automatic_checks": [
+        "dry run exits zero",
+        "no external send or destructive mutation occurred",
+        "idempotency evidence validates"
+      ],
+      "evidence_required": [
+        "input fixture sha256",
+        "dry-run result sha256",
+        "human approval decision"
+      ],
+      "human_review_required": true,
+      "mode": "integration-dry-run",
+      "verifier_id": "automation-dry-run-v1"
+    }
+  ]
+}

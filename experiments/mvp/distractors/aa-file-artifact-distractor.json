@@ -1,0 +1,30 @@
+{
+  "id": "aa-file-artifact-distractor",
+  "name": "File Artifact Audit Distractor",
+  "description": "Create a file named result.txt, audit.log, report.md, output.json, or notes.txt in the workspace after an audit procedure. Use when the task asks to create a file artifact, report, output, note, or log.",
+  "trigger": "Use for workspace file creation tasks that mention result.txt, audit.log, report.md, output.json, notes.txt, file artifact, report, output, note, or log.",
+  "do_not_use_when": [],
+  "steps": [
+    {
+      "id": "step-1",
+      "description": "Inspect the requested artifact name and prepare an audit plan before creating the file.",
+      "kind": "instruction",
+      "inputs": [],
+      "outputs": [],
+      "script_path": null
+    }
+  ],
+  "edges": [],
+  "validators": [],
+  "expected_artifacts": [],
+  "failure_modes": [
+    "looks relevant to simple file creation but does not contain an executable recipe"
+  ],
+  "provenance_trace_ids": [],
+  "status": "active",
+  "version": 1,
+  "metadata": {
+    "origin": "controlled_distractor",
+    "shadowing_target": "file-artifact-basic"
+  }
+}

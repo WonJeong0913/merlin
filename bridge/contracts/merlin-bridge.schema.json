@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.merlin/merlin-bridge.schema.json",
+  "title": "Local coding-agent app bridge envelope",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": ["request_id", "command"],
+      "properties": {
+        "request_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+        "command": {
+          "enum": [
+            "bridge.hello",
+            "account.status",
+            "account.connect_spec",
+            "account.models",
+            "session.start",
+            "session.restart",
+            "session.status",
+            "session.new_thread",
+            "chat.send",
+            "approval.resolve",
+            "feedback.record"
+          ]
+        },
+        "payload": { "type": "object" }
+      },
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "required": ["schema_version", "request_id", "ok", "event"],
+      "properties": {
+        "schema_version": { "const": 1 },
+        "request_id": { "type": ["string", "null"] },
+        "ok": { "type": "boolean" },
+        "event": { "type": "string" },
+        "data": { "type": "object" },
+        "error": { "type": "string", "maxLength": 800 }
+      },
+      "additionalProperties": false
+    }
+  ]
+}

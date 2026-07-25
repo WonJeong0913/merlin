@@ -1,0 +1,1263 @@
+{
+  "decision": "splits are kept as drawn; re-drawing after seeing these numbers would be post-hoc fitting",
+  "exposure_budget": 3,
+  "purpose": "routing-difficulty balance across the seed-fixed splits, measured before any execution run",
+  "query_rule": "task_id with hyphens replaced by spaces",
+  "recorded_at_utc": "2026-07-25T06:59:11.597590+00:00",
+  "routing_mode": "deterministic",
+  "schema_version": "merlin-skillsbench-split-preflight-v1",
+  "split_manifest_sha256": "2ee814636509b5bfca50c436d333ea8a95498b16c144a86a88876ecb0eb6e20c",
+  "splits": {
+    "adaptation": {
+      "hits": 24,
+      "n": 35,
+      "recall_at_3": 0.6857,
+      "rows": [
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/jackson-security",
+            "sb/senior-java"
+          ],
+          "provisioned_skill_ids": [
+            "sb/lab-unit-harmonization",
+            "sb/memory-optimization"
+          ],
+          "query": "fix druid loophole cve",
+          "task_id": "fix-druid-loophole-cve"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/discover-important-function",
+            "sb/fuzzing-python",
+            "sb/setup-env"
+          ],
+          "provisioned_skill_ids": [
+            "sb/silence-detector",
+            "sb/temporal-python-testing"
+          ],
+          "query": "setup fuzzing py",
+          "task_id": "setup-fuzzing-py"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/syz-extract-constants",
+            "sb/syzkaller-build-loop",
+            "sb/syzlang-ioctl-basics"
+          ],
+          "provisioned_skill_ids": [
+            "sb/syz-extract-constants",
+            "sb/syzkaller-build-loop",
+            "sb/syzlang-ioctl-basics"
+          ],
+          "query": "syzkaller ppdev syzlang",
+          "task_id": "syzkaller-ppdev-syzlang"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/13f-analyzer",
+            "sb/fuzzy-name-search"
+          ],
+          "provisioned_skill_ids": [
+            "sb/13f-analyzer"
+          ],
+          "query": "sec financial report",
+          "task_id": "sec-financial-report"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/xlsx"
+          ],
+          "provisioned_skill_ids": [],
+          "query": "weighted gdp calc",
+          "task_id": "weighted-gdp-calc"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/timeseries-detrending"
+          ],
+          "provisioned_skill_ids": [
+            "sb/qutip",
+            "sb/timeseries-detrending"
+          ],
+          "query": "econ detrending correlation",
+          "task_id": "econ-detrending-correlation"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/mesh-analysis"
+          ],
+          "provisioned_skill_ids": [
+            "sb/mesh-analysis",
+            "sb/obj-exporter",
+            "sb/stepinfo-3d"
+          ],
+          "query": "3d scan calc",
+          "task_id": "3d-scan-calc"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/ada-plan-view-accessibility",
+            "sb/architectural-dxf-extraction",
+            "sb/geometric-layout-repair"
+          ],
+          "provisioned_skill_ids": [
+            "sb/ada-plan-view-accessibility",
+            "sb/architectural-dxf-extraction",
+            "sb/fjsp-baseline-repair-with-downtime-and-policy"
+          ],
+          "query": "ada bathroom plan repair",
+          "task_id": "ada-bathroom-plan-repair"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/attitude-controller-planner",
+            "sb/flight-plan-parser",
+            "sb/motor-model-dynamics",
+            "sb/plot-quadrotor",
+            "sb/position-controller-trajectory-planner",
+            "sb/stepinfo-3d"
+          ],
+          "provisioned_skill_ids": [
+            "sb/attitude-controller-planner",
+            "sb/excitation-signal-design",
+            "sb/position-controller-trajectory-planner"
+          ],
+          "query": "drone planning control",
+          "task_id": "drone-planning-control"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/manufacturing-failure-reason-codebook-normalization"
+          ],
+          "provisioned_skill_ids": [
+            "sb/text-to-speech"
+          ],
+          "query": "manufacturing codebook normalization",
+          "task_id": "manufacturing-codebook-normalization"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/excitation-signal-design",
+            "sb/first-order-model-fitting",
+            "sb/imc-tuning-rules",
+            "sb/safety-interlocks",
+            "sb/scipy-curve-fit"
+          ],
+          "provisioned_skill_ids": [
+            "sb/attitude-controller-planner",
+            "sb/excitation-signal-design",
+            "sb/imc-tuning-rules"
+          ],
+          "query": "hvac control",
+          "task_id": "hvac-control"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/dc-power-flow",
+            "sb/economic-dispatch",
+            "sb/power-flow-data"
+          ],
+          "provisioned_skill_ids": [
+            "sb/economic-dispatch",
+            "sb/hex-grid-spatial",
+            "sb/map-optimization-strategy"
+          ],
+          "query": "grid dispatch operator",
+          "task_id": "grid-dispatch-operator"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/civ6lib",
+            "sb/hex-grid-spatial",
+            "sb/map-optimization-strategy",
+            "sb/sqlite-map-parser"
+          ],
+          "provisioned_skill_ids": [
+            "sb/civ6lib"
+          ],
+          "query": "civ6 adjacency optimizer",
+          "task_id": "civ6-adjacency-optimizer"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/geospatial-routing-data",
+            "sb/logistics-rules-to-optimization",
+            "sb/routing-subtour-elimination",
+            "sb/scip-opt"
+          ],
+          "provisioned_skill_ids": [],
+          "query": "bike rebalance",
+          "task_id": "bike-rebalance"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/pddl-skills@3a838435e9e2"
+          ],
+          "provisioned_skill_ids": [
+            "sb/attitude-controller-planner",
+            "sb/exoplanet-workflows",
+            "sb/pddl-skills"
+          ],
+          "query": "pddl tpp planning",
+          "task_id": "pddl-tpp-planning"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/audio-extractor",
+            "sb/energy-calculator",
+            "sb/pause-detector",
+            "sb/report-generator",
+            "sb/segment-combiner",
+            "sb/silence-detector",
+            "sb/video-processor"
+          ],
+          "provisioned_skill_ids": [
+            "sb/audio-extractor",
+            "sb/energy-calculator",
+            "sb/silence-detector"
+          ],
+          "query": "video silence remover",
+          "task_id": "video-silence-remover"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/obj-exporter@b6d1bcf98031",
+            "sb/threejs"
+          ],
+          "provisioned_skill_ids": [
+            "sb/obj-exporter",
+            "sb/threejs"
+          ],
+          "query": "threejs to obj",
+          "task_id": "threejs-to-obj"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/custom-distance-metrics",
+            "sb/parallel-processing",
+            "sb/pareto-optimization"
+          ],
+          "provisioned_skill_ids": [
+            "sb/custom-distance-metrics",
+            "sb/gamma-phase-associator"
+          ],
+          "query": "mars clouds clustering",
+          "task_id": "mars-clouds-clustering"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/gamma-phase-associator",
+            "sb/obspy-data-api",
+            "sb/seisbench-model-api",
+            "sb/seismic-picker-selection"
+          ],
+          "provisioned_skill_ids": [
+            "sb/gamma-phase-associator",
+            "sb/seisbench-model-api",
+            "sb/seismic-picker-selection"
+          ],
+          "query": "earthquake phase association",
+          "task_id": "earthquake-phase-association"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/radar-signal-processing",
+            "sb/radar-vital-signs",
+            "sb/vital-sign-extraction"
+          ],
+          "provisioned_skill_ids": [
+            "sb/radar-signal-processing",
+            "sb/radar-vital-signs",
+            "sb/vital-sign-extraction"
+          ],
+          "query": "radar vital signs",
+          "task_id": "radar-vital-signs"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/pymatgen",
+            "sb/sympy"
+          ],
+          "provisioned_skill_ids": [
+            "sb/13f-analyzer",
+            "sb/dc-power-flow",
+            "sb/energy-calculator"
+          ],
+          "query": "crystallographic wyckoff position analysis",
+          "task_id": "crystallographic-wyckoff-position-analysis"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/lab-unit-harmonization"
+          ],
+          "provisioned_skill_ids": [
+            "sb/casadi-ipopt-nlp",
+            "sb/lab-unit-harmonization",
+            "sb/temporal-python-testing"
+          ],
+          "query": "lab unit harmonization",
+          "task_id": "lab-unit-harmonization"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/geospatial-analysis"
+          ],
+          "provisioned_skill_ids": [
+            "sb/audio-extractor",
+            "sb/gamma-phase-associator",
+            "sb/geospatial-analysis"
+          ],
+          "query": "earthquake plate calculation",
+          "task_id": "earthquake-plate-calculation"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/pdf"
+          ],
+          "provisioned_skill_ids": [
+            "sb/pdf"
+          ],
+          "query": "court form filling",
+          "task_id": "court-form-filling"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/enterprise-artifact-search"
+          ],
+          "provisioned_skill_ids": [
+            "sb/citation-management",
+            "sb/enterprise-artifact-search",
+            "sb/fuzzy-name-search"
+          ],
+          "query": "enterprise information search",
+          "task_id": "enterprise-information-search"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/academic-pdf-redaction",
+            "sb/pdf@31b77156e562"
+          ],
+          "provisioned_skill_ids": [
+            "sb/transaction-protocol-reasoning"
+          ],
+          "query": "paper anonymizer",
+          "task_id": "paper-anonymizer"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/marker",
+            "sb/pdf"
+          ],
+          "provisioned_skill_ids": [
+            "sb/enterprise-artifact-search",
+            "sb/marker",
+            "sb/milp-solver-workflow"
+          ],
+          "query": "latex formula extraction",
+          "task_id": "latex-formula-extraction"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/pdf-editing",
+            "sb/text-parser"
+          ],
+          "provisioned_skill_ids": [
+            "sb/academic-pdf-redaction",
+            "sb/marker",
+            "sb/pdf"
+          ],
+          "query": "edit pdf",
+          "task_id": "edit-pdf"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/maven-build-lifecycle",
+            "sb/maven-dependency-management",
+            "sb/maven-plugin-configuration"
+          ],
+          "provisioned_skill_ids": [
+            "sb/citation-management",
+            "sb/d3-visualization",
+            "sb/lab-unit-harmonization"
+          ],
+          "query": "fix build google auto",
+          "task_id": "fix-build-google-auto"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/dialogue-graph"
+          ],
+          "provisioned_skill_ids": [
+            "sb/dialogue-graph"
+          ],
+          "query": "dialogue parser",
+          "task_id": "dialogue-parser"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/grpo",
+            "sb/rl-post-training",
+            "sb/trl"
+          ],
+          "provisioned_skill_ids": [
+            "sb/grpo",
+            "sb/radar-signal-processing",
+            "sb/trl"
+          ],
+          "query": "debug trl grpo",
+          "task_id": "debug-trl-grpo"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/pdf",
+            "sb/senior-data-engineer"
+          ],
+          "provisioned_skill_ids": [
+            "sb/hibernate-upgrade",
+            "sb/senior-data-engineer"
+          ],
+          "query": "flink query",
+          "task_id": "flink-query"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/python-scala-collections",
+            "sb/python-scala-functional",
+            "sb/python-scala-idioms",
+            "sb/python-scala-libraries",
+            "sb/python-scala-oop",
+            "sb/python-scala-syntax-mapping"
+          ],
+          "provisioned_skill_ids": [
+            "sb/python-scala-collections",
+            "sb/python-scala-functional",
+            "sb/python-scala-idioms"
+          ],
+          "query": "python scala translation",
+          "task_id": "python-scala-translation"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/memory-optimization",
+            "sb/python-parallelization",
+            "sb/workload-balancing"
+          ],
+          "provisioned_skill_ids": [
+            "sb/citation-management",
+            "sb/enterprise-artifact-search",
+            "sb/parallel-processing"
+          ],
+          "query": "parallel tfidf search",
+          "task_id": "parallel-tfidf-search"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/d3-visualization"
+          ],
+          "provisioned_skill_ids": [
+            "sb/13f-analyzer",
+            "sb/conditioning",
+            "sb/d3-visualization"
+          ],
+          "query": "data to d3",
+          "task_id": "data-to-d3"
+        }
+      ]
+    },
+    "held_out": {
+      "hits": 14,
+      "n": 30,
+      "recall_at_3": 0.4667,
+      "rows": [
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/pcap-analysis",
+            "sb/threat-detection"
+          ],
+          "provisioned_skill_ids": [
+            "sb/energy-calculator",
+            "sb/exoplanet-workflows",
+            "sb/matched-filtering"
+          ],
+          "query": "dapt intrusion detection",
+          "task_id": "dapt-intrusion-detection"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/pcap-triage-tshark",
+            "sb/suricata-offline-evejson",
+            "sb/suricata-rules-basics"
+          ],
+          "provisioned_skill_ids": [
+            "sb/custom-distance-metrics",
+            "sb/maven-plugin-configuration",
+            "sb/obspy-data-api"
+          ],
+          "query": "suricata custom exfil",
+          "task_id": "suricata-custom-exfil"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/xlsx"
+          ],
+          "provisioned_skill_ids": [
+            "sb/13f-analyzer",
+            "sb/dc-power-flow",
+            "sb/energy-calculator"
+          ],
+          "query": "shock analysis supply",
+          "task_id": "shock-analysis-supply"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/fuzzy-match",
+            "sb/pdf",
+            "sb/xlsx"
+          ],
+          "provisioned_skill_ids": [
+            "sb/energy-calculator",
+            "sb/exoplanet-workflows",
+            "sb/matched-filtering"
+          ],
+          "query": "invoice fraud detection",
+          "task_id": "invoice-fraud-detection"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/xlsx"
+          ],
+          "provisioned_skill_ids": [
+            "sb/13f-analyzer",
+            "sb/dc-power-flow",
+            "sb/energy-calculator"
+          ],
+          "query": "shock analysis demand",
+          "task_id": "shock-analysis-demand"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/data-reconciliation",
+            "sb/xlsx"
+          ],
+          "provisioned_skill_ids": [
+            "sb/13f-analyzer",
+            "sb/conditioning",
+            "sb/xlsx"
+          ],
+          "query": "xlsx recover data",
+          "task_id": "xlsx-recover-data"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/dc-power-flow",
+            "sb/economic-dispatch",
+            "sb/locational-marginal-prices",
+            "sb/power-flow-data"
+          ],
+          "provisioned_skill_ids": [
+            "sb/audio-extractor",
+            "sb/energy-calculator",
+            "sb/silence-detector"
+          ],
+          "query": "energy market pricing",
+          "task_id": "energy-market-pricing"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/dyn-object-masks",
+            "sb/egomotion-estimation",
+            "sb/output-validation",
+            "sb/sampling-and-indexing"
+          ],
+          "provisioned_skill_ids": [
+            "sb/dyn-object-masks",
+            "sb/finite-horizon-lqr",
+            "sb/first-order-model-fitting"
+          ],
+          "query": "dynamic object aware egomotion",
+          "task_id": "dynamic-object-aware-egomotion"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/ac-branch-pi-model",
+            "sb/casadi-ipopt-nlp",
+            "sb/power-flow-data"
+          ],
+          "provisioned_skill_ids": [
+            "sb/ac-branch-pi-model",
+            "sb/dc-power-flow",
+            "sb/economic-dispatch"
+          ],
+          "query": "energy ac optimal power flow",
+          "task_id": "energy-ac-optimal-power-flow"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/reflow-machine-maintenance-guidance",
+            "sb/reflow-profile-compliance-toolkit"
+          ],
+          "provisioned_skill_ids": [
+            "sb/reflow-machine-maintenance-guidance",
+            "sb/safety-interlocks"
+          ],
+          "query": "manufacturing equipment maintenance",
+          "task_id": "manufacturing-equipment-maintenance"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/mip-solver-and-solution-audit",
+            "sb/ordered-window-sequencing-mip"
+          ],
+          "provisioned_skill_ids": [
+            "sb/ordered-window-sequencing-mip",
+            "sb/prefix-cache-replay"
+          ],
+          "query": "exam block sequencing",
+          "task_id": "exam-block-sequencing"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/pddl-skills"
+          ],
+          "provisioned_skill_ids": [
+            "sb/attitude-controller-planner",
+            "sb/exoplanet-workflows",
+            "sb/pddl-skills"
+          ],
+          "query": "pddl airport planning",
+          "task_id": "pddl-airport-planning"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/search-accommodations",
+            "sb/search-attractions",
+            "sb/search-cities",
+            "sb/search-driving-distance",
+            "sb/search-flights",
+            "sb/search-restaurants"
+          ],
+          "provisioned_skill_ids": [
+            "sb/attitude-controller-planner",
+            "sb/exoplanet-workflows",
+            "sb/fjsp-baseline-repair-with-downtime-and-policy"
+          ],
+          "query": "travel planning",
+          "task_id": "travel-planning"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/ffmpeg-keyframe-extraction",
+            "sb/image-editing",
+            "sb/object-counter"
+          ],
+          "provisioned_skill_ids": [
+            "sb/flood-detection"
+          ],
+          "query": "mario coin counting",
+          "task_id": "mario-coin-counting"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/obj-exporter",
+            "sb/threejs"
+          ],
+          "provisioned_skill_ids": [
+            "sb/marker",
+            "sb/pymatgen"
+          ],
+          "query": "threejs structure parser",
+          "task_id": "threejs-structure-parser"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/obspy-data-api",
+            "sb/obspy-datacenter-client",
+            "sb/seisbench-model-api",
+            "sb/seismic-picker-selection"
+          ],
+          "provisioned_skill_ids": [
+            "sb/ac-branch-pi-model",
+            "sb/seisbench-model-api",
+            "sb/seismic-picker-selection"
+          ],
+          "query": "seismic phase picking",
+          "task_id": "seismic-phase-picking"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/xlsx"
+          ],
+          "provisioned_skill_ids": [
+            "sb/13f-analyzer",
+            "sb/dc-power-flow",
+            "sb/energy-calculator"
+          ],
+          "query": "protein expression analysis",
+          "task_id": "protein-expression-analysis"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/box-least-squares",
+            "sb/exoplanet-workflows",
+            "sb/light-curve-preprocessing",
+            "sb/lomb-scargle-periodogram",
+            "sb/transit-least-squares"
+          ],
+          "provisioned_skill_ids": [
+            "sb/energy-calculator",
+            "sb/exoplanet-workflows",
+            "sb/light-curve-preprocessing"
+          ],
+          "query": "exoplanet detection period",
+          "task_id": "exoplanet-detection-period"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/flood-detection",
+            "sb/nws-flood-thresholds",
+            "sb/usgs-data-download"
+          ],
+          "provisioned_skill_ids": [
+            "sb/13f-analyzer",
+            "sb/dc-power-flow",
+            "sb/energy-calculator"
+          ],
+          "query": "flood risk analysis",
+          "task_id": "flood-risk-analysis"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/conditioning",
+            "sb/matched-filtering"
+          ],
+          "provisioned_skill_ids": [
+            "sb/conditioning",
+            "sb/matched-filtering",
+            "sb/radar-vital-signs"
+          ],
+          "query": "gravitational wave detection",
+          "task_id": "gravitational-wave-detection"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/docx"
+          ],
+          "provisioned_skill_ids": [
+            "sb/economic-dispatch",
+            "sb/memory-optimization",
+            "sb/power-flow-data"
+          ],
+          "query": "offer letter generator",
+          "task_id": "offer-letter-generator"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/citation-management"
+          ],
+          "provisioned_skill_ids": [
+            "sb/browser-testing",
+            "sb/citation-management",
+            "sb/output-validation"
+          ],
+          "query": "citation check",
+          "task_id": "citation-check"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/pdf",
+            "sb/xlsx"
+          ],
+          "provisioned_skill_ids": [
+            "sb/academic-pdf-redaction",
+            "sb/marker",
+            "sb/pdf"
+          ],
+          "query": "pdf excel diff",
+          "task_id": "pdf-excel-diff"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/docx@d3cfe519dca2",
+            "sb/file-organizer",
+            "sb/pdf",
+            "sb/planning-with-files",
+            "sb/pptx@3ad72806f38c"
+          ],
+          "provisioned_skill_ids": [
+            "sb/architectural-dxf-extraction",
+            "sb/audio-extractor",
+            "sb/csv-processing"
+          ],
+          "query": "organize messy files",
+          "task_id": "organize-messy-files"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/pptx@5f3f8d7402fa"
+          ],
+          "provisioned_skill_ids": [
+            "sb/citation-management",
+            "sb/fuzzy-match",
+            "sb/python-scala-syntax-mapping"
+          ],
+          "query": "pptx reference formatting",
+          "task_id": "pptx-reference-formatting"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/browser-testing",
+            "sb/react-best-practices",
+            "sb/web-interface-guidelines"
+          ],
+          "provisioned_skill_ids": [
+            "sb/browser-testing",
+            "sb/ffmpeg-video-filters",
+            "sb/web-interface-guidelines"
+          ],
+          "query": "fix visual stability",
+          "task_id": "fix-visual-stability"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/browser-testing@ebcae60ef709",
+            "sb/react-best-practices@175ee538059c"
+          ],
+          "provisioned_skill_ids": [
+            "sb/ac-branch-pi-model",
+            "sb/browser-testing",
+            "sb/grpo"
+          ],
+          "query": "react performance debugging",
+          "task_id": "react-performance-debugging"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/transaction-concurrency-control-foundations",
+            "sb/transaction-protocol-reasoning",
+            "sb/transaction-trace-analysis"
+          ],
+          "provisioned_skill_ids": [
+            "sb/energy-calculator",
+            "sb/exoplanet-workflows",
+            "sb/matched-filtering"
+          ],
+          "query": "tictoc unnecessary abort detection",
+          "task_id": "tictoc-unnecessary-abort-detection"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/jax-skills"
+          ],
+          "provisioned_skill_ids": [
+            "sb/ac-branch-pi-model",
+            "sb/dc-power-flow",
+            "sb/jax-skills"
+          ],
+          "query": "jax computing basics",
+          "task_id": "jax-computing-basics"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/azure-bgp"
+          ],
+          "provisioned_skill_ids": [
+            "sb/azure-bgp",
+            "sb/geospatial-routing-data",
+            "sb/ortools-routing-modeling"
+          ],
+          "query": "azure bgp oscillation route leak",
+          "task_id": "azure-bgp-oscillation-route-leak"
+        }
+      ]
+    },
+    "regression": {
+      "hits": 14,
+      "n": 22,
+      "recall_at_3": 0.6364,
+      "rows": [
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/erlang-concurrency",
+            "sb/erlang-distribution",
+            "sb/erlang-otp-behaviors",
+            "sb/find-bugs",
+            "sb/senior-security",
+            "sb/ssh-penetration-testing"
+          ],
+          "provisioned_skill_ids": [
+            "sb/erlang-concurrency",
+            "sb/erlang-distribution",
+            "sb/erlang-otp-behaviors"
+          ],
+          "query": "fix erlang ssh cve",
+          "task_id": "fix-erlang-ssh-cve"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/cvss-score-extraction",
+            "sb/trivy-offline-vulnerability-scanning",
+            "sb/vulnerability-csv-reporting"
+          ],
+          "provisioned_skill_ids": [
+            "sb/find-bugs",
+            "sb/maven-dependency-management",
+            "sb/obj-exporter"
+          ],
+          "query": "software dependency audit",
+          "task_id": "software-dependency-audit"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/pdf@0d4af66f868d",
+            "sb/xlsx@b1a6bde518fc"
+          ],
+          "provisioned_skill_ids": [
+            "sb/obspy-data-api",
+            "sb/scip-opt",
+            "sb/senior-data-engineer"
+          ],
+          "query": "financial modeling qa",
+          "task_id": "financial-modeling-qa"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/xlsx"
+          ],
+          "provisioned_skill_ids": [],
+          "query": "reserves at risk calc",
+          "task_id": "reserves-at-risk-calc"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/milp-solver-workflow",
+            "sb/unit-commitment-data-modeling",
+            "sb/unit-commitment-operating-rules"
+          ],
+          "provisioned_skill_ids": [
+            "sb/audio-extractor",
+            "sb/unit-commitment-data-modeling",
+            "sb/unit-commitment-operating-rules"
+          ],
+          "query": "energy unit commitment",
+          "task_id": "energy-unit-commitment"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/finite-horizon-lqr",
+            "sb/integral-action-design",
+            "sb/mpc-horizon-tuning",
+            "sb/state-space-linearization"
+          ],
+          "provisioned_skill_ids": [
+            "sb/attitude-controller-planner",
+            "sb/excitation-signal-design",
+            "sb/finite-horizon-lqr"
+          ],
+          "query": "r2r mpc control",
+          "task_id": "r2r-mpc-control"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/csv-processing",
+            "sb/pid-controller",
+            "sb/simulation-metrics",
+            "sb/vehicle-dynamics",
+            "sb/yaml-config"
+          ],
+          "provisioned_skill_ids": [
+            "sb/attitude-controller-planner",
+            "sb/pid-controller",
+            "sb/vehicle-dynamics"
+          ],
+          "query": "adaptive cruise control",
+          "task_id": "adaptive-cruise-control"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/fjsp-baseline-repair-with-downtime-and-policy"
+          ],
+          "provisioned_skill_ids": [
+            "sb/casadi-ipopt-nlp",
+            "sb/economic-dispatch",
+            "sb/geospatial-routing-data"
+          ],
+          "query": "manufacturing fjsp optimization",
+          "task_id": "manufacturing-fjsp-optimization"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/ortools-pickup-delivery-routing",
+            "sb/ortools-routing-modeling"
+          ],
+          "provisioned_skill_ids": [
+            "sb/geospatial-routing-data",
+            "sb/ortools-pickup-delivery-routing",
+            "sb/ortools-routing-modeling"
+          ],
+          "query": "paratransit routing",
+          "task_id": "paratransit-routing"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/lean4-memories",
+            "sb/lean4-theorem-proving"
+          ],
+          "provisioned_skill_ids": [
+            "sb/lean4-memories"
+          ],
+          "query": "lean4 proof",
+          "task_id": "lean4-proof"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/ffmpeg-audio-processing",
+            "sb/ffmpeg-format-conversion",
+            "sb/ffmpeg-media-info",
+            "sb/ffmpeg-video-editing",
+            "sb/ffmpeg-video-filters",
+            "sb/text-to-speech"
+          ],
+          "provisioned_skill_ids": [
+            "sb/audio-extractor",
+            "sb/ffmpeg-format-conversion",
+            "sb/ffmpeg-keyframe-extraction"
+          ],
+          "query": "multilingual video dubbing",
+          "task_id": "multilingual-video-dubbing"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/glm-basics",
+            "sb/glm-calibration",
+            "sb/glm-output"
+          ],
+          "provisioned_skill_ids": [
+            "sb/glm-basics",
+            "sb/glm-calibration",
+            "sb/glm-output"
+          ],
+          "query": "glm lake mendota",
+          "task_id": "glm-lake-mendota"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/contribution-analysis",
+            "sb/meteorology-driver-classification",
+            "sb/pca-decomposition",
+            "sb/trend-analysis"
+          ],
+          "provisioned_skill_ids": [
+            "sb/glm-basics",
+            "sb/meteorology-driver-classification"
+          ],
+          "query": "lake warming attribution",
+          "task_id": "lake-warming-attribution"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/qutip"
+          ],
+          "provisioned_skill_ids": [
+            "sb/csv-processing",
+            "sb/glm-basics",
+            "sb/glm-calibration"
+          ],
+          "query": "quantum numerical simulation",
+          "task_id": "quantum-numerical-simulation"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/powerlifting",
+            "sb/senior-data-scientist",
+            "sb/xlsx"
+          ],
+          "provisioned_skill_ids": [
+            "sb/powerlifting"
+          ],
+          "query": "powerlifting coef calc",
+          "task_id": "powerlifting-coef-calc"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/image-ocr",
+            "sb/openai-vision",
+            "sb/pdf",
+            "sb/video-frame-extraction",
+            "sb/xlsx"
+          ],
+          "provisioned_skill_ids": [
+            "sb/image-ocr"
+          ],
+          "query": "jpg ocr stat",
+          "task_id": "jpg-ocr-stat"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/pdf@a963d991212a",
+            "sb/xlsx@8e5fe91c81dc"
+          ],
+          "provisioned_skill_ids": [
+            "sb/13f-analyzer",
+            "sb/dc-power-flow",
+            "sb/energy-calculator"
+          ],
+          "query": "sales pivot analysis",
+          "task_id": "sales-pivot-analysis"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/pptx",
+            "sb/xlsx@1a801fe1bd5f"
+          ],
+          "provisioned_skill_ids": [],
+          "query": "exceltable in ppt",
+          "task_id": "exceltable-in-ppt"
+        },
+        {
+          "hit": false,
+          "oracle_skill_ids": [
+            "sb/analyze-ci",
+            "sb/temporal-python-testing",
+            "sb/testing-python",
+            "sb/uv-package-manager"
+          ],
+          "provisioned_skill_ids": [
+            "sb/d3-visualization",
+            "sb/lab-unit-harmonization",
+            "sb/lean4-theorem-proving"
+          ],
+          "query": "fix build agentops",
+          "task_id": "fix-build-agentops"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/hibernate-upgrade",
+            "sb/jakarta-namespace",
+            "sb/restclient-migration",
+            "sb/spring-boot-migration",
+            "sb/spring-security-6"
+          ],
+          "provisioned_skill_ids": [
+            "sb/hibernate-upgrade",
+            "sb/jakarta-namespace",
+            "sb/spring-boot-migration"
+          ],
+          "query": "spring boot jakarta migration",
+          "task_id": "spring-boot-jakarta-migration"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/nlp-research-repo-package-installment",
+            "sb/pdf@ba530d0bb107"
+          ],
+          "provisioned_skill_ids": [
+            "sb/find-bugs",
+            "sb/memory-optimization",
+            "sb/nlp-research-repo-package-installment"
+          ],
+          "query": "simpo code reproduction",
+          "task_id": "simpo-code-reproduction"
+        },
+        {
+          "hit": true,
+          "oracle_skill_ids": [
+            "sb/cache-policy-comparison",
+            "sb/prefix-cache-replay"
+          ],
+          "provisioned_skill_ids": [
+            "sb/cache-policy-comparison",
+            "sb/ordered-window-sequencing-mip",
+            "sb/prefix-cache-replay"
+          ],
+          "query": "llm prefix cache replay",
+          "task_id": "llm-prefix-cache-replay"
+        }
+      ]
+    }
+  }
+}

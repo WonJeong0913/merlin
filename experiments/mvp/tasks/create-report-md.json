@@ -1,0 +1,23 @@
+{
+  "id": "create-report-md",
+  "instruction": "Create a file named report.md in the workspace.",
+  "metadata": {
+    "benchmark_family": "SkillsBench-style",
+    "capability": "Tool Use",
+    "difficulty": "C",
+    "domain": "Office & White Collar",
+    "mvp_tier": "mvp",
+    "shadowing_role": "oracle_target",
+    "skill_dependency": "medium"
+  },
+  "oracle_skill_ids": [
+    "file-artifact-basic"
+  ],
+  "regression_group": "artifact",
+  "setup_files": {},
+  "verifier": {
+    "kind": "file_exists",
+    "name": "report_md_exists",
+    "target_path": "report.md"
+  }
+}

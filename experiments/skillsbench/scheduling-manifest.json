@@ -1,0 +1,2699 @@
+{
+  "created": "2026-07-10",
+  "source": "https://github.com/benchflow-ai/skillsbench",
+  "commit": "5433cf15c343f0da5fb942b80dc7dcb7c76506df",
+  "license": "Apache-2.0",
+  "seed": 20260709,
+  "policy": {
+    "final_coverage": "All 87 tasks remain in the final experiment.",
+    "purpose": "Scheduling only: validate throughput on short tasks before long-running document/media strata.",
+    "claim_rule": "Do not compare or claim only on the short_smoke_candidate bucket; final claims require all eligible strata or pre-registered infrastructure exceptions."
+  },
+  "summary": {
+    "task_count": 87,
+    "split_counts": {
+      "adaptation": 35,
+      "held_out": 30,
+      "regression": 22
+    },
+    "benchmark_stratum_counts": {
+      "code_or_security": 13,
+      "document_pdf_pptx_docx": 17,
+      "image_or_ocr": 3,
+      "media_audio_video": 4,
+      "scientific_or_numeric": 7,
+      "spreadsheet_office": 8,
+      "structured_json_xml": 22,
+      "tabular_data": 13
+    },
+    "execution_bucket_counts": {
+      "long_running_compute": 49,
+      "long_running_document_media": 17,
+      "repair_or_exception": 8,
+      "short_smoke_candidate": 10,
+      "standard": 3
+    },
+    "oracle_readiness_status_counts": {
+      "build_failed": 1,
+      "oracle_failed": 3,
+      "passed": 79,
+      "reward_failed": 2,
+      "reward_partial": 1,
+      "verifier_contract_inconsistent": 1
+    },
+    "short_smoke_adaptation_ready": [
+      "earthquake-plate-calculation",
+      "3d-scan-calc",
+      "crystallographic-wyckoff-position-analysis"
+    ]
+  },
+  "tasks": [
+    {
+      "task_id": "3d-scan-calc",
+      "split": "adaptation",
+      "category": "industrial-physical-systems",
+      "difficulty": "hard",
+      "benchmark_stratum": "scientific_or_numeric",
+      "execution_bucket": "short_smoke_candidate",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "binary",
+        "3d-model",
+        "json"
+      ],
+      "task_types": [
+        "calculation",
+        "extraction"
+      ],
+      "environment_suffix_counts": {
+        ".md": 1,
+        ".stl": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "mesh-analysis"
+      ]
+    },
+    {
+      "task_id": "ada-bathroom-plan-repair",
+      "split": "adaptation",
+      "category": "industrial-physical-systems",
+      "difficulty": "hard",
+      "benchmark_stratum": "image_or_ocr",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 2400,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "3d-model",
+        "json",
+        "image"
+      ],
+      "task_types": [
+        "repair",
+        "extraction"
+      ],
+      "environment_suffix_counts": {
+        ".dxf": 1,
+        ".jpg": 1,
+        ".json": 7,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "ada-plan-view-accessibility",
+        "architectural-dxf-extraction",
+        "geometric-layout-repair"
+      ]
+    },
+    {
+      "task_id": "adaptive-cruise-control",
+      "split": "regression",
+      "category": "industrial-physical-systems",
+      "difficulty": "medium",
+      "benchmark_stratum": "tabular_data",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 1800,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "csv",
+        "source-code",
+        "time-series"
+      ],
+      "task_types": [
+        "implementation",
+        "simulation"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 1,
+        ".yaml": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "csv-processing",
+        "pid-controller",
+        "simulation-metrics",
+        "vehicle-dynamics",
+        "yaml-config"
+      ]
+    },
+    {
+      "task_id": "azure-bgp-oscillation-route-leak",
+      "split": "held_out",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "benchmark_stratum": "image_or_ocr",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 3600,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "json"
+      ],
+      "task_types": [
+        "detection",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".jpg": 1,
+        ".json": 3,
+        ".py": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "azure-bgp"
+      ]
+    },
+    {
+      "task_id": "bike-rebalance",
+      "split": "adaptation",
+      "category": "mathematics-or-formal-reasoning",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "json"
+      ],
+      "task_types": [
+        "optimization",
+        "planning"
+      ],
+      "environment_suffix_counts": {
+        ".json": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "geospatial-routing-data",
+        "logistics-rules-to-optimization",
+        "routing-subtour-elimination",
+        "scip-opt"
+      ]
+    },
+    {
+      "task_id": "citation-check",
+      "split": "held_out",
+      "category": "office-white-collar",
+      "difficulty": "medium",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "document",
+        "json"
+      ],
+      "task_types": [
+        "verification",
+        "search"
+      ],
+      "environment_suffix_counts": {
+        ".bib": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "citation-management"
+      ]
+    },
+    {
+      "task_id": "civ6-adjacency-optimizer",
+      "split": "adaptation",
+      "category": "mathematics-or-formal-reasoning",
+      "difficulty": "hard",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "repair_or_exception",
+      "oracle_readiness_status": "verifier_contract_inconsistent",
+      "oracle_readiness_passed": false,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "json",
+        "binary"
+      ],
+      "task_types": [
+        "optimization",
+        "planning"
+      ],
+      "environment_suffix_counts": {
+        ".civ6map": 1,
+        ".json": 3,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "civ6lib",
+        "hex-grid-spatial",
+        "map-optimization-strategy",
+        "sqlite-map-parser"
+      ]
+    },
+    {
+      "task_id": "court-form-filling",
+      "split": "adaptation",
+      "category": "office-white-collar",
+      "difficulty": "easy",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "pdf"
+      ],
+      "task_types": [
+        "extraction",
+        "generation"
+      ],
+      "environment_suffix_counts": {
+        ".pdf": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "pdf"
+      ]
+    },
+    {
+      "task_id": "crystallographic-wyckoff-position-analysis",
+      "split": "adaptation",
+      "category": "natural-science",
+      "difficulty": "medium",
+      "benchmark_stratum": "scientific_or_numeric",
+      "execution_bucket": "short_smoke_candidate",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "scientific-data"
+      ],
+      "task_types": [
+        "analysis",
+        "calculation"
+      ],
+      "environment_suffix_counts": {
+        ".cif": 11,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "pymatgen",
+        "sympy"
+      ]
+    },
+    {
+      "task_id": "dapt-intrusion-detection",
+      "split": "held_out",
+      "category": "cybersecurity",
+      "difficulty": "hard",
+      "benchmark_stratum": "tabular_data",
+      "execution_bucket": "short_smoke_candidate",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 600,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "network-logs",
+        "csv"
+      ],
+      "task_types": [
+        "analysis",
+        "detection",
+        "calculation"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 1,
+        ".pcap": 1,
+        ".py": 3,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "pcap-analysis",
+        "threat-detection"
+      ]
+    },
+    {
+      "task_id": "data-to-d3",
+      "split": "adaptation",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "benchmark_stratum": "tabular_data",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "csv",
+        "source-code",
+        "webpage"
+      ],
+      "task_types": [
+        "implementation",
+        "generation"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 51,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "d3-visualization"
+      ]
+    },
+    {
+      "task_id": "debug-trl-grpo",
+      "split": "adaptation",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "benchmark_stratum": "code_or_security",
+      "execution_bucket": "repair_or_exception",
+      "oracle_readiness_status": "reward_partial",
+      "oracle_readiness_passed": false,
+      "agent_timeout_sec": 3600,
+      "verifier_timeout_sec": 120,
+      "build_timeout_sec": 2400,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "debugging",
+        "repair"
+      ],
+      "environment_suffix_counts": {
+        ".gz": 1,
+        ".py": 2,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "grpo",
+        "rl-post-training",
+        "trl"
+      ]
+    },
+    {
+      "task_id": "dialogue-parser",
+      "split": "adaptation",
+      "category": "software-engineering",
+      "difficulty": "easy",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "document",
+        "json",
+        "source-code"
+      ],
+      "task_types": [
+        "implementation",
+        "transformation"
+      ],
+      "environment_suffix_counts": {
+        ".txt": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "dialogue-graph"
+      ]
+    },
+    {
+      "task_id": "drone-planning-control",
+      "split": "adaptation",
+      "category": "industrial-physical-systems",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code",
+        "time-series"
+      ],
+      "task_types": [
+        "implementation",
+        "simulation",
+        "optimization"
+      ],
+      "environment_suffix_counts": {
+        ".txt": 30,
+        ".yaml": 2,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "attitude-controller-planner",
+        "flight-plan-parser",
+        "motor-model-dynamics",
+        "plot-quadrotor",
+        "position-controller-trajectory-planner",
+        "stepinfo-3d"
+      ]
+    },
+    {
+      "task_id": "dynamic-object-aware-egomotion",
+      "split": "held_out",
+      "category": "industrial-physical-systems",
+      "difficulty": "medium",
+      "benchmark_stratum": "media_audio_video",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1200,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 1200,
+      "modalities": [
+        "video",
+        "json"
+      ],
+      "task_types": [
+        "analysis",
+        "detection",
+        "classification"
+      ],
+      "environment_suffix_counts": {
+        ".mp4": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "dyn-object-masks",
+        "egomotion-estimation",
+        "output-validation",
+        "sampling-and-indexing"
+      ]
+    },
+    {
+      "task_id": "earthquake-phase-association",
+      "split": "adaptation",
+      "category": "natural-science",
+      "difficulty": "hard",
+      "benchmark_stratum": "tabular_data",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 3600,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 900,
+      "modalities": [
+        "scientific-data",
+        "csv",
+        "time-series"
+      ],
+      "task_types": [
+        "detection",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 1,
+        ".mseed": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "gamma-phase-associator",
+        "obspy-data-api",
+        "seisbench-model-api",
+        "seismic-picker-selection"
+      ]
+    },
+    {
+      "task_id": "earthquake-plate-calculation",
+      "split": "adaptation",
+      "category": "natural-science",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "short_smoke_candidate",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "geospatial-data",
+        "json"
+      ],
+      "task_types": [
+        "calculation",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".json": 3,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "geospatial-analysis"
+      ]
+    },
+    {
+      "task_id": "econ-detrending-correlation",
+      "split": "adaptation",
+      "category": "finance-economics",
+      "difficulty": "medium",
+      "benchmark_stratum": "spreadsheet_office",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "spreadsheet",
+        "time-series"
+      ],
+      "task_types": [
+        "calculation",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".xls": 2,
+        ".xlsx": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "timeseries-detrending"
+      ]
+    },
+    {
+      "task_id": "edit-pdf",
+      "split": "adaptation",
+      "category": "office-white-collar",
+      "difficulty": "medium",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "pdf",
+        "document"
+      ],
+      "task_types": [
+        "transformation",
+        "formatting"
+      ],
+      "environment_suffix_counts": {
+        ".pdf": 1,
+        ".txt": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "pdf-editing",
+        "text-parser"
+      ]
+    },
+    {
+      "task_id": "energy-ac-optimal-power-flow",
+      "split": "held_out",
+      "category": "industrial-physical-systems",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 3600,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "json"
+      ],
+      "task_types": [
+        "optimization",
+        "verification"
+      ],
+      "environment_suffix_counts": {
+        ".json": 1,
+        ".md": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "ac-branch-pi-model",
+        "casadi-ipopt-nlp",
+        "power-flow-data"
+      ]
+    },
+    {
+      "task_id": "energy-market-pricing",
+      "split": "held_out",
+      "category": "industrial-physical-systems",
+      "difficulty": "hard",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "json"
+      ],
+      "task_types": [
+        "optimization",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".json": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "dc-power-flow",
+        "economic-dispatch",
+        "locational-marginal-prices",
+        "power-flow-data"
+      ]
+    },
+    {
+      "task_id": "energy-unit-commitment",
+      "split": "regression",
+      "category": "industrial-physical-systems",
+      "difficulty": "hard",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "json",
+        "time-series"
+      ],
+      "task_types": [
+        "optimization",
+        "planning"
+      ],
+      "environment_suffix_counts": {
+        ".json": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "milp-solver-workflow",
+        "unit-commitment-data-modeling",
+        "unit-commitment-operating-rules"
+      ]
+    },
+    {
+      "task_id": "enterprise-information-search",
+      "split": "adaptation",
+      "category": "office-white-collar",
+      "difficulty": "hard",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "document",
+        "pdf"
+      ],
+      "task_types": [
+        "search",
+        "extraction"
+      ],
+      "environment_suffix_counts": {
+        ".json": 33,
+        ".txt": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "enterprise-artifact-search"
+      ]
+    },
+    {
+      "task_id": "exam-block-sequencing",
+      "split": "held_out",
+      "category": "mathematics-or-formal-reasoning",
+      "difficulty": "hard",
+      "benchmark_stratum": "tabular_data",
+      "execution_bucket": "repair_or_exception",
+      "oracle_readiness_status": "oracle_failed",
+      "oracle_readiness_passed": false,
+      "agent_timeout_sec": 1500,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "json",
+        "csv"
+      ],
+      "task_types": [
+        "optimization",
+        "planning"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 4,
+        ".json": 1,
+        ".md": 2,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "mip-solver-and-solution-audit",
+        "ordered-window-sequencing-mip"
+      ]
+    },
+    {
+      "task_id": "exceltable-in-ppt",
+      "split": "regression",
+      "category": "office-white-collar",
+      "difficulty": "medium",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "presentation",
+        "spreadsheet"
+      ],
+      "task_types": [
+        "transformation",
+        "extraction"
+      ],
+      "environment_suffix_counts": {
+        ".pptx": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "pptx",
+        "xlsx@1a801fe1bd5f"
+      ]
+    },
+    {
+      "task_id": "exoplanet-detection-period",
+      "split": "held_out",
+      "category": "natural-science",
+      "difficulty": "medium",
+      "benchmark_stratum": "scientific_or_numeric",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 3600,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 900,
+      "modalities": [
+        "time-series",
+        "scientific-data"
+      ],
+      "task_types": [
+        "detection",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".txt": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "box-least-squares",
+        "exoplanet-workflows",
+        "light-curve-preprocessing",
+        "lomb-scargle-periodogram",
+        "transit-least-squares"
+      ]
+    },
+    {
+      "task_id": "financial-modeling-qa",
+      "split": "regression",
+      "category": "finance-economics",
+      "difficulty": "hard",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 600,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "spreadsheet",
+        "pdf"
+      ],
+      "task_types": [
+        "analysis",
+        "extraction"
+      ],
+      "environment_suffix_counts": {
+        ".pdf": 1,
+        ".xlsx": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "pdf@0d4af66f868d",
+        "xlsx@b1a6bde518fc"
+      ]
+    },
+    {
+      "task_id": "fix-build-agentops",
+      "split": "regression",
+      "category": "software-engineering",
+      "difficulty": "easy",
+      "benchmark_stratum": "code_or_security",
+      "execution_bucket": "repair_or_exception",
+      "oracle_readiness_status": "reward_failed",
+      "oracle_readiness_passed": false,
+      "agent_timeout_sec": 7200,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "repair",
+        "debugging"
+      ],
+      "environment_suffix_counts": {
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "analyze-ci",
+        "temporal-python-testing",
+        "testing-python",
+        "uv-package-manager"
+      ]
+    },
+    {
+      "task_id": "fix-build-google-auto",
+      "split": "adaptation",
+      "category": "software-engineering",
+      "difficulty": "easy",
+      "benchmark_stratum": "code_or_security",
+      "execution_bucket": "repair_or_exception",
+      "oracle_readiness_status": "reward_failed",
+      "oracle_readiness_passed": false,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "repair",
+        "debugging"
+      ],
+      "environment_suffix_counts": {
+        ".md": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "maven-build-lifecycle",
+        "maven-dependency-management",
+        "maven-plugin-configuration"
+      ]
+    },
+    {
+      "task_id": "fix-druid-loophole-cve",
+      "split": "adaptation",
+      "category": "cybersecurity",
+      "difficulty": "hard",
+      "benchmark_stratum": "code_or_security",
+      "execution_bucket": "repair_or_exception",
+      "oracle_readiness_status": "build_failed",
+      "oracle_readiness_passed": false,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 1800,
+      "build_timeout_sec": 3600,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "repair"
+      ],
+      "environment_suffix_counts": {
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "jackson-security",
+        "senior-java"
+      ]
+    },
+    {
+      "task_id": "fix-erlang-ssh-cve",
+      "split": "regression",
+      "category": "cybersecurity",
+      "difficulty": "hard",
+      "benchmark_stratum": "code_or_security",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 600,
+      "verifier_timeout_sec": 1200,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "repair",
+        "debugging"
+      ],
+      "environment_suffix_counts": {
+        "<none>": 2
+      },
+      "curated_skill_variants": [
+        "erlang-concurrency",
+        "erlang-distribution",
+        "erlang-otp-behaviors",
+        "find-bugs",
+        "senior-security",
+        "ssh-penetration-testing"
+      ]
+    },
+    {
+      "task_id": "fix-visual-stability",
+      "split": "held_out",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 3000,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code",
+        "webpage"
+      ],
+      "task_types": [
+        "repair",
+        "debugging"
+      ],
+      "environment_suffix_counts": {
+        ".api": 1,
+        ".css": 1,
+        ".js": 3,
+        ".json": 6,
+        ".ts": 1,
+        ".tsx": 10,
+        ".yaml": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "browser-testing",
+        "react-best-practices",
+        "web-interface-guidelines"
+      ]
+    },
+    {
+      "task_id": "flink-query",
+      "split": "adaptation",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code",
+        "csv"
+      ],
+      "task_types": [
+        "implementation",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".gz": 2,
+        ".java": 2,
+        ".md": 1,
+        ".pdf": 1,
+        ".properties": 1,
+        ".xml": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "pdf",
+        "senior-data-engineer"
+      ]
+    },
+    {
+      "task_id": "flood-risk-analysis",
+      "split": "held_out",
+      "category": "natural-science",
+      "difficulty": "medium",
+      "benchmark_stratum": "scientific_or_numeric",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 7200,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "csv",
+        "time-series"
+      ],
+      "task_types": [
+        "analysis",
+        "detection"
+      ],
+      "environment_suffix_counts": {
+        ".txt": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "flood-detection",
+        "nws-flood-thresholds",
+        "usgs-data-download"
+      ]
+    },
+    {
+      "task_id": "glm-lake-mendota",
+      "split": "regression",
+      "category": "natural-science",
+      "difficulty": "hard",
+      "benchmark_stratum": "tabular_data",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 3600,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "scientific-data",
+        "time-series"
+      ],
+      "task_types": [
+        "simulation",
+        "calculation"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 5,
+        ".nml": 1,
+        "<none>": 2
+      },
+      "curated_skill_variants": [
+        "glm-basics",
+        "glm-calibration",
+        "glm-output"
+      ]
+    },
+    {
+      "task_id": "gravitational-wave-detection",
+      "split": "held_out",
+      "category": "natural-science",
+      "difficulty": "medium",
+      "benchmark_stratum": "scientific_or_numeric",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 3600,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 1800,
+      "modalities": [
+        "scientific-data",
+        "time-series"
+      ],
+      "task_types": [
+        "detection",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".gwf": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "conditioning",
+        "matched-filtering"
+      ]
+    },
+    {
+      "task_id": "grid-dispatch-operator",
+      "split": "adaptation",
+      "category": "industrial-physical-systems",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "json"
+      ],
+      "task_types": [
+        "optimization",
+        "calculation"
+      ],
+      "environment_suffix_counts": {
+        ".json": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "dc-power-flow",
+        "economic-dispatch",
+        "power-flow-data"
+      ]
+    },
+    {
+      "task_id": "hvac-control",
+      "split": "adaptation",
+      "category": "industrial-physical-systems",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 1800,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "time-series",
+        "json"
+      ],
+      "task_types": [
+        "implementation",
+        "simulation"
+      ],
+      "environment_suffix_counts": {
+        ".json": 2,
+        ".py": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "excitation-signal-design",
+        "first-order-model-fitting",
+        "imc-tuning-rules",
+        "safety-interlocks",
+        "scipy-curve-fit"
+      ]
+    },
+    {
+      "task_id": "invoice-fraud-detection",
+      "split": "held_out",
+      "category": "finance-economics",
+      "difficulty": "hard",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "pdf",
+        "spreadsheet",
+        "csv"
+      ],
+      "task_types": [
+        "detection",
+        "verification"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 1,
+        ".pdf": 1,
+        ".xlsx": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "fuzzy-match",
+        "pdf",
+        "xlsx"
+      ]
+    },
+    {
+      "task_id": "jax-computing-basics",
+      "split": "held_out",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "short_smoke_candidate",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 600,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "scientific-data",
+        "json"
+      ],
+      "task_types": [
+        "implementation",
+        "calculation"
+      ],
+      "environment_suffix_counts": {
+        ".json": 1,
+        ".npy": 6,
+        ".npz": 3,
+        ".py": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "jax-skills"
+      ]
+    },
+    {
+      "task_id": "jpg-ocr-stat",
+      "split": "regression",
+      "category": "office-white-collar",
+      "difficulty": "hard",
+      "benchmark_stratum": "image_or_ocr",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "image",
+        "spreadsheet"
+      ],
+      "task_types": [
+        "extraction",
+        "transformation"
+      ],
+      "environment_suffix_counts": {
+        ".jpg": 22,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "image-ocr",
+        "openai-vision",
+        "pdf",
+        "video-frame-extraction",
+        "xlsx"
+      ]
+    },
+    {
+      "task_id": "lab-unit-harmonization",
+      "split": "adaptation",
+      "category": "natural-science",
+      "difficulty": "medium",
+      "benchmark_stratum": "tabular_data",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 1800,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "csv"
+      ],
+      "task_types": [
+        "transformation"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 2,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "lab-unit-harmonization"
+      ]
+    },
+    {
+      "task_id": "lake-warming-attribution",
+      "split": "regression",
+      "category": "natural-science",
+      "difficulty": "medium",
+      "benchmark_stratum": "tabular_data",
+      "execution_bucket": "short_smoke_candidate",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 300,
+      "verifier_timeout_sec": 300,
+      "build_timeout_sec": 300,
+      "modalities": [
+        "csv",
+        "time-series"
+      ],
+      "task_types": [
+        "analysis",
+        "calculation"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 4,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "contribution-analysis",
+        "meteorology-driver-classification",
+        "pca-decomposition",
+        "trend-analysis"
+      ]
+    },
+    {
+      "task_id": "latex-formula-extraction",
+      "split": "adaptation",
+      "category": "office-white-collar",
+      "difficulty": "medium",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 3600,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 1200,
+      "modalities": [
+        "pdf",
+        "document"
+      ],
+      "task_types": [
+        "extraction",
+        "repair"
+      ],
+      "environment_suffix_counts": {
+        ".pdf": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "marker",
+        "pdf"
+      ]
+    },
+    {
+      "task_id": "lean4-proof",
+      "split": "regression",
+      "category": "mathematics-or-formal-reasoning",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "verification",
+        "implementation"
+      ],
+      "environment_suffix_counts": {
+        ".json": 1,
+        ".lean": 29,
+        "<none>": 2
+      },
+      "curated_skill_variants": [
+        "lean4-memories",
+        "lean4-theorem-proving"
+      ]
+    },
+    {
+      "task_id": "llm-prefix-cache-replay",
+      "split": "regression",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 300,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "json",
+        "source-code"
+      ],
+      "task_types": [
+        "implementation",
+        "simulation"
+      ],
+      "environment_suffix_counts": {
+        ".json": 1,
+        ".jsonl": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "cache-policy-comparison",
+        "prefix-cache-replay"
+      ]
+    },
+    {
+      "task_id": "manufacturing-codebook-normalization",
+      "split": "adaptation",
+      "category": "industrial-physical-systems",
+      "difficulty": "medium",
+      "benchmark_stratum": "tabular_data",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 300,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "csv",
+        "json"
+      ],
+      "task_types": [
+        "classification",
+        "transformation"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 4,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "manufacturing-failure-reason-codebook-normalization"
+      ]
+    },
+    {
+      "task_id": "manufacturing-equipment-maintenance",
+      "split": "held_out",
+      "category": "industrial-physical-systems",
+      "difficulty": "medium",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 300,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "pdf",
+        "csv",
+        "time-series"
+      ],
+      "task_types": [
+        "analysis",
+        "calculation"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 3,
+        ".pdf": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "reflow-machine-maintenance-guidance",
+        "reflow-profile-compliance-toolkit"
+      ]
+    },
+    {
+      "task_id": "manufacturing-fjsp-optimization",
+      "split": "regression",
+      "category": "industrial-physical-systems",
+      "difficulty": "medium",
+      "benchmark_stratum": "tabular_data",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 450,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "csv",
+        "json"
+      ],
+      "task_types": [
+        "optimization",
+        "planning"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 1,
+        ".json": 3,
+        ".txt": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "fjsp-baseline-repair-with-downtime-and-policy"
+      ]
+    },
+    {
+      "task_id": "mario-coin-counting",
+      "split": "held_out",
+      "category": "media-content-production",
+      "difficulty": "medium",
+      "benchmark_stratum": "media_audio_video",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "video",
+        "image",
+        "csv"
+      ],
+      "task_types": [
+        "detection",
+        "transformation"
+      ],
+      "environment_suffix_counts": {
+        ".mp4": 1,
+        ".png": 3,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "ffmpeg-keyframe-extraction",
+        "image-editing",
+        "object-counter"
+      ]
+    },
+    {
+      "task_id": "mars-clouds-clustering",
+      "split": "adaptation",
+      "category": "natural-science",
+      "difficulty": "hard",
+      "benchmark_stratum": "tabular_data",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 3600,
+      "verifier_timeout_sec": 1800,
+      "build_timeout_sec": 900,
+      "modalities": [
+        "csv",
+        "scientific-data"
+      ],
+      "task_types": [
+        "optimization",
+        "classification"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 2,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "custom-distance-metrics",
+        "parallel-processing",
+        "pareto-optimization"
+      ]
+    },
+    {
+      "task_id": "multilingual-video-dubbing",
+      "split": "regression",
+      "category": "media-content-production",
+      "difficulty": "medium",
+      "benchmark_stratum": "media_audio_video",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 2700,
+      "verifier_timeout_sec": 1350,
+      "build_timeout_sec": 1200,
+      "modalities": [
+        "video",
+        "audio"
+      ],
+      "task_types": [
+        "generation",
+        "transformation"
+      ],
+      "environment_suffix_counts": {
+        ".mp4": 1,
+        ".srt": 3,
+        ".txt": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "ffmpeg-audio-processing",
+        "ffmpeg-format-conversion",
+        "ffmpeg-media-info",
+        "ffmpeg-video-editing",
+        "ffmpeg-video-filters",
+        "text-to-speech"
+      ]
+    },
+    {
+      "task_id": "offer-letter-generator",
+      "split": "held_out",
+      "category": "office-white-collar",
+      "difficulty": "easy",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "document",
+        "json"
+      ],
+      "task_types": [
+        "generation",
+        "formatting"
+      ],
+      "environment_suffix_counts": {
+        ".docx": 1,
+        ".json": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "docx"
+      ]
+    },
+    {
+      "task_id": "organize-messy-files",
+      "split": "held_out",
+      "category": "office-white-collar",
+      "difficulty": "medium",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "pdf",
+        "document",
+        "presentation"
+      ],
+      "task_types": [
+        "classification"
+      ],
+      "environment_suffix_counts": {
+        ".docx": 2,
+        ".pptx": 1,
+        ".sh": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "docx@d3cfe519dca2",
+        "file-organizer",
+        "pdf",
+        "planning-with-files",
+        "pptx@3ad72806f38c"
+      ]
+    },
+    {
+      "task_id": "paper-anonymizer",
+      "split": "adaptation",
+      "category": "office-white-collar",
+      "difficulty": "medium",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1000,
+      "verifier_timeout_sec": 300,
+      "build_timeout_sec": 300,
+      "modalities": [
+        "pdf"
+      ],
+      "task_types": [
+        "transformation",
+        "detection"
+      ],
+      "environment_suffix_counts": {
+        ".pdf": 3,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "academic-pdf-redaction",
+        "pdf@31b77156e562"
+      ]
+    },
+    {
+      "task_id": "parallel-tfidf-search",
+      "split": "adaptation",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "benchmark_stratum": "code_or_security",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "implementation",
+        "optimization"
+      ],
+      "environment_suffix_counts": {
+        ".py": 2,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "memory-optimization",
+        "python-parallelization",
+        "workload-balancing"
+      ]
+    },
+    {
+      "task_id": "paratransit-routing",
+      "split": "regression",
+      "category": "mathematics-or-formal-reasoning",
+      "difficulty": "hard",
+      "benchmark_stratum": "tabular_data",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "json",
+        "geospatial-data"
+      ],
+      "task_types": [
+        "optimization",
+        "planning"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 1,
+        ".json": 2,
+        ".md": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "ortools-pickup-delivery-routing",
+        "ortools-routing-modeling"
+      ]
+    },
+    {
+      "task_id": "pddl-airport-planning",
+      "split": "held_out",
+      "category": "mathematics-or-formal-reasoning",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 600,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "planning"
+      ],
+      "environment_suffix_counts": {
+        ".json": 1,
+        ".pddl": 60,
+        ".py": 2,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "pddl-skills"
+      ]
+    },
+    {
+      "task_id": "pddl-tpp-planning",
+      "split": "adaptation",
+      "category": "mathematics-or-formal-reasoning",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 600,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "planning",
+        "generation"
+      ],
+      "environment_suffix_counts": {
+        ".json": 1,
+        ".pddl": 31,
+        ".py": 2,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "pddl-skills@3a838435e9e2"
+      ]
+    },
+    {
+      "task_id": "pdf-excel-diff",
+      "split": "held_out",
+      "category": "office-white-collar",
+      "difficulty": "medium",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 3600,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "pdf",
+        "spreadsheet",
+        "json"
+      ],
+      "task_types": [
+        "extraction",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "pdf",
+        "xlsx"
+      ]
+    },
+    {
+      "task_id": "powerlifting-coef-calc",
+      "split": "regression",
+      "category": "office-white-collar",
+      "difficulty": "easy",
+      "benchmark_stratum": "spreadsheet_office",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 600,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "spreadsheet"
+      ],
+      "task_types": [
+        "calculation",
+        "transformation"
+      ],
+      "environment_suffix_counts": {
+        ".md": 1,
+        ".xlsx": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "powerlifting",
+        "senior-data-scientist",
+        "xlsx"
+      ]
+    },
+    {
+      "task_id": "pptx-reference-formatting",
+      "split": "held_out",
+      "category": "office-white-collar",
+      "difficulty": "medium",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "presentation"
+      ],
+      "task_types": [
+        "formatting",
+        "transformation"
+      ],
+      "environment_suffix_counts": {
+        ".pptx": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "pptx@5f3f8d7402fa"
+      ]
+    },
+    {
+      "task_id": "protein-expression-analysis",
+      "split": "held_out",
+      "category": "natural-science",
+      "difficulty": "medium",
+      "benchmark_stratum": "spreadsheet_office",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 1800,
+      "build_timeout_sec": 900,
+      "modalities": [
+        "spreadsheet"
+      ],
+      "task_types": [
+        "analysis",
+        "calculation"
+      ],
+      "environment_suffix_counts": {
+        ".xlsx": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "xlsx"
+      ]
+    },
+    {
+      "task_id": "python-scala-translation",
+      "split": "adaptation",
+      "category": "software-engineering",
+      "difficulty": "medium",
+      "benchmark_stratum": "code_or_security",
+      "execution_bucket": "standard",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 600,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "transformation",
+        "implementation"
+      ],
+      "environment_suffix_counts": {
+        ".properties": 2,
+        ".py": 3,
+        ".sbt": 2,
+        ".scala": 4,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "python-scala-collections",
+        "python-scala-functional",
+        "python-scala-idioms",
+        "python-scala-libraries",
+        "python-scala-oop",
+        "python-scala-syntax-mapping"
+      ]
+    },
+    {
+      "task_id": "quantum-numerical-simulation",
+      "split": "regression",
+      "category": "natural-science",
+      "difficulty": "medium",
+      "benchmark_stratum": "code_or_security",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 7200,
+      "verifier_timeout_sec": 1800,
+      "build_timeout_sec": 1800,
+      "modalities": [
+        "scientific-data",
+        "csv"
+      ],
+      "task_types": [
+        "simulation",
+        "calculation"
+      ],
+      "environment_suffix_counts": {
+        ".py": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "qutip"
+      ]
+    },
+    {
+      "task_id": "r2r-mpc-control",
+      "split": "regression",
+      "category": "industrial-physical-systems",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1200,
+      "verifier_timeout_sec": 1200,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "json",
+        "time-series"
+      ],
+      "task_types": [
+        "implementation",
+        "simulation"
+      ],
+      "environment_suffix_counts": {
+        ".json": 1,
+        ".py": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "finite-horizon-lqr",
+        "integral-action-design",
+        "mpc-horizon-tuning",
+        "state-space-linearization"
+      ]
+    },
+    {
+      "task_id": "radar-vital-signs",
+      "split": "adaptation",
+      "category": "natural-science",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "short_smoke_candidate",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1200,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "scientific-data",
+        "time-series"
+      ],
+      "task_types": [
+        "extraction",
+        "calculation"
+      ],
+      "environment_suffix_counts": {
+        ".bin": 15,
+        ".json": 15,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "radar-signal-processing",
+        "radar-vital-signs",
+        "vital-sign-extraction"
+      ]
+    },
+    {
+      "task_id": "react-performance-debugging",
+      "split": "held_out",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 400,
+      "build_timeout_sec": 1200,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "debugging",
+        "optimization"
+      ],
+      "environment_suffix_counts": {
+        ".css": 1,
+        ".js": 3,
+        ".json": 5,
+        ".ts": 5,
+        ".tsx": 5,
+        ".yml": 1,
+        "<none>": 2
+      },
+      "curated_skill_variants": [
+        "browser-testing@ebcae60ef709",
+        "react-best-practices@175ee538059c"
+      ]
+    },
+    {
+      "task_id": "reserves-at-risk-calc",
+      "split": "regression",
+      "category": "finance-economics",
+      "difficulty": "medium",
+      "benchmark_stratum": "spreadsheet_office",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 600,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "spreadsheet"
+      ],
+      "task_types": [
+        "calculation",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".xlsx": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "xlsx"
+      ]
+    },
+    {
+      "task_id": "sales-pivot-analysis",
+      "split": "regression",
+      "category": "office-white-collar",
+      "difficulty": "medium",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 300,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "pdf",
+        "spreadsheet"
+      ],
+      "task_types": [
+        "analysis",
+        "transformation"
+      ],
+      "environment_suffix_counts": {
+        ".pdf": 1,
+        ".xlsx": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "pdf@a963d991212a",
+        "xlsx@8e5fe91c81dc"
+      ]
+    },
+    {
+      "task_id": "sec-financial-report",
+      "split": "adaptation",
+      "category": "finance-economics",
+      "difficulty": "hard",
+      "benchmark_stratum": "scientific_or_numeric",
+      "execution_bucket": "short_smoke_candidate",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "database",
+        "json"
+      ],
+      "task_types": [
+        "search",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".zip": 2,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "13f-analyzer",
+        "fuzzy-name-search"
+      ]
+    },
+    {
+      "task_id": "seismic-phase-picking",
+      "split": "held_out",
+      "category": "natural-science",
+      "difficulty": "hard",
+      "benchmark_stratum": "scientific_or_numeric",
+      "execution_bucket": "repair_or_exception",
+      "oracle_readiness_status": "oracle_failed",
+      "oracle_readiness_passed": false,
+      "agent_timeout_sec": 3600,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 900,
+      "modalities": [
+        "scientific-data",
+        "time-series",
+        "csv"
+      ],
+      "task_types": [
+        "detection",
+        "classification"
+      ],
+      "environment_suffix_counts": {
+        ".npz": 100,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "obspy-data-api",
+        "obspy-datacenter-client",
+        "seisbench-model-api",
+        "seismic-picker-selection"
+      ]
+    },
+    {
+      "task_id": "setup-fuzzing-py",
+      "split": "adaptation",
+      "category": "cybersecurity",
+      "difficulty": "medium",
+      "benchmark_stratum": "code_or_security",
+      "execution_bucket": "repair_or_exception",
+      "oracle_readiness_status": "oracle_failed",
+      "oracle_readiness_passed": false,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "implementation",
+        "verification"
+      ],
+      "environment_suffix_counts": {
+        ".sh": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "discover-important-function",
+        "fuzzing-python",
+        "setup-env"
+      ]
+    },
+    {
+      "task_id": "shock-analysis-demand",
+      "split": "held_out",
+      "category": "finance-economics",
+      "difficulty": "medium",
+      "benchmark_stratum": "spreadsheet_office",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "spreadsheet"
+      ],
+      "task_types": [
+        "calculation",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".xlsx": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "xlsx"
+      ]
+    },
+    {
+      "task_id": "shock-analysis-supply",
+      "split": "held_out",
+      "category": "finance-economics",
+      "difficulty": "hard",
+      "benchmark_stratum": "spreadsheet_office",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 2700,
+      "verifier_timeout_sec": 1350,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "spreadsheet"
+      ],
+      "task_types": [
+        "calculation",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".xlsx": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "xlsx"
+      ]
+    },
+    {
+      "task_id": "simpo-code-reproduction",
+      "split": "regression",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "benchmark_stratum": "document_pdf_pptx_docx",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code",
+        "pdf"
+      ],
+      "task_types": [
+        "implementation"
+      ],
+      "environment_suffix_counts": {
+        ".jinja": 4,
+        ".json": 2,
+        ".jsonl": 1,
+        ".md": 3,
+        ".pdf": 1,
+        ".png": 1,
+        ".pt": 2,
+        ".py": 16,
+        ".txt": 4,
+        ".yaml": 26,
+        ".yml": 1,
+        "<none>": 3
+      },
+      "curated_skill_variants": [
+        "nlp-research-repo-package-installment",
+        "pdf@ba530d0bb107"
+      ]
+    },
+    {
+      "task_id": "software-dependency-audit",
+      "split": "regression",
+      "category": "cybersecurity",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "short_smoke_candidate",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "json",
+        "csv"
+      ],
+      "task_types": [
+        "detection",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".json": 1,
+        ".md": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "cvss-score-extraction",
+        "trivy-offline-vulnerability-scanning",
+        "vulnerability-csv-reporting"
+      ]
+    },
+    {
+      "task_id": "spring-boot-jakarta-migration",
+      "split": "regression",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "short_smoke_candidate",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "transformation"
+      ],
+      "environment_suffix_counts": {
+        ".java": 14,
+        ".properties": 2,
+        ".xml": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "hibernate-upgrade",
+        "jakarta-namespace",
+        "restclient-migration",
+        "spring-boot-migration",
+        "spring-security-6"
+      ]
+    },
+    {
+      "task_id": "suricata-custom-exfil",
+      "split": "held_out",
+      "category": "cybersecurity",
+      "difficulty": "medium",
+      "benchmark_stratum": "structured_json_xml",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "network-logs"
+      ],
+      "task_types": [
+        "detection",
+        "implementation"
+      ],
+      "environment_suffix_counts": {
+        ".py": 1,
+        ".rules": 1,
+        ".yaml": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "pcap-triage-tshark",
+        "suricata-offline-evejson",
+        "suricata-rules-basics"
+      ]
+    },
+    {
+      "task_id": "syzkaller-ppdev-syzlang",
+      "split": "adaptation",
+      "category": "cybersecurity",
+      "difficulty": "medium",
+      "benchmark_stratum": "code_or_security",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1400,
+      "verifier_timeout_sec": 1200,
+      "build_timeout_sec": 1200,
+      "modalities": [
+        "source-code"
+      ],
+      "task_types": [
+        "implementation"
+      ],
+      "environment_suffix_counts": {
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "syz-extract-constants",
+        "syzkaller-build-loop",
+        "syzlang-ioctl-basics"
+      ]
+    },
+    {
+      "task_id": "threejs-structure-parser",
+      "split": "held_out",
+      "category": "media-content-production",
+      "difficulty": "medium",
+      "benchmark_stratum": "code_or_security",
+      "execution_bucket": "standard",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 600,
+      "verifier_timeout_sec": 300,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code",
+        "3d-model"
+      ],
+      "task_types": [
+        "extraction",
+        "transformation"
+      ],
+      "environment_suffix_counts": {
+        ".js": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "obj-exporter",
+        "threejs"
+      ]
+    },
+    {
+      "task_id": "threejs-to-obj",
+      "split": "adaptation",
+      "category": "media-content-production",
+      "difficulty": "medium",
+      "benchmark_stratum": "code_or_security",
+      "execution_bucket": "standard",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 300,
+      "verifier_timeout_sec": 300,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "source-code",
+        "3d-model"
+      ],
+      "task_types": [
+        "transformation"
+      ],
+      "environment_suffix_counts": {
+        ".js": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "obj-exporter@b6d1bcf98031",
+        "threejs"
+      ]
+    },
+    {
+      "task_id": "tictoc-unnecessary-abort-detection",
+      "split": "held_out",
+      "category": "software-engineering",
+      "difficulty": "hard",
+      "benchmark_stratum": "code_or_security",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 1800,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "csv",
+        "json"
+      ],
+      "task_types": [
+        "detection",
+        "analysis"
+      ],
+      "environment_suffix_counts": {
+        ".gz": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "transaction-concurrency-control-foundations",
+        "transaction-protocol-reasoning",
+        "transaction-trace-analysis"
+      ]
+    },
+    {
+      "task_id": "travel-planning",
+      "split": "held_out",
+      "category": "mathematics-or-formal-reasoning",
+      "difficulty": "medium",
+      "benchmark_stratum": "tabular_data",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 600,
+      "verifier_timeout_sec": 300,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "json"
+      ],
+      "task_types": [
+        "planning",
+        "search"
+      ],
+      "environment_suffix_counts": {
+        ".csv": 5,
+        ".txt": 3,
+        "<none>": 2
+      },
+      "curated_skill_variants": [
+        "search-accommodations",
+        "search-attractions",
+        "search-cities",
+        "search-driving-distance",
+        "search-flights",
+        "search-restaurants"
+      ]
+    },
+    {
+      "task_id": "video-silence-remover",
+      "split": "adaptation",
+      "category": "media-content-production",
+      "difficulty": "hard",
+      "benchmark_stratum": "media_audio_video",
+      "execution_bucket": "long_running_compute",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 3600,
+      "verifier_timeout_sec": 240,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "video",
+        "audio"
+      ],
+      "task_types": [
+        "detection",
+        "transformation"
+      ],
+      "environment_suffix_counts": {
+        ".mp4": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "audio-extractor",
+        "energy-calculator",
+        "pause-detector",
+        "report-generator",
+        "segment-combiner",
+        "silence-detector",
+        "video-processor"
+      ]
+    },
+    {
+      "task_id": "weighted-gdp-calc",
+      "split": "adaptation",
+      "category": "finance-economics",
+      "difficulty": "medium",
+      "benchmark_stratum": "spreadsheet_office",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 900,
+      "verifier_timeout_sec": 900,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "spreadsheet"
+      ],
+      "task_types": [
+        "calculation"
+      ],
+      "environment_suffix_counts": {
+        ".xlsx": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "xlsx"
+      ]
+    },
+    {
+      "task_id": "xlsx-recover-data",
+      "split": "held_out",
+      "category": "finance-economics",
+      "difficulty": "medium",
+      "benchmark_stratum": "spreadsheet_office",
+      "execution_bucket": "long_running_document_media",
+      "oracle_readiness_status": "passed",
+      "oracle_readiness_passed": true,
+      "agent_timeout_sec": 600,
+      "verifier_timeout_sec": 600,
+      "build_timeout_sec": 600,
+      "modalities": [
+        "spreadsheet"
+      ],
+      "task_types": [
+        "analysis",
+        "calculation"
+      ],
+      "environment_suffix_counts": {
+        ".md": 1,
+        ".py": 2,
+        ".txt": 1,
+        ".xlsx": 1,
+        "<none>": 1
+      },
+      "curated_skill_variants": [
+        "data-reconciliation",
+        "xlsx"
+      ]
+    }
+  ],
+  "readiness_artifact": {
+    "path": "experiments/skillsbench/runs/oracle-readiness/strict-reconciled-20260710/summary.json",
+    "sha256": "29829acd2410c23896a61dedc414d735244ff998ab3ee7601dbef57150cf98ba",
+    "derived_artifact": true,
+    "policy": "strict",
+    "source_summary_sha256": "77f15cf914b020091c24a652a89d2bae00c8786849b888a180f9f46074ce6884",
+    "overlay_summaries": [
+      {
+        "path": "experiments/skillsbench/runs/oracle-readiness/exception-logfix-3-20260710/summary.json",
+        "sha256": "3a29918e0f1a3041c7e5642ec2f80eecbe0720e3790dc98f5b5a16dce3a86cba"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3614 @@
+{
+  "commit": "5433cf15c343f0da5fb942b80dc7dcb7c76506df",
+  "infrastructure_flag_counts": {
+    "docker": 87,
+    "node": 2,
+    "workspace_seed": 6
+  },
+  "license": "Apache-2.0",
+  "notes": [
+    "Static readiness only; this manifest does not execute verifiers.",
+    "Paper-level SkillsBench claims should target all 87 tasks.",
+    "Tasks with infrastructure issues require repair or pre-registered exceptions, not silent removal."
+  ],
+  "source": "https://github.com/benchflow-ai/skillsbench",
+  "status_counts": {
+    "needs_infrastructure_review": 87
+  },
+  "target_task_count": 87,
+  "task_count": 87,
+  "tasks": [
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "mesh-analysis"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/mesh-analysis"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/mesh-analysis/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "3d-scan-calc",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "ada-plan-view-accessibility",
+        "architectural-dxf-extraction",
+        "geometric-layout-repair"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/ada-plan-view-accessibility",
+        "environment/skills/architectural-dxf-extraction",
+        "environment/skills/geometric-layout-repair"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/ada-plan-view-accessibility/SKILL.md",
+        "environment/skills/architectural-dxf-extraction/SKILL.md",
+        "environment/skills/geometric-layout-repair/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "ada-bathroom-plan-repair",
+      "title": "Task",
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "csv-processing",
+        "pid-controller",
+        "simulation-metrics",
+        "vehicle-dynamics",
+        "yaml-config"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/csv-processing",
+        "environment/skills/pid-controller",
+        "environment/skills/simulation-metrics",
+        "environment/skills/vehicle-dynamics",
+        "environment/skills/yaml-config"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/csv-processing/SKILL.md",
+        "environment/skills/pid-controller/SKILL.md",
+        "environment/skills/simulation-metrics/SKILL.md",
+        "environment/skills/vehicle-dynamics/SKILL.md",
+        "environment/skills/yaml-config/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "adaptive-cruise-control",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "azure-bgp"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/azure-bgp"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/azure-bgp/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "azure-bgp-oscillation-route-leak",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "geospatial-routing-data",
+        "logistics-rules-to-optimization",
+        "routing-subtour-elimination",
+        "scip-opt"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/geospatial-routing-data",
+        "environment/skills/logistics-rules-to-optimization",
+        "environment/skills/routing-subtour-elimination",
+        "environment/skills/scip-opt"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/geospatial-routing-data/SKILL.md",
+        "environment/skills/logistics-rules-to-optimization/SKILL.md",
+        "environment/skills/routing-subtour-elimination/SKILL.md",
+        "environment/skills/scip-opt/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "bike-rebalance",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "citation-management"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/citation-management"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/citation-management/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "citation-check",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "civ6lib",
+        "hex-grid-spatial",
+        "map-optimization-strategy",
+        "sqlite-map-parser"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/civ6lib",
+        "environment/skills/hex-grid-spatial",
+        "environment/skills/map-optimization-strategy",
+        "environment/skills/sqlite-map-parser"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/civ6lib/SKILL.md",
+        "environment/skills/hex-grid-spatial/SKILL.md",
+        "environment/skills/map-optimization-strategy/SKILL.md",
+        "environment/skills/sqlite-map-parser/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "civ6-adjacency-optimizer",
+      "title": "Sid Meier's Civilization 6 District Adjacency Bonus Optimizer",
+      "verifier_files": [
+        "verifier/evaluate.py",
+        "verifier/ground_truths/scenario_1/ground_truth.json",
+        "verifier/ground_truths/scenario_2/ground_truth.json",
+        "verifier/ground_truths/scenario_3/ground_truth.json",
+        "verifier/src/__init__.py",
+        "verifier/src/adjacency_rules.py",
+        "verifier/src/hex_utils.py",
+        "verifier/src/placement_rules.py",
+        "verifier/test.sh",
+        "verifier/test_outputs.py",
+        "verifier/test_unit.py",
+        "verifier/tools/civ6map_to_scenario.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "pdf"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "easy",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/pdf"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/pdf/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "court-form-filling",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "pymatgen",
+        "sympy"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/pymatgen",
+        "environment/skills/sympy"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/pymatgen/SKILL.md",
+        "environment/skills/sympy/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "crystallographic-wyckoff-position-analysis",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "pcap-analysis",
+        "threat-detection"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/pcap-analysis",
+        "environment/skills/threat-detection"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/pcap-analysis/SKILL.md",
+        "environment/skills/threat-detection/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "dapt-intrusion-detection",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "d3-visualization"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/d3-visualization"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/d3-visualization/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "data-to-d3",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "grpo",
+        "rl-post-training",
+        "trl"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/grpo",
+        "environment/skills/rl-post-training",
+        "environment/skills/trl"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/grpo/SKILL.md",
+        "environment/skills/rl-post-training/SKILL.md",
+        "environment/skills/trl/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "debug-trl-grpo",
+      "title": "debug-trl-grpo",
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "dialogue-graph"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "easy",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/dialogue-graph"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/dialogue-graph/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "dialogue-parser",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "attitude-controller-planner",
+        "flight-plan-parser",
+        "motor-model-dynamics",
+        "plot-quadrotor",
+        "position-controller-trajectory-planner",
+        "stepinfo-3d"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile",
+        "environment/docker-compose.yaml"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/attitude-controller-planner",
+        "environment/skills/flight-plan-parser",
+        "environment/skills/motor-model-dynamics",
+        "environment/skills/plot-quadrotor",
+        "environment/skills/position-controller-trajectory-planner",
+        "environment/skills/stepinfo-3d"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/attitude-controller-planner/SKILL.md",
+        "environment/skills/flight-plan-parser/SKILL.md",
+        "environment/skills/motor-model-dynamics/SKILL.md",
+        "environment/skills/plot-quadrotor/SKILL.md",
+        "environment/skills/position-controller-trajectory-planner/SKILL.md",
+        "environment/skills/stepinfo-3d/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "drone-planning-control",
+      "title": null,
+      "verifier_files": [
+        "verifier/_oracle_sim.py",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "dyn-object-masks",
+        "egomotion-estimation",
+        "output-validation",
+        "sampling-and-indexing"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/dyn-object-masks",
+        "environment/skills/egomotion-estimation",
+        "environment/skills/output-validation",
+        "environment/skills/sampling-and-indexing"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/dyn-object-masks/SKILL.md",
+        "environment/skills/egomotion-estimation/SKILL.md",
+        "environment/skills/output-validation/SKILL.md",
+        "environment/skills/sampling-and-indexing/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "dynamic-object-aware-egomotion",
+      "title": null,
+      "verifier_files": [
+        "verifier/dyn_masks.npz",
+        "verifier/instructions.json",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "gamma-phase-associator",
+        "obspy-data-api",
+        "seisbench-model-api",
+        "seismic-picker-selection"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [
+        "environment/skills/licenses"
+      ],
+      "per_task_skill_dirs": [
+        "environment/skills/gamma-phase-associator",
+        "environment/skills/licenses",
+        "environment/skills/obspy-data-api",
+        "environment/skills/seisbench-model-api",
+        "environment/skills/seismic-picker-selection"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/gamma-phase-associator/SKILL.md",
+        "environment/skills/obspy-data-api/SKILL.md",
+        "environment/skills/seisbench-model-api/SKILL.md",
+        "environment/skills/seismic-picker-selection/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required",
+        "some environment/skills subdirectories do not contain SKILL.md"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "earthquake-phase-association",
+      "title": null,
+      "verifier_files": [
+        "verifier/catalog.csv",
+        "verifier/test.sh",
+        "verifier/test_outputs.py",
+        "verifier/test_utils.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "geospatial-analysis"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/geospatial-analysis"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/geospatial-analysis/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "earthquake-plate-calculation",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "timeseries-detrending"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/timeseries-detrending"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/timeseries-detrending/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "econ-detrending-correlation",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "pdf-editing",
+        "text-parser"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/pdf-editing",
+        "environment/skills/text-parser"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/pdf-editing/SKILL.md",
+        "environment/skills/text-parser/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "edit-pdf",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "ac-branch-pi-model",
+        "casadi-ipopt-nlp",
+        "power-flow-data"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/ac-branch-pi-model",
+        "environment/skills/casadi-ipopt-nlp",
+        "environment/skills/power-flow-data"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/ac-branch-pi-model/SKILL.md",
+        "environment/skills/casadi-ipopt-nlp/SKILL.md",
+        "environment/skills/power-flow-data/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "energy-ac-optimal-power-flow",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "dc-power-flow",
+        "economic-dispatch",
+        "locational-marginal-prices",
+        "power-flow-data"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/dc-power-flow",
+        "environment/skills/economic-dispatch",
+        "environment/skills/locational-marginal-prices",
+        "environment/skills/power-flow-data"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/dc-power-flow/SKILL.md",
+        "environment/skills/economic-dispatch/SKILL.md",
+        "environment/skills/locational-marginal-prices/SKILL.md",
+        "environment/skills/power-flow-data/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "energy-market-pricing",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "milp-solver-workflow",
+        "unit-commitment-data-modeling",
+        "unit-commitment-operating-rules"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/milp-solver-workflow",
+        "environment/skills/unit-commitment-data-modeling",
+        "environment/skills/unit-commitment-operating-rules"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/milp-solver-workflow/SKILL.md",
+        "environment/skills/unit-commitment-data-modeling/SKILL.md",
+        "environment/skills/unit-commitment-operating-rules/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [
+        "unit-commitment-operating-rules",
+        "unit-commitment-data-modeling",
+        "milp-solver-workflow"
+      ],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "energy-unit-commitment",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "enterprise-artifact-search"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/enterprise-artifact-search"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/enterprise-artifact-search/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "enterprise-information-search",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "mip-solver-and-solution-audit",
+        "ordered-window-sequencing-mip"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/mip-solver-and-solution-audit",
+        "environment/skills/ordered-window-sequencing-mip"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/mip-solver-and-solution-audit/SKILL.md",
+        "environment/skills/ordered-window-sequencing-mip/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [
+        "mip-solver-and-solution-audit",
+        "ordered-window-sequencing-mip"
+      ],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "exam-block-sequencing",
+      "title": null,
+      "verifier_files": [
+        "verifier/oracle_metrics.json",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "pptx",
+        "xlsx@1a801fe1bd5f"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/pptx",
+        "environment/skills/xlsx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/pptx/SKILL.md",
+        "environment/skills/xlsx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "exceltable-in-ppt",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "box-least-squares",
+        "exoplanet-workflows",
+        "light-curve-preprocessing",
+        "lomb-scargle-periodogram",
+        "transit-least-squares"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/box-least-squares",
+        "environment/skills/exoplanet-workflows",
+        "environment/skills/light-curve-preprocessing",
+        "environment/skills/lomb-scargle-periodogram",
+        "environment/skills/transit-least-squares"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/box-least-squares/SKILL.md",
+        "environment/skills/exoplanet-workflows/SKILL.md",
+        "environment/skills/light-curve-preprocessing/SKILL.md",
+        "environment/skills/lomb-scargle-periodogram/SKILL.md",
+        "environment/skills/transit-least-squares/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "exoplanet-detection-period",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "pdf@0d4af66f868d",
+        "xlsx@b1a6bde518fc"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/pdf",
+        "environment/skills/xlsx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/pdf/SKILL.md",
+        "environment/skills/xlsx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "financial-modeling-qa",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "analyze-ci",
+        "temporal-python-testing",
+        "testing-python",
+        "uv-package-manager"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "easy",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/analyze-ci",
+        "environment/skills/temporal-python-testing",
+        "environment/skills/testing-python",
+        "environment/skills/uv-package-manager"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/analyze-ci/SKILL.md",
+        "environment/skills/temporal-python-testing/SKILL.md",
+        "environment/skills/testing-python/SKILL.md",
+        "environment/skills/uv-package-manager/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "fix-build-agentops",
+      "title": null,
+      "verifier_files": [
+        "verifier/run_passed.sh",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "maven-build-lifecycle",
+        "maven-dependency-management",
+        "maven-plugin-configuration"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "easy",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/maven-build-lifecycle",
+        "environment/skills/maven-dependency-management",
+        "environment/skills/maven-plugin-configuration"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/maven-build-lifecycle/SKILL.md",
+        "environment/skills/maven-dependency-management/SKILL.md",
+        "environment/skills/maven-plugin-configuration/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "fix-build-google-auto",
+      "title": null,
+      "verifier_files": [
+        "verifier/run_passed.sh",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "jackson-security",
+        "senior-java"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/jackson-security",
+        "environment/skills/senior-java"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/jackson-security/SKILL.md",
+        "environment/skills/senior-java/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "fix-druid-loophole-cve",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "erlang-concurrency",
+        "erlang-distribution",
+        "erlang-otp-behaviors",
+        "find-bugs",
+        "senior-security",
+        "ssh-penetration-testing"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker",
+        "workspace_seed"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/erlang-concurrency",
+        "environment/skills/erlang-distribution",
+        "environment/skills/erlang-otp-behaviors",
+        "environment/skills/find-bugs",
+        "environment/skills/senior-security",
+        "environment/skills/ssh-penetration-testing"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/erlang-concurrency/SKILL.md",
+        "environment/skills/erlang-distribution/SKILL.md",
+        "environment/skills/erlang-otp-behaviors/SKILL.md",
+        "environment/skills/find-bugs/SKILL.md",
+        "environment/skills/senior-security/SKILL.md",
+        "environment/skills/ssh-penetration-testing/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "fix-erlang-ssh-cve",
+      "title": null,
+      "verifier_files": [
+        "verifier/build.sh",
+        "verifier/exploit.py",
+        "verifier/start_ssh.escript",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "browser-testing",
+        "react-best-practices",
+        "web-interface-guidelines"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile",
+        "environment/api-server/package.json",
+        "environment/app/package-lock.json",
+        "environment/app/package.json",
+        "environment/docker-compose.yaml"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker",
+        "node"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/browser-testing",
+        "environment/skills/react-best-practices",
+        "environment/skills/web-interface-guidelines"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/browser-testing/SKILL.md",
+        "environment/skills/react-best-practices/SKILL.md",
+        "environment/skills/web-interface-guidelines/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [
+        "browser-testing",
+        "react-best-practices",
+        "web-interface-guidelines"
+      ],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "fix-visual-stability",
+      "title": "Rules",
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "pdf",
+        "senior-data-engineer"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker",
+        "workspace_seed"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/pdf",
+        "environment/skills/senior-data-engineer"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/pdf/SKILL.md",
+        "environment/skills/senior-data-engineer/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "flink-query",
+      "title": "Task",
+      "verifier_files": [
+        "verifier/out_lsj_001a.txt",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "flood-detection",
+        "nws-flood-thresholds",
+        "usgs-data-download"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/flood-detection",
+        "environment/skills/nws-flood-thresholds",
+        "environment/skills/usgs-data-download"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/flood-detection/SKILL.md",
+        "environment/skills/nws-flood-thresholds/SKILL.md",
+        "environment/skills/usgs-data-download/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "flood-risk-analysis",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "glm-basics",
+        "glm-calibration",
+        "glm-output"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/glm-basics",
+        "environment/skills/glm-calibration",
+        "environment/skills/glm-output"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/glm-basics/SKILL.md",
+        "environment/skills/glm-calibration/SKILL.md",
+        "environment/skills/glm-output/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "glm-lake-mendota",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "conditioning",
+        "matched-filtering"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/conditioning",
+        "environment/skills/matched-filtering"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/conditioning/SKILL.md",
+        "environment/skills/matched-filtering/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "gravitational-wave-detection",
+      "title": null,
+      "verifier_files": [
+        "verifier/expected_results.csv",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "dc-power-flow",
+        "economic-dispatch",
+        "power-flow-data"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/dc-power-flow",
+        "environment/skills/economic-dispatch",
+        "environment/skills/power-flow-data"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/dc-power-flow/SKILL.md",
+        "environment/skills/economic-dispatch/SKILL.md",
+        "environment/skills/power-flow-data/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "grid-dispatch-operator",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "excitation-signal-design",
+        "first-order-model-fitting",
+        "imc-tuning-rules",
+        "safety-interlocks",
+        "scipy-curve-fit"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/excitation-signal-design",
+        "environment/skills/first-order-model-fitting",
+        "environment/skills/imc-tuning-rules",
+        "environment/skills/safety-interlocks",
+        "environment/skills/scipy-curve-fit"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/excitation-signal-design/SKILL.md",
+        "environment/skills/first-order-model-fitting/SKILL.md",
+        "environment/skills/imc-tuning-rules/SKILL.md",
+        "environment/skills/safety-interlocks/SKILL.md",
+        "environment/skills/scipy-curve-fit/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "hvac-control",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py",
+        "verifier/verification_params.json"
+      ]
+    },
+    {
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "fuzzy-match",
+        "pdf",
+        "xlsx"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/fuzzy-match",
+        "environment/skills/pdf",
+        "environment/skills/xlsx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/fuzzy-match/SKILL.md",
+        "environment/skills/pdf/SKILL.md",
+        "environment/skills/xlsx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "invoice-fraud-detection",
+      "title": null,
+      "verifier_files": [
+        "verifier/ground_truth.json",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "jax-skills"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/jax-skills"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/jax-skills/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "jax-computing-basics",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "image-ocr",
+        "openai-vision",
+        "pdf",
+        "video-frame-extraction",
+        "xlsx"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker",
+        "workspace_seed"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/image-ocr",
+        "environment/skills/openai-vision",
+        "environment/skills/pdf",
+        "environment/skills/video-frame-extraction",
+        "environment/skills/xlsx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/image-ocr/SKILL.md",
+        "environment/skills/openai-vision/SKILL.md",
+        "environment/skills/pdf/SKILL.md",
+        "environment/skills/video-frame-extraction/SKILL.md",
+        "environment/skills/xlsx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "jpg-ocr-stat",
+      "title": "Task description",
+      "verifier_files": [
+        "verifier/stat_oracle.xlsx",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "lab-unit-harmonization"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/lab-unit-harmonization"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/lab-unit-harmonization/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "lab-unit-harmonization",
+      "title": "Probelm",
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "contribution-analysis",
+        "meteorology-driver-classification",
+        "pca-decomposition",
+        "trend-analysis"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/contribution-analysis",
+        "environment/skills/meteorology-driver-classification",
+        "environment/skills/pca-decomposition",
+        "environment/skills/trend-analysis"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/contribution-analysis/SKILL.md",
+        "environment/skills/meteorology-driver-classification/SKILL.md",
+        "environment/skills/pca-decomposition/SKILL.md",
+        "environment/skills/trend-analysis/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "lake-warming-attribution",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "marker",
+        "pdf"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/marker",
+        "environment/skills/pdf"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/marker/SKILL.md",
+        "environment/skills/pdf/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "latex-formula-extraction",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "lean4-memories",
+        "lean4-theorem-proving"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker",
+        "workspace_seed"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/lean4-memories",
+        "environment/skills/lean4-theorem-proving"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/lean4-memories/SKILL.md",
+        "environment/skills/lean4-theorem-proving/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "lean4-proof",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "cache-policy-comparison",
+        "prefix-cache-replay"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/cache-policy-comparison",
+        "environment/skills/prefix-cache-replay"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/cache-policy-comparison/SKILL.md",
+        "environment/skills/prefix-cache-replay/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [
+        "prefix-cache-replay"
+      ],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "llm-prefix-cache-replay",
+      "title": null,
+      "verifier_files": [
+        "verifier/oracle_helpers.py",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "manufacturing-failure-reason-codebook-normalization"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/manufacturing-failure-reason-codebook-normalization"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/manufacturing-failure-reason-codebook-normalization/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [
+        "manufacturing-failure-reason-codebook-normalization"
+      ],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "manufacturing-codebook-normalization",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "reflow-machine-maintenance-guidance",
+        "reflow-profile-compliance-toolkit"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/reflow-machine-maintenance-guidance",
+        "environment/skills/reflow-profile-compliance-toolkit"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/reflow-machine-maintenance-guidance/SKILL.md",
+        "environment/skills/reflow-profile-compliance-toolkit/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [
+        "reflow-machine-maintenance-guidance"
+      ],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "manufacturing-equipment-maintenance",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "fjsp-baseline-repair-with-downtime-and-policy"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/fjsp-baseline-repair-with-downtime-and-policy"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/fjsp-baseline-repair-with-downtime-and-policy/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [
+        "fjsp-baseline-repair-with-downtime-and-policy"
+      ],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "manufacturing-fjsp-optimization",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "media-content-production",
+      "curated_skill_variants": [
+        "ffmpeg-keyframe-extraction",
+        "image-editing",
+        "object-counter"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/ffmpeg-keyframe-extraction",
+        "environment/skills/image-editing",
+        "environment/skills/object-counter"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/ffmpeg-keyframe-extraction/SKILL.md",
+        "environment/skills/image-editing/SKILL.md",
+        "environment/skills/object-counter/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "mario-coin-counting",
+      "title": null,
+      "verifier_files": [
+        "verifier/expected_output.csv",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "custom-distance-metrics",
+        "parallel-processing",
+        "pareto-optimization"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/custom-distance-metrics",
+        "environment/skills/parallel-processing",
+        "environment/skills/pareto-optimization"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/custom-distance-metrics/SKILL.md",
+        "environment/skills/parallel-processing/SKILL.md",
+        "environment/skills/pareto-optimization/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "mars-clouds-clustering",
+      "title": "Mars Cloud Clustering Optimization",
+      "verifier_files": [
+        "verifier/expected_frontier.csv",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "media-content-production",
+      "curated_skill_variants": [
+        "ffmpeg-audio-processing",
+        "ffmpeg-format-conversion",
+        "ffmpeg-media-info",
+        "ffmpeg-video-editing",
+        "ffmpeg-video-filters",
+        "text-to-speech"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/ffmpeg-audio-processing",
+        "environment/skills/ffmpeg-format-conversion",
+        "environment/skills/ffmpeg-media-info",
+        "environment/skills/ffmpeg-video-editing",
+        "environment/skills/ffmpeg-video-filters",
+        "environment/skills/text-to-speech"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/ffmpeg-audio-processing/SKILL.md",
+        "environment/skills/ffmpeg-format-conversion/SKILL.md",
+        "environment/skills/ffmpeg-media-info/SKILL.md",
+        "environment/skills/ffmpeg-video-editing/SKILL.md",
+        "environment/skills/ffmpeg-video-filters/SKILL.md",
+        "environment/skills/text-to-speech/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "multilingual-video-dubbing",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "docx"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "easy",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/docx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/docx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "offer-letter-generator",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "docx@d3cfe519dca2",
+        "file-organizer",
+        "pdf",
+        "planning-with-files",
+        "pptx@3ad72806f38c"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/docx",
+        "environment/skills/file-organizer",
+        "environment/skills/pdf",
+        "environment/skills/planning-with-files",
+        "environment/skills/pptx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/docx/SKILL.md",
+        "environment/skills/file-organizer/SKILL.md",
+        "environment/skills/pdf/SKILL.md",
+        "environment/skills/planning-with-files/SKILL.md",
+        "environment/skills/pptx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "organize-messy-files",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "academic-pdf-redaction",
+        "pdf@31b77156e562"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/academic-pdf-redaction",
+        "environment/skills/pdf"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/academic-pdf-redaction/SKILL.md",
+        "environment/skills/pdf/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "paper-anonymizer",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "memory-optimization",
+        "python-parallelization",
+        "workload-balancing"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker",
+        "workspace_seed"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/memory-optimization",
+        "environment/skills/python-parallelization",
+        "environment/skills/workload-balancing"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/memory-optimization/SKILL.md",
+        "environment/skills/python-parallelization/SKILL.md",
+        "environment/skills/workload-balancing/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "parallel-tfidf-search",
+      "title": "Parallel TF-IDF Similarity Search",
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "ortools-pickup-delivery-routing",
+        "ortools-routing-modeling"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/ortools-pickup-delivery-routing",
+        "environment/skills/ortools-routing-modeling"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/ortools-pickup-delivery-routing/SKILL.md",
+        "environment/skills/ortools-routing-modeling/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [
+        "ortools-routing-modeling",
+        "ortools-pickup-delivery-routing"
+      ],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "paratransit-routing",
+      "title": null,
+      "verifier_files": [
+        "verifier/darp_validation.py",
+        "verifier/reference_oracle.py",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "pddl-skills"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/pddl-skills"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/pddl-skills/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "pddl-airport-planning",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "pddl-skills@3a838435e9e2"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/pddl-skills"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/pddl-skills/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "pddl-tpp-planning",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "pdf",
+        "xlsx"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/pdf",
+        "environment/skills/xlsx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/pdf/SKILL.md",
+        "environment/skills/xlsx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "pdf-excel-diff",
+      "title": null,
+      "verifier_files": [
+        "verifier/expected_output.json",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "powerlifting",
+        "senior-data-scientist",
+        "xlsx"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "easy",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/powerlifting",
+        "environment/skills/senior-data-scientist",
+        "environment/skills/xlsx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/powerlifting/SKILL.md",
+        "environment/skills/senior-data-scientist/SKILL.md",
+        "environment/skills/xlsx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "powerlifting-coef-calc",
+      "title": null,
+      "verifier_files": [
+        "verifier/cleaned_with_coefficients.xlsx",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "pptx@5f3f8d7402fa"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/pptx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/pptx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "pptx-reference-formatting",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "xlsx"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/xlsx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/xlsx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "protein-expression-analysis",
+      "title": "What's this about?",
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "python-scala-collections",
+        "python-scala-functional",
+        "python-scala-idioms",
+        "python-scala-libraries",
+        "python-scala-oop",
+        "python-scala-syntax-mapping"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/python-scala-collections",
+        "environment/skills/python-scala-functional",
+        "environment/skills/python-scala-idioms",
+        "environment/skills/python-scala-libraries",
+        "environment/skills/python-scala-oop",
+        "environment/skills/python-scala-syntax-mapping"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/python-scala-collections/SKILL.md",
+        "environment/skills/python-scala-functional/SKILL.md",
+        "environment/skills/python-scala-idioms/SKILL.md",
+        "environment/skills/python-scala-libraries/SKILL.md",
+        "environment/skills/python-scala-oop/SKILL.md",
+        "environment/skills/python-scala-syntax-mapping/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "python-scala-translation",
+      "title": "Python to Scala Code Translation",
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "qutip"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/qutip"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/qutip/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "quantum-numerical-simulation",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "finite-horizon-lqr",
+        "integral-action-design",
+        "mpc-horizon-tuning",
+        "state-space-linearization"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/finite-horizon-lqr",
+        "environment/skills/integral-action-design",
+        "environment/skills/mpc-horizon-tuning",
+        "environment/skills/state-space-linearization"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/finite-horizon-lqr/SKILL.md",
+        "environment/skills/integral-action-design/SKILL.md",
+        "environment/skills/mpc-horizon-tuning/SKILL.md",
+        "environment/skills/state-space-linearization/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "r2r-mpc-control",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "radar-signal-processing",
+        "radar-vital-signs",
+        "vital-sign-extraction"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/radar-signal-processing",
+        "environment/skills/radar-vital-signs",
+        "environment/skills/vital-sign-extraction"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/radar-signal-processing/SKILL.md",
+        "environment/skills/radar-vital-signs/SKILL.md",
+        "environment/skills/vital-sign-extraction/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "radar-vital-signs",
+      "title": null,
+      "verifier_files": [
+        "verifier/expected_values.json",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "browser-testing@ebcae60ef709",
+        "react-best-practices@175ee538059c"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile",
+        "environment/api-simulator/Dockerfile",
+        "environment/api-simulator/package-lock.json",
+        "environment/api-simulator/package.json",
+        "environment/docker-compose.yml",
+        "environment/website/package-lock.json",
+        "environment/website/package.json"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker",
+        "node"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/browser-testing",
+        "environment/skills/react-best-practices"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/browser-testing/SKILL.md",
+        "environment/skills/react-best-practices/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [
+        "playwright-cdp",
+        "react-best-practices"
+      ],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "react-performance-debugging",
+      "title": null,
+      "verifier_files": [
+        "verifier/conftest.py",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "xlsx"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/xlsx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/xlsx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "reserves-at-risk-calc",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "pdf@a963d991212a",
+        "xlsx@8e5fe91c81dc"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/pdf",
+        "environment/skills/xlsx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/pdf/SKILL.md",
+        "environment/skills/xlsx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [
+        "xlsx",
+        "pdf"
+      ],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "sales-pivot-analysis",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "13f-analyzer",
+        "fuzzy-name-search"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/13f-analyzer",
+        "environment/skills/fuzzy-name-search"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/13f-analyzer/SKILL.md",
+        "environment/skills/fuzzy-name-search/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "sec-financial-report",
+      "title": null,
+      "verifier_files": [
+        "verifier/expected_output.json",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "obspy-data-api",
+        "obspy-datacenter-client",
+        "seisbench-model-api",
+        "seismic-picker-selection"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [
+        "environment/skills/licenses"
+      ],
+      "per_task_skill_dirs": [
+        "environment/skills/licenses",
+        "environment/skills/obspy-data-api",
+        "environment/skills/obspy-datacenter-client",
+        "environment/skills/seisbench-model-api",
+        "environment/skills/seismic-picker-selection"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/obspy-data-api/SKILL.md",
+        "environment/skills/obspy-datacenter-client/SKILL.md",
+        "environment/skills/seisbench-model-api/SKILL.md",
+        "environment/skills/seismic-picker-selection/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required",
+        "some environment/skills subdirectories do not contain SKILL.md"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "seismic-phase-picking",
+      "title": null,
+      "verifier_files": [
+        "verifier/evaluate_picks.py",
+        "verifier/labels.csv",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "discover-important-function",
+        "fuzzing-python",
+        "setup-env"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/discover-important-function",
+        "environment/skills/fuzzing-python",
+        "environment/skills/setup-env"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/discover-important-function/SKILL.md",
+        "environment/skills/fuzzing-python/SKILL.md",
+        "environment/skills/setup-env/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "setup-fuzzing-py",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_lib.py",
+        "verifier/test_setup.py",
+        "verifier/testing_utils.py"
+      ]
+    },
+    {
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "xlsx"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/xlsx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/xlsx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "shock-analysis-demand",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "xlsx"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/xlsx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/xlsx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "shock-analysis-supply",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "nlp-research-repo-package-installment",
+        "pdf@ba530d0bb107"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/nlp-research-repo-package-installment",
+        "environment/skills/pdf"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/nlp-research-repo-package-installment/SKILL.md",
+        "environment/skills/pdf/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "simpo-code-reproduction",
+      "title": null,
+      "verifier_files": [
+        "verifier/loss.npz",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "cvss-score-extraction",
+        "trivy-offline-vulnerability-scanning",
+        "vulnerability-csv-reporting"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile",
+        "environment/package-lock.json"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/cvss-score-extraction",
+        "environment/skills/trivy-offline-vulnerability-scanning",
+        "environment/skills/vulnerability-csv-reporting"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/cvss-score-extraction/SKILL.md",
+        "environment/skills/trivy-offline-vulnerability-scanning/SKILL.md",
+        "environment/skills/vulnerability-csv-reporting/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "software-dependency-audit",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "hibernate-upgrade",
+        "jakarta-namespace",
+        "restclient-migration",
+        "spring-boot-migration",
+        "spring-security-6"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker",
+        "workspace_seed"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/hibernate-upgrade",
+        "environment/skills/jakarta-namespace",
+        "environment/skills/restclient-migration",
+        "environment/skills/spring-boot-migration",
+        "environment/skills/spring-security-6"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/hibernate-upgrade/SKILL.md",
+        "environment/skills/jakarta-namespace/SKILL.md",
+        "environment/skills/restclient-migration/SKILL.md",
+        "environment/skills/spring-boot-migration/SKILL.md",
+        "environment/skills/spring-security-6/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "spring-boot-jakarta-migration",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "pcap-triage-tshark",
+        "suricata-offline-evejson",
+        "suricata-rules-basics"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/pcap-triage-tshark",
+        "environment/skills/suricata-offline-evejson",
+        "environment/skills/suricata-rules-basics"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/pcap-triage-tshark/SKILL.md",
+        "environment/skills/suricata-offline-evejson/SKILL.md",
+        "environment/skills/suricata-rules-basics/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "suricata-custom-exfil",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "syz-extract-constants",
+        "syzkaller-build-loop",
+        "syzlang-ioctl-basics"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/syz-extract-constants",
+        "environment/skills/syzkaller-build-loop",
+        "environment/skills/syzlang-ioctl-basics"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/syz-extract-constants/SKILL.md",
+        "environment/skills/syzkaller-build-loop/SKILL.md",
+        "environment/skills/syzlang-ioctl-basics/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "syzkaller-ppdev-syzlang",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "media-content-production",
+      "curated_skill_variants": [
+        "obj-exporter",
+        "threejs"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/obj-exporter",
+        "environment/skills/threejs"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/obj-exporter/SKILL.md",
+        "environment/skills/threejs/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "threejs-structure-parser",
+      "title": null,
+      "verifier_files": [
+        "verifier/gen_ground_truth.mjs",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "media-content-production",
+      "curated_skill_variants": [
+        "obj-exporter@b6d1bcf98031",
+        "threejs"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/obj-exporter",
+        "environment/skills/threejs"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/obj-exporter/SKILL.md",
+        "environment/skills/threejs/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "threejs-to-obj",
+      "title": null,
+      "verifier_files": [
+        "verifier/gen_ground_truth.mjs",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "transaction-concurrency-control-foundations",
+        "transaction-protocol-reasoning",
+        "transaction-trace-analysis"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/transaction-concurrency-control-foundations",
+        "environment/skills/transaction-protocol-reasoning",
+        "environment/skills/transaction-trace-analysis"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/transaction-concurrency-control-foundations/SKILL.md",
+        "environment/skills/transaction-protocol-reasoning/SKILL.md",
+        "environment/skills/transaction-trace-analysis/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [
+        "transaction-concurrency-control-foundations",
+        "transaction-protocol-reasoning",
+        "transaction-trace-analysis"
+      ],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "tictoc-unnecessary-abort-detection",
+      "title": null,
+      "verifier_files": [
+        "verifier/expected_unnecessary_abort_txn_ids.json",
+        "verifier/score_outputs.py",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "search-accommodations",
+        "search-attractions",
+        "search-cities",
+        "search-driving-distance",
+        "search-flights",
+        "search-restaurants"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/search-accommodations",
+        "environment/skills/search-attractions",
+        "environment/skills/search-cities",
+        "environment/skills/search-driving-distance",
+        "environment/skills/search-flights",
+        "environment/skills/search-restaurants"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/search-accommodations/SKILL.md",
+        "environment/skills/search-attractions/SKILL.md",
+        "environment/skills/search-cities/SKILL.md",
+        "environment/skills/search-driving-distance/SKILL.md",
+        "environment/skills/search-flights/SKILL.md",
+        "environment/skills/search-restaurants/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [
+        "search-cities",
+        "search-accommodation",
+        "search-restaurant",
+        "search-attraction",
+        "search-driving-distance"
+      ],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "travel-planning",
+      "title": "Task",
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "media-content-production",
+      "curated_skill_variants": [
+        "audio-extractor",
+        "energy-calculator",
+        "pause-detector",
+        "report-generator",
+        "segment-combiner",
+        "silence-detector",
+        "video-processor"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "hard",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/audio-extractor",
+        "environment/skills/energy-calculator",
+        "environment/skills/pause-detector",
+        "environment/skills/report-generator",
+        "environment/skills/segment-combiner",
+        "environment/skills/silence-detector",
+        "environment/skills/video-processor"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/audio-extractor/SKILL.md",
+        "environment/skills/energy-calculator/SKILL.md",
+        "environment/skills/pause-detector/SKILL.md",
+        "environment/skills/report-generator/SKILL.md",
+        "environment/skills/segment-combiner/SKILL.md",
+        "environment/skills/silence-detector/SKILL.md",
+        "environment/skills/video-processor/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "video-silence-remover",
+      "title": "Video Silence Remover Task",
+      "verifier_files": [
+        "verifier/ground_truth.json",
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "xlsx"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/xlsx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/xlsx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "weighted-gdp-calc",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    },
+    {
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "data-reconciliation",
+        "xlsx"
+      ],
+      "dependency_files": [
+        "environment/Dockerfile"
+      ],
+      "difficulty": "medium",
+      "has_environment": true,
+      "has_oracle": true,
+      "has_task_md": true,
+      "has_verifier": true,
+      "infrastructure_flags": [
+        "docker"
+      ],
+      "missing_skill_md_dirs": [],
+      "per_task_skill_dirs": [
+        "environment/skills/data-reconciliation",
+        "environment/skills/xlsx"
+      ],
+      "per_task_skill_md": [
+        "environment/skills/data-reconciliation/SKILL.md",
+        "environment/skills/xlsx/SKILL.md"
+      ],
+      "repair_notes": [
+        "static files present; dependency/runtime review required"
+      ],
+      "required_skills": [],
+      "static_status": "needs_infrastructure_review",
+      "task_id": "xlsx-recover-data",
+      "title": null,
+      "verifier_files": [
+        "verifier/test.sh",
+        "verifier/test_outputs.py"
+      ]
+    }
+  ]
+}

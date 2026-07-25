@@ -1,0 +1,21 @@
+{
+  "id": "answer-yes",
+  "instruction": "Return exactly the word yes.",
+  "metadata": {
+    "benchmark_family": "SkillsBench-style",
+    "capability": "Reasoning",
+    "difficulty": "C",
+    "domain": "Office & White Collar",
+    "mvp_tier": "smoke",
+    "shadowing_role": "control",
+    "skill_dependency": "none"
+  },
+  "oracle_skill_ids": [],
+  "regression_group": "smoke",
+  "setup_files": {},
+  "verifier": {
+    "expected": "yes",
+    "kind": "exact_match",
+    "name": "exact_yes"
+  }
+}

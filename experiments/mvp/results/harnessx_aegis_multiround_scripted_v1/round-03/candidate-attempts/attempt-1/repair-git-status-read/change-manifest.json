@@ -1,0 +1,43 @@
+{
+  "candidate_variant_id": "aegis-repair-git-status-read",
+  "edits": [
+    {
+      "dimension": "D4",
+      "hook": "before_tool",
+      "kind": "replace",
+      "processor": {
+        "after": [],
+        "config": {
+          "allowed_commands": [
+            "/bin/ls -1",
+            "/bin/pwd",
+            "git status --short",
+            "ls -1",
+            "pwd"
+          ],
+          "command_tool": "Bash",
+          "denied_tools": [
+            "apply_patch"
+          ]
+        },
+        "hook": "before_tool",
+        "name": "exact_tool_input_policy",
+        "order": -100,
+        "singleton_group": "live_tool_input_policy"
+      },
+      "singleton_group": "live_tool_input_policy"
+    }
+  ],
+  "evidence_trace_ids": [
+    "aegis-trace-a5847bfa5dc23e28a4776183"
+  ],
+  "expected_improve_task_ids": [
+    "git-status-read"
+  ],
+  "expected_regress_task_ids": [],
+  "id": "aegis-repair-git-status-read-manifest",
+  "parent_variant_sha256": "7e35a511f58a0fe039419bc069c6f0804d290fb3d9f4af3ef5fe2391c4a2ab96",
+  "rationale": "Add only the exact command for git-status-read and preserve the parent allowlist.",
+  "risk_tier": "medium",
+  "rollback_variant_sha256": "7e35a511f58a0fe039419bc069c6f0804d290fb3d9f4af3ef5fe2391c4a2ab96"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "count-errors",
+  "instruction": "Read errors.log and create error-count.txt containing the number of non-empty lines.",
+  "metadata": {
+    "benchmark_family": "SkillsBench-style",
+    "capability": "Tool Use",
+    "difficulty": "C",
+    "domain": "Office & White Collar",
+    "mvp_tier": "mvp",
+    "shadowing_role": "oracle_target",
+    "skill_dependency": "medium"
+  },
+  "oracle_skill_ids": [
+    "line-summary"
+  ],
+  "regression_group": "file-transform",
+  "setup_files": {
+    "errors.log": "E001\n\nE002\n"
+  },
+  "verifier": {
+    "command": [
+      "python3",
+      "-c",
+      "from pathlib import Path; p=Path('error-count.txt'); raise SystemExit(0 if p.exists() and p.read_text().strip() == '2' else 1)"
+    ],
+    "kind": "command",
+    "name": "error_count_is_two",
+    "timeout_s": 5.0
+  }
+}

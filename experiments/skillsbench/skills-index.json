@@ -1,0 +1,3102 @@
+{
+  "source": "https://github.com/benchflow-ai/skillsbench",
+  "commit": "5433cf15c343f0da5fb942b80dc7dcb7c76506df",
+  "license": "Apache-2.0",
+  "skills": [
+    {
+      "name": "13f-analyzer",
+      "variant": "13f-analyzer",
+      "content_hash": "361a834cd5b3",
+      "size_bytes": 7108,
+      "n_files": 3,
+      "used_by_tasks": [
+        "sec-financial-report"
+      ]
+    },
+    {
+      "name": "ac-branch-pi-model",
+      "variant": "ac-branch-pi-model",
+      "content_hash": "5fea91a5d510",
+      "size_bytes": 6718,
+      "n_files": 2,
+      "used_by_tasks": [
+        "energy-ac-optimal-power-flow"
+      ]
+    },
+    {
+      "name": "academic-pdf-redaction",
+      "variant": "academic-pdf-redaction",
+      "content_hash": "673007e6362b",
+      "size_bytes": 3741,
+      "n_files": 1,
+      "used_by_tasks": [
+        "paper-anonymizer"
+      ]
+    },
+    {
+      "name": "ada-plan-view-accessibility",
+      "variant": "ada-plan-view-accessibility",
+      "content_hash": "4e8542880a4f",
+      "size_bytes": 3947,
+      "n_files": 1,
+      "used_by_tasks": [
+        "ada-bathroom-plan-repair"
+      ]
+    },
+    {
+      "name": "analyze-ci",
+      "variant": "analyze-ci",
+      "content_hash": "99c4a065c9bf",
+      "size_bytes": 958,
+      "n_files": 1,
+      "used_by_tasks": [
+        "fix-build-agentops"
+      ]
+    },
+    {
+      "name": "architectural-dxf-extraction",
+      "variant": "architectural-dxf-extraction",
+      "content_hash": "37bbdf5badec",
+      "size_bytes": 5534,
+      "n_files": 1,
+      "used_by_tasks": [
+        "ada-bathroom-plan-repair"
+      ]
+    },
+    {
+      "name": "attitude-controller-planner",
+      "variant": "attitude-controller-planner",
+      "content_hash": "32d136c51264",
+      "size_bytes": 2881,
+      "n_files": 1,
+      "used_by_tasks": [
+        "drone-planning-control"
+      ]
+    },
+    {
+      "name": "audio-extractor",
+      "variant": "audio-extractor",
+      "content_hash": "0f4cbdd7446e",
+      "size_bytes": 3075,
+      "n_files": 2,
+      "used_by_tasks": [
+        "video-silence-remover"
+      ]
+    },
+    {
+      "name": "azure-bgp",
+      "variant": "azure-bgp",
+      "content_hash": "114d11f1712a",
+      "size_bytes": 9824,
+      "n_files": 1,
+      "used_by_tasks": [
+        "azure-bgp-oscillation-route-leak"
+      ]
+    },
+    {
+      "name": "box-least-squares",
+      "variant": "box-least-squares",
+      "content_hash": "d0081001723e",
+      "size_bytes": 10281,
+      "n_files": 1,
+      "used_by_tasks": [
+        "exoplanet-detection-period"
+      ]
+    },
+    {
+      "name": "browser-testing",
+      "variant": "browser-testing",
+      "content_hash": "18274efe815b",
+      "size_bytes": 14512,
+      "n_files": 4,
+      "used_by_tasks": [
+        "fix-visual-stability"
+      ]
+    },
+    {
+      "name": "browser-testing",
+      "variant": "browser-testing@ebcae60ef709",
+      "content_hash": "ebcae60ef709",
+      "size_bytes": 11029,
+      "n_files": 3,
+      "used_by_tasks": [
+        "react-performance-debugging"
+      ]
+    },
+    {
+      "name": "cache-policy-comparison",
+      "variant": "cache-policy-comparison",
+      "content_hash": "5eff7fc5d29c",
+      "size_bytes": 5970,
+      "n_files": 1,
+      "used_by_tasks": [
+        "llm-prefix-cache-replay"
+      ]
+    },
+    {
+      "name": "casadi-ipopt-nlp",
+      "variant": "casadi-ipopt-nlp",
+      "content_hash": "9d596c29d392",
+      "size_bytes": 4928,
+      "n_files": 1,
+      "used_by_tasks": [
+        "energy-ac-optimal-power-flow"
+      ]
+    },
+    {
+      "name": "citation-management",
+      "variant": "citation-management",
+      "content_hash": "affb62118047",
+      "size_bytes": 215811,
+      "n_files": 14,
+      "used_by_tasks": [
+        "citation-check"
+      ]
+    },
+    {
+      "name": "civ6lib",
+      "variant": "civ6lib",
+      "content_hash": "2c8d646277dc",
+      "size_bytes": 54360,
+      "n_files": 4,
+      "used_by_tasks": [
+        "civ6-adjacency-optimizer"
+      ]
+    },
+    {
+      "name": "conditioning",
+      "variant": "conditioning",
+      "content_hash": "0b1b215678c1",
+      "size_bytes": 5373,
+      "n_files": 1,
+      "used_by_tasks": [
+        "gravitational-wave-detection"
+      ]
+    },
+    {
+      "name": "contribution-analysis",
+      "variant": "contribution-analysis",
+      "content_hash": "c1e0da4e66dd",
+      "size_bytes": 2959,
+      "n_files": 1,
+      "used_by_tasks": [
+        "lake-warming-attribution"
+      ]
+    },
+    {
+      "name": "csv-processing",
+      "variant": "csv-processing",
+      "content_hash": "7e5adf0f0921",
+      "size_bytes": 1819,
+      "n_files": 1,
+      "used_by_tasks": [
+        "adaptive-cruise-control"
+      ]
+    },
+    {
+      "name": "custom-distance-metrics",
+      "variant": "custom-distance-metrics",
+      "content_hash": "c01825a8d99c",
+      "size_bytes": 2696,
+      "n_files": 1,
+      "used_by_tasks": [
+        "mars-clouds-clustering"
+      ]
+    },
+    {
+      "name": "cvss-score-extraction",
+      "variant": "cvss-score-extraction",
+      "content_hash": "a1a7b781e0bf",
+      "size_bytes": 9163,
+      "n_files": 1,
+      "used_by_tasks": [
+        "software-dependency-audit"
+      ]
+    },
+    {
+      "name": "d3-visualization",
+      "variant": "d3-visualization",
+      "content_hash": "14bd5a5a2df8",
+      "size_bytes": 21813,
+      "n_files": 5,
+      "used_by_tasks": [
+        "data-to-d3"
+      ]
+    },
+    {
+      "name": "data-reconciliation",
+      "variant": "data-reconciliation",
+      "content_hash": "c39b109d789e",
+      "size_bytes": 2695,
+      "n_files": 1,
+      "used_by_tasks": [
+        "xlsx-recover-data"
+      ]
+    },
+    {
+      "name": "dc-power-flow",
+      "variant": "dc-power-flow",
+      "content_hash": "3847a5bf2828",
+      "size_bytes": 6043,
+      "n_files": 2,
+      "used_by_tasks": [
+        "energy-market-pricing",
+        "grid-dispatch-operator"
+      ]
+    },
+    {
+      "name": "dialogue-graph",
+      "variant": "dialogue-graph",
+      "content_hash": "bb3955556a3e",
+      "size_bytes": 8179,
+      "n_files": 2,
+      "used_by_tasks": [
+        "dialogue-parser"
+      ]
+    },
+    {
+      "name": "discover-important-function",
+      "variant": "discover-important-function",
+      "content_hash": "40e68e8a5d5e",
+      "size_bytes": 14358,
+      "n_files": 1,
+      "used_by_tasks": [
+        "setup-fuzzing-py"
+      ]
+    },
+    {
+      "name": "docx",
+      "variant": "docx",
+      "content_hash": "117a24b63740",
+      "size_bytes": 7869,
+      "n_files": 1,
+      "used_by_tasks": [
+        "offer-letter-generator"
+      ]
+    },
+    {
+      "name": "docx",
+      "variant": "docx@d3cfe519dca2",
+      "content_hash": "d3cfe519dca2",
+      "size_bytes": 1181834,
+      "n_files": 59,
+      "used_by_tasks": [
+        "organize-messy-files"
+      ]
+    },
+    {
+      "name": "dyn-object-masks",
+      "variant": "dyn-object-masks",
+      "content_hash": "d124cecfe303",
+      "size_bytes": 2068,
+      "n_files": 1,
+      "used_by_tasks": [
+        "dynamic-object-aware-egomotion"
+      ]
+    },
+    {
+      "name": "economic-dispatch",
+      "variant": "economic-dispatch",
+      "content_hash": "9dbc5d8d70c6",
+      "size_bytes": 6529,
+      "n_files": 2,
+      "used_by_tasks": [
+        "energy-market-pricing",
+        "grid-dispatch-operator"
+      ]
+    },
+    {
+      "name": "egomotion-estimation",
+      "variant": "egomotion-estimation",
+      "content_hash": "9f430c8a4f27",
+      "size_bytes": 2006,
+      "n_files": 1,
+      "used_by_tasks": [
+        "dynamic-object-aware-egomotion"
+      ]
+    },
+    {
+      "name": "energy-calculator",
+      "variant": "energy-calculator",
+      "content_hash": "486721acc4ef",
+      "size_bytes": 3967,
+      "n_files": 2,
+      "used_by_tasks": [
+        "video-silence-remover"
+      ]
+    },
+    {
+      "name": "enterprise-artifact-search",
+      "variant": "enterprise-artifact-search",
+      "content_hash": "0026738dc957",
+      "size_bytes": 10126,
+      "n_files": 1,
+      "used_by_tasks": [
+        "enterprise-information-search"
+      ]
+    },
+    {
+      "name": "erlang-concurrency",
+      "variant": "erlang-concurrency",
+      "content_hash": "33d1fd7bf16c",
+      "size_bytes": 8540,
+      "n_files": 1,
+      "used_by_tasks": [
+        "fix-erlang-ssh-cve"
+      ]
+    },
+    {
+      "name": "erlang-distribution",
+      "variant": "erlang-distribution",
+      "content_hash": "5766ed1cdfec",
+      "size_bytes": 13301,
+      "n_files": 1,
+      "used_by_tasks": [
+        "fix-erlang-ssh-cve"
+      ]
+    },
+    {
+      "name": "erlang-otp-behaviors",
+      "variant": "erlang-otp-behaviors",
+      "content_hash": "c0fcebfa65da",
+      "size_bytes": 17914,
+      "n_files": 1,
+      "used_by_tasks": [
+        "fix-erlang-ssh-cve"
+      ]
+    },
+    {
+      "name": "excitation-signal-design",
+      "variant": "excitation-signal-design",
+      "content_hash": "2876bb8e97bd",
+      "size_bytes": 2569,
+      "n_files": 1,
+      "used_by_tasks": [
+        "hvac-control"
+      ]
+    },
+    {
+      "name": "exoplanet-workflows",
+      "variant": "exoplanet-workflows",
+      "content_hash": "a6979e2c42a7",
+      "size_bytes": 6363,
+      "n_files": 1,
+      "used_by_tasks": [
+        "exoplanet-detection-period"
+      ]
+    },
+    {
+      "name": "ffmpeg-audio-processing",
+      "variant": "ffmpeg-audio-processing",
+      "content_hash": "d21f26d827e5",
+      "size_bytes": 3836,
+      "n_files": 1,
+      "used_by_tasks": [
+        "multilingual-video-dubbing"
+      ]
+    },
+    {
+      "name": "ffmpeg-format-conversion",
+      "variant": "ffmpeg-format-conversion",
+      "content_hash": "b29ed60eb236",
+      "size_bytes": 2790,
+      "n_files": 1,
+      "used_by_tasks": [
+        "multilingual-video-dubbing"
+      ]
+    },
+    {
+      "name": "ffmpeg-keyframe-extraction",
+      "variant": "ffmpeg-keyframe-extraction",
+      "content_hash": "8a99455ec64e",
+      "size_bytes": 1993,
+      "n_files": 1,
+      "used_by_tasks": [
+        "mario-coin-counting"
+      ]
+    },
+    {
+      "name": "ffmpeg-media-info",
+      "variant": "ffmpeg-media-info",
+      "content_hash": "8c1550514f65",
+      "size_bytes": 2794,
+      "n_files": 1,
+      "used_by_tasks": [
+        "multilingual-video-dubbing"
+      ]
+    },
+    {
+      "name": "ffmpeg-video-editing",
+      "variant": "ffmpeg-video-editing",
+      "content_hash": "519060657de5",
+      "size_bytes": 2509,
+      "n_files": 1,
+      "used_by_tasks": [
+        "multilingual-video-dubbing"
+      ]
+    },
+    {
+      "name": "ffmpeg-video-filters",
+      "variant": "ffmpeg-video-filters",
+      "content_hash": "68b89d5e2b00",
+      "size_bytes": 3468,
+      "n_files": 1,
+      "used_by_tasks": [
+        "multilingual-video-dubbing"
+      ]
+    },
+    {
+      "name": "file-organizer",
+      "variant": "file-organizer",
+      "content_hash": "8bffb7c9f39a",
+      "size_bytes": 11175,
+      "n_files": 1,
+      "used_by_tasks": [
+        "organize-messy-files"
+      ]
+    },
+    {
+      "name": "find-bugs",
+      "variant": "find-bugs",
+      "content_hash": "d6c81119a46a",
+      "size_bytes": 2767,
+      "n_files": 1,
+      "used_by_tasks": [
+        "fix-erlang-ssh-cve"
+      ]
+    },
+    {
+      "name": "finite-horizon-lqr",
+      "variant": "finite-horizon-lqr",
+      "content_hash": "e9b4af6f1842",
+      "size_bytes": 1078,
+      "n_files": 1,
+      "used_by_tasks": [
+        "r2r-mpc-control"
+      ]
+    },
+    {
+      "name": "first-order-model-fitting",
+      "variant": "first-order-model-fitting",
+      "content_hash": "7598b06a3e70",
+      "size_bytes": 2606,
+      "n_files": 1,
+      "used_by_tasks": [
+        "hvac-control"
+      ]
+    },
+    {
+      "name": "fjsp-baseline-repair-with-downtime-and-policy",
+      "variant": "fjsp-baseline-repair-with-downtime-and-policy",
+      "content_hash": "7f77e7560cc2",
+      "size_bytes": 4824,
+      "n_files": 1,
+      "used_by_tasks": [
+        "manufacturing-fjsp-optimization"
+      ]
+    },
+    {
+      "name": "flight-plan-parser",
+      "variant": "flight-plan-parser",
+      "content_hash": "51268b3e3a6a",
+      "size_bytes": 3087,
+      "n_files": 1,
+      "used_by_tasks": [
+        "drone-planning-control"
+      ]
+    },
+    {
+      "name": "flood-detection",
+      "variant": "flood-detection",
+      "content_hash": "872344a67578",
+      "size_bytes": 3688,
+      "n_files": 1,
+      "used_by_tasks": [
+        "flood-risk-analysis"
+      ]
+    },
+    {
+      "name": "fuzzing-python",
+      "variant": "fuzzing-python",
+      "content_hash": "e5e8bef2ca2e",
+      "size_bytes": 16925,
+      "n_files": 1,
+      "used_by_tasks": [
+        "setup-fuzzing-py"
+      ]
+    },
+    {
+      "name": "fuzzy-match",
+      "variant": "fuzzy-match",
+      "content_hash": "7185c9e83a8a",
+      "size_bytes": 3173,
+      "n_files": 1,
+      "used_by_tasks": [
+        "invoice-fraud-detection"
+      ]
+    },
+    {
+      "name": "fuzzy-name-search",
+      "variant": "fuzzy-name-search",
+      "content_hash": "abe3b45e1282",
+      "size_bytes": 8346,
+      "n_files": 3,
+      "used_by_tasks": [
+        "sec-financial-report"
+      ]
+    },
+    {
+      "name": "gamma-phase-associator",
+      "variant": "gamma-phase-associator",
+      "content_hash": "ee0c49ae1099",
+      "size_bytes": 10107,
+      "n_files": 1,
+      "used_by_tasks": [
+        "earthquake-phase-association"
+      ]
+    },
+    {
+      "name": "geometric-layout-repair",
+      "variant": "geometric-layout-repair",
+      "content_hash": "e10c2084908e",
+      "size_bytes": 5163,
+      "n_files": 1,
+      "used_by_tasks": [
+        "ada-bathroom-plan-repair"
+      ]
+    },
+    {
+      "name": "geospatial-analysis",
+      "variant": "geospatial-analysis",
+      "content_hash": "ec2668cacdad",
+      "size_bytes": 7543,
+      "n_files": 1,
+      "used_by_tasks": [
+        "earthquake-plate-calculation"
+      ]
+    },
+    {
+      "name": "geospatial-routing-data",
+      "variant": "geospatial-routing-data",
+      "content_hash": "bcefc676896a",
+      "size_bytes": 5879,
+      "n_files": 1,
+      "used_by_tasks": [
+        "bike-rebalance"
+      ]
+    },
+    {
+      "name": "glm-basics",
+      "variant": "glm-basics",
+      "content_hash": "48b7e142dfd9",
+      "size_bytes": 2158,
+      "n_files": 1,
+      "used_by_tasks": [
+        "glm-lake-mendota"
+      ]
+    },
+    {
+      "name": "glm-calibration",
+      "variant": "glm-calibration",
+      "content_hash": "e5fbf98afc8a",
+      "size_bytes": 3144,
+      "n_files": 1,
+      "used_by_tasks": [
+        "glm-lake-mendota"
+      ]
+    },
+    {
+      "name": "glm-output",
+      "variant": "glm-output",
+      "content_hash": "1cbbc963fce3",
+      "size_bytes": 4009,
+      "n_files": 1,
+      "used_by_tasks": [
+        "glm-lake-mendota"
+      ]
+    },
+    {
+      "name": "grpo",
+      "variant": "grpo",
+      "content_hash": "549e1d55102e",
+      "size_bytes": 13375,
+      "n_files": 3,
+      "used_by_tasks": [
+        "debug-trl-grpo"
+      ]
+    },
+    {
+      "name": "hex-grid-spatial",
+      "variant": "hex-grid-spatial",
+      "content_hash": "c7239973df5c",
+      "size_bytes": 7327,
+      "n_files": 2,
+      "used_by_tasks": [
+        "civ6-adjacency-optimizer"
+      ]
+    },
+    {
+      "name": "hibernate-upgrade",
+      "variant": "hibernate-upgrade",
+      "content_hash": "b29f17b29662",
+      "size_bytes": 7507,
+      "n_files": 1,
+      "used_by_tasks": [
+        "spring-boot-jakarta-migration"
+      ]
+    },
+    {
+      "name": "image-editing",
+      "variant": "image-editing",
+      "content_hash": "4b3c0060e202",
+      "size_bytes": 4327,
+      "n_files": 1,
+      "used_by_tasks": [
+        "mario-coin-counting"
+      ]
+    },
+    {
+      "name": "image-ocr",
+      "variant": "image-ocr",
+      "content_hash": "8325b795befe",
+      "size_bytes": 11348,
+      "n_files": 1,
+      "used_by_tasks": [
+        "jpg-ocr-stat"
+      ]
+    },
+    {
+      "name": "imc-tuning-rules",
+      "variant": "imc-tuning-rules",
+      "content_hash": "34854b9d4a9c",
+      "size_bytes": 3613,
+      "n_files": 1,
+      "used_by_tasks": [
+        "hvac-control"
+      ]
+    },
+    {
+      "name": "integral-action-design",
+      "variant": "integral-action-design",
+      "content_hash": "5f833c09912f",
+      "size_bytes": 1104,
+      "n_files": 1,
+      "used_by_tasks": [
+        "r2r-mpc-control"
+      ]
+    },
+    {
+      "name": "jackson-security",
+      "variant": "jackson-security",
+      "content_hash": "6579f48f99bd",
+      "size_bytes": 4182,
+      "n_files": 1,
+      "used_by_tasks": [
+        "fix-druid-loophole-cve"
+      ]
+    },
+    {
+      "name": "jakarta-namespace",
+      "variant": "jakarta-namespace",
+      "content_hash": "54d003f9773d",
+      "size_bytes": 7656,
+      "n_files": 1,
+      "used_by_tasks": [
+        "spring-boot-jakarta-migration"
+      ]
+    },
+    {
+      "name": "jax-skills",
+      "variant": "jax-skills",
+      "content_hash": "e00c749ec2c9",
+      "size_bytes": 6239,
+      "n_files": 9,
+      "used_by_tasks": [
+        "jax-computing-basics"
+      ]
+    },
+    {
+      "name": "lab-unit-harmonization",
+      "variant": "lab-unit-harmonization",
+      "content_hash": "7ecbb1eb534b",
+      "size_bytes": 23713,
+      "n_files": 2,
+      "used_by_tasks": [
+        "lab-unit-harmonization"
+      ]
+    },
+    {
+      "name": "lean4-memories",
+      "variant": "lean4-memories",
+      "content_hash": "2342c3459e80",
+      "size_bytes": 42261,
+      "n_files": 3,
+      "used_by_tasks": [
+        "lean4-proof"
+      ]
+    },
+    {
+      "name": "lean4-theorem-proving",
+      "variant": "lean4-theorem-proving",
+      "content_hash": "75e87a9d0446",
+      "size_bytes": 313790,
+      "n_files": 21,
+      "used_by_tasks": [
+        "lean4-proof"
+      ]
+    },
+    {
+      "name": "light-curve-preprocessing",
+      "variant": "light-curve-preprocessing",
+      "content_hash": "f43ba4ad64ba",
+      "size_bytes": 5511,
+      "n_files": 1,
+      "used_by_tasks": [
+        "exoplanet-detection-period"
+      ]
+    },
+    {
+      "name": "locational-marginal-prices",
+      "variant": "locational-marginal-prices",
+      "content_hash": "793c40cf02ee",
+      "size_bytes": 4746,
+      "n_files": 1,
+      "used_by_tasks": [
+        "energy-market-pricing"
+      ]
+    },
+    {
+      "name": "logistics-rules-to-optimization",
+      "variant": "logistics-rules-to-optimization",
+      "content_hash": "13a0dfc5e86b",
+      "size_bytes": 11015,
+      "n_files": 1,
+      "used_by_tasks": [
+        "bike-rebalance"
+      ]
+    },
+    {
+      "name": "lomb-scargle-periodogram",
+      "variant": "lomb-scargle-periodogram",
+      "content_hash": "907e7d1ecb6e",
+      "size_bytes": 3529,
+      "n_files": 1,
+      "used_by_tasks": [
+        "exoplanet-detection-period"
+      ]
+    },
+    {
+      "name": "manufacturing-failure-reason-codebook-normalization",
+      "variant": "manufacturing-failure-reason-codebook-normalization",
+      "content_hash": "a6232295b37e",
+      "size_bytes": 4475,
+      "n_files": 1,
+      "used_by_tasks": [
+        "manufacturing-codebook-normalization"
+      ]
+    },
+    {
+      "name": "map-optimization-strategy",
+      "variant": "map-optimization-strategy",
+      "content_hash": "9e099dc56cc8",
+      "size_bytes": 4446,
+      "n_files": 1,
+      "used_by_tasks": [
+        "civ6-adjacency-optimizer"
+      ]
+    },
+    {
+      "name": "marker",
+      "variant": "marker",
+      "content_hash": "51b88f8de9de",
+      "size_bytes": 6236,
+      "n_files": 2,
+      "used_by_tasks": [
+        "latex-formula-extraction"
+      ]
+    },
+    {
+      "name": "matched-filtering",
+      "variant": "matched-filtering",
+      "content_hash": "182527eacd37",
+      "size_bytes": 6404,
+      "n_files": 1,
+      "used_by_tasks": [
+        "gravitational-wave-detection"
+      ]
+    },
+    {
+      "name": "maven-build-lifecycle",
+      "variant": "maven-build-lifecycle",
+      "content_hash": "e2bbb00f21b5",
+      "size_bytes": 11521,
+      "n_files": 1,
+      "used_by_tasks": [
+        "fix-build-google-auto"
+      ]
+    },
+    {
+      "name": "maven-dependency-management",
+      "variant": "maven-dependency-management",
+      "content_hash": "6f48605866fe",
+      "size_bytes": 12272,
+      "n_files": 1,
+      "used_by_tasks": [
+        "fix-build-google-auto"
+      ]
+    },
+    {
+      "name": "maven-plugin-configuration",
+      "variant": "maven-plugin-configuration",
+      "content_hash": "18593ef5b81f",
+      "size_bytes": 19193,
+      "n_files": 1,
+      "used_by_tasks": [
+        "fix-build-google-auto"
+      ]
+    },
+    {
+      "name": "memory-optimization",
+      "variant": "memory-optimization",
+      "content_hash": "a283c00649bd",
+      "size_bytes": 10957,
+      "n_files": 2,
+      "used_by_tasks": [
+        "parallel-tfidf-search"
+      ]
+    },
+    {
+      "name": "mesh-analysis",
+      "variant": "mesh-analysis",
+      "content_hash": "57e750a32cb1",
+      "size_bytes": 6965,
+      "n_files": 2,
+      "used_by_tasks": [
+        "3d-scan-calc"
+      ]
+    },
+    {
+      "name": "meteorology-driver-classification",
+      "variant": "meteorology-driver-classification",
+      "content_hash": "ceab3a8c1397",
+      "size_bytes": 1946,
+      "n_files": 1,
+      "used_by_tasks": [
+        "lake-warming-attribution"
+      ]
+    },
+    {
+      "name": "milp-solver-workflow",
+      "variant": "milp-solver-workflow",
+      "content_hash": "e069ce2ffe16",
+      "size_bytes": 6563,
+      "n_files": 1,
+      "used_by_tasks": [
+        "energy-unit-commitment"
+      ]
+    },
+    {
+      "name": "mip-solver-and-solution-audit",
+      "variant": "mip-solver-and-solution-audit",
+      "content_hash": "96d483c3de36",
+      "size_bytes": 10797,
+      "n_files": 1,
+      "used_by_tasks": [
+        "exam-block-sequencing"
+      ]
+    },
+    {
+      "name": "motor-model-dynamics",
+      "variant": "motor-model-dynamics",
+      "content_hash": "1f1f0a50276b",
+      "size_bytes": 3440,
+      "n_files": 1,
+      "used_by_tasks": [
+        "drone-planning-control"
+      ]
+    },
+    {
+      "name": "mpc-horizon-tuning",
+      "variant": "mpc-horizon-tuning",
+      "content_hash": "4c75f8663c9f",
+      "size_bytes": 1197,
+      "n_files": 1,
+      "used_by_tasks": [
+        "r2r-mpc-control"
+      ]
+    },
+    {
+      "name": "nlp-research-repo-package-installment",
+      "variant": "nlp-research-repo-package-installment",
+      "content_hash": "843bae1cf5cb",
+      "size_bytes": 2032,
+      "n_files": 1,
+      "used_by_tasks": [
+        "simpo-code-reproduction"
+      ]
+    },
+    {
+      "name": "nws-flood-thresholds",
+      "variant": "nws-flood-thresholds",
+      "content_hash": "98c5b472c30e",
+      "size_bytes": 4091,
+      "n_files": 1,
+      "used_by_tasks": [
+        "flood-risk-analysis"
+      ]
+    },
+    {
+      "name": "obj-exporter",
+      "variant": "obj-exporter",
+      "content_hash": "50730856c6a1",
+      "size_bytes": 4576,
+      "n_files": 1,
+      "used_by_tasks": [
+        "threejs-structure-parser"
+      ]
+    },
+    {
+      "name": "obj-exporter",
+      "variant": "obj-exporter@b6d1bcf98031",
+      "content_hash": "b6d1bcf98031",
+      "size_bytes": 2055,
+      "n_files": 1,
+      "used_by_tasks": [
+        "threejs-to-obj"
+      ]
+    },
+    {
+      "name": "object-counter",
+      "variant": "object-counter",
+      "content_hash": "2b918e423f03",
+      "size_bytes": 3332,
+      "n_files": 2,
+      "used_by_tasks": [
+        "mario-coin-counting"
+      ]
+    },
+    {
+      "name": "obspy-data-api",
+      "variant": "obspy-data-api",
+      "content_hash": "18ec2c51dd43",
+      "size_bytes": 5488,
+      "n_files": 1,
+      "used_by_tasks": [
+        "earthquake-phase-association",
+        "seismic-phase-picking"
+      ]
+    },
+    {
+      "name": "obspy-datacenter-client",
+      "variant": "obspy-datacenter-client",
+      "content_hash": "872cc4b7b612",
+      "size_bytes": 14152,
+      "n_files": 2,
+      "used_by_tasks": [
+        "seismic-phase-picking"
+      ]
+    },
+    {
+      "name": "openai-vision",
+      "variant": "openai-vision",
+      "content_hash": "743dc4307bb5",
+      "size_bytes": 20003,
+      "n_files": 1,
+      "used_by_tasks": [
+        "jpg-ocr-stat"
+      ]
+    },
+    {
+      "name": "ordered-window-sequencing-mip",
+      "variant": "ordered-window-sequencing-mip",
+      "content_hash": "b5251122dc0d",
+      "size_bytes": 10905,
+      "n_files": 1,
+      "used_by_tasks": [
+        "exam-block-sequencing"
+      ]
+    },
+    {
+      "name": "ortools-pickup-delivery-routing",
+      "variant": "ortools-pickup-delivery-routing",
+      "content_hash": "dc57adc708de",
+      "size_bytes": 7920,
+      "n_files": 1,
+      "used_by_tasks": [
+        "paratransit-routing"
+      ]
+    },
+    {
+      "name": "ortools-routing-modeling",
+      "variant": "ortools-routing-modeling",
+      "content_hash": "939bab2b4e91",
+      "size_bytes": 11200,
+      "n_files": 1,
+      "used_by_tasks": [
+        "paratransit-routing"
+      ]
+    },
+    {
+      "name": "output-validation",
+      "variant": "output-validation",
+      "content_hash": "1c731edcf325",
+      "size_bytes": 1847,
+      "n_files": 1,
+      "used_by_tasks": [
+        "dynamic-object-aware-egomotion"
+      ]
+    },
+    {
+      "name": "parallel-processing",
+      "variant": "parallel-processing",
+      "content_hash": "c3c0d497d69e",
+      "size_bytes": 2042,
+      "n_files": 1,
+      "used_by_tasks": [
+        "mars-clouds-clustering"
+      ]
+    },
+    {
+      "name": "pareto-optimization",
+      "variant": "pareto-optimization",
+      "content_hash": "d592244f0e89",
+      "size_bytes": 4166,
+      "n_files": 1,
+      "used_by_tasks": [
+        "mars-clouds-clustering"
+      ]
+    },
+    {
+      "name": "pause-detector",
+      "variant": "pause-detector",
+      "content_hash": "88a070bd49c4",
+      "size_bytes": 5940,
+      "n_files": 2,
+      "used_by_tasks": [
+        "video-silence-remover"
+      ]
+    },
+    {
+      "name": "pca-decomposition",
+      "variant": "pca-decomposition",
+      "content_hash": "4123ab17496d",
+      "size_bytes": 3961,
+      "n_files": 1,
+      "used_by_tasks": [
+        "lake-warming-attribution"
+      ]
+    },
+    {
+      "name": "pcap-analysis",
+      "variant": "pcap-analysis",
+      "content_hash": "b294564e8ed1",
+      "size_bytes": 23660,
+      "n_files": 2,
+      "used_by_tasks": [
+        "dapt-intrusion-detection"
+      ]
+    },
+    {
+      "name": "pcap-triage-tshark",
+      "variant": "pcap-triage-tshark",
+      "content_hash": "9b66436f4cee",
+      "size_bytes": 2085,
+      "n_files": 2,
+      "used_by_tasks": [
+        "suricata-custom-exfil"
+      ]
+    },
+    {
+      "name": "pddl-skills",
+      "variant": "pddl-skills",
+      "content_hash": "5dec6a3ed72a",
+      "size_bytes": 4672,
+      "n_files": 5,
+      "used_by_tasks": [
+        "pddl-airport-planning"
+      ]
+    },
+    {
+      "name": "pddl-skills",
+      "variant": "pddl-skills@3a838435e9e2",
+      "content_hash": "3a838435e9e2",
+      "size_bytes": 4756,
+      "n_files": 5,
+      "used_by_tasks": [
+        "pddl-tpp-planning"
+      ]
+    },
+    {
+      "name": "pdf",
+      "variant": "pdf",
+      "content_hash": "77cf110e0555",
+      "size_bytes": 63808,
+      "n_files": 12,
+      "used_by_tasks": [
+        "court-form-filling",
+        "flink-query",
+        "invoice-fraud-detection",
+        "jpg-ocr-stat",
+        "latex-formula-extraction",
+        "organize-messy-files",
+        "pdf-excel-diff"
+      ]
+    },
+    {
+      "name": "pdf",
+      "variant": "pdf@0d4af66f868d",
+      "content_hash": "0d4af66f868d",
+      "size_bytes": 64296,
+      "n_files": 12,
+      "used_by_tasks": [
+        "financial-modeling-qa"
+      ]
+    },
+    {
+      "name": "pdf",
+      "variant": "pdf@31b77156e562",
+      "content_hash": "31b77156e562",
+      "size_bytes": 34546,
+      "n_files": 4,
+      "used_by_tasks": [
+        "paper-anonymizer"
+      ]
+    },
+    {
+      "name": "pdf",
+      "variant": "pdf@a963d991212a",
+      "content_hash": "a963d991212a",
+      "size_bytes": 6452,
+      "n_files": 1,
+      "used_by_tasks": [
+        "sales-pivot-analysis"
+      ]
+    },
+    {
+      "name": "pdf",
+      "variant": "pdf@ba530d0bb107",
+      "content_hash": "ba530d0bb107",
+      "size_bytes": 64296,
+      "n_files": 12,
+      "used_by_tasks": [
+        "simpo-code-reproduction"
+      ]
+    },
+    {
+      "name": "pdf-editing",
+      "variant": "pdf-editing",
+      "content_hash": "51b4824a23b0",
+      "size_bytes": 9935,
+      "n_files": 1,
+      "used_by_tasks": [
+        "edit-pdf"
+      ]
+    },
+    {
+      "name": "pid-controller",
+      "variant": "pid-controller",
+      "content_hash": "cb815e71b519",
+      "size_bytes": 2690,
+      "n_files": 1,
+      "used_by_tasks": [
+        "adaptive-cruise-control"
+      ]
+    },
+    {
+      "name": "planning-with-files",
+      "variant": "planning-with-files",
+      "content_hash": "7bceb6a1cdbc",
+      "size_bytes": 34725,
+      "n_files": 8,
+      "used_by_tasks": [
+        "organize-messy-files"
+      ]
+    },
+    {
+      "name": "plot-quadrotor",
+      "variant": "plot-quadrotor",
+      "content_hash": "9d46b47dd63d",
+      "size_bytes": 2620,
+      "n_files": 1,
+      "used_by_tasks": [
+        "drone-planning-control"
+      ]
+    },
+    {
+      "name": "position-controller-trajectory-planner",
+      "variant": "position-controller-trajectory-planner",
+      "content_hash": "bfe45842d2d5",
+      "size_bytes": 5845,
+      "n_files": 1,
+      "used_by_tasks": [
+        "drone-planning-control"
+      ]
+    },
+    {
+      "name": "power-flow-data",
+      "variant": "power-flow-data",
+      "content_hash": "8fcaa2e71eba",
+      "size_bytes": 4367,
+      "n_files": 1,
+      "used_by_tasks": [
+        "energy-ac-optimal-power-flow",
+        "energy-market-pricing",
+        "grid-dispatch-operator"
+      ]
+    },
+    {
+      "name": "powerlifting",
+      "variant": "powerlifting",
+      "content_hash": "533248e4849d",
+      "size_bytes": 14910,
+      "n_files": 1,
+      "used_by_tasks": [
+        "powerlifting-coef-calc"
+      ]
+    },
+    {
+      "name": "pptx",
+      "variant": "pptx",
+      "content_hash": "1f3a16768e68",
+      "size_bytes": 1230007,
+      "n_files": 56,
+      "used_by_tasks": [
+        "exceltable-in-ppt"
+      ]
+    },
+    {
+      "name": "pptx",
+      "variant": "pptx@3ad72806f38c",
+      "content_hash": "3ad72806f38c",
+      "size_bytes": 1225685,
+      "n_files": 56,
+      "used_by_tasks": [
+        "organize-messy-files"
+      ]
+    },
+    {
+      "name": "pptx",
+      "variant": "pptx@5f3f8d7402fa",
+      "content_hash": "5f3f8d7402fa",
+      "size_bytes": 1225309,
+      "n_files": 56,
+      "used_by_tasks": [
+        "pptx-reference-formatting"
+      ]
+    },
+    {
+      "name": "prefix-cache-replay",
+      "variant": "prefix-cache-replay",
+      "content_hash": "dee6250711b9",
+      "size_bytes": 9283,
+      "n_files": 1,
+      "used_by_tasks": [
+        "llm-prefix-cache-replay"
+      ]
+    },
+    {
+      "name": "pymatgen",
+      "variant": "pymatgen",
+      "content_hash": "c2be2777f627",
+      "size_bytes": 106806,
+      "n_files": 10,
+      "used_by_tasks": [
+        "crystallographic-wyckoff-position-analysis"
+      ]
+    },
+    {
+      "name": "python-parallelization",
+      "variant": "python-parallelization",
+      "content_hash": "f09a46eab8c7",
+      "size_bytes": 10999,
+      "n_files": 2,
+      "used_by_tasks": [
+        "parallel-tfidf-search"
+      ]
+    },
+    {
+      "name": "python-scala-collections",
+      "variant": "python-scala-collections",
+      "content_hash": "27d0bbf5678a",
+      "size_bytes": 6394,
+      "n_files": 1,
+      "used_by_tasks": [
+        "python-scala-translation"
+      ]
+    },
+    {
+      "name": "python-scala-functional",
+      "variant": "python-scala-functional",
+      "content_hash": "2bb31e4067b8",
+      "size_bytes": 7983,
+      "n_files": 1,
+      "used_by_tasks": [
+        "python-scala-translation"
+      ]
+    },
+    {
+      "name": "python-scala-idioms",
+      "variant": "python-scala-idioms",
+      "content_hash": "1ebe1b5adcd5",
+      "size_bytes": 7510,
+      "n_files": 1,
+      "used_by_tasks": [
+        "python-scala-translation"
+      ]
+    },
+    {
+      "name": "python-scala-libraries",
+      "variant": "python-scala-libraries",
+      "content_hash": "2ff6e5cb3098",
+      "size_bytes": 8947,
+      "n_files": 1,
+      "used_by_tasks": [
+        "python-scala-translation"
+      ]
+    },
+    {
+      "name": "python-scala-oop",
+      "variant": "python-scala-oop",
+      "content_hash": "0a077c5a77ec",
+      "size_bytes": 7605,
+      "n_files": 1,
+      "used_by_tasks": [
+        "python-scala-translation"
+      ]
+    },
+    {
+      "name": "python-scala-syntax-mapping",
+      "variant": "python-scala-syntax-mapping",
+      "content_hash": "f84087f79872",
+      "size_bytes": 4050,
+      "n_files": 1,
+      "used_by_tasks": [
+        "python-scala-translation"
+      ]
+    },
+    {
+      "name": "qutip",
+      "variant": "qutip",
+      "content_hash": "c347c5b07345",
+      "size_bytes": 52074,
+      "n_files": 6,
+      "used_by_tasks": [
+        "quantum-numerical-simulation"
+      ]
+    },
+    {
+      "name": "radar-signal-processing",
+      "variant": "radar-signal-processing",
+      "content_hash": "29cf07c506d4",
+      "size_bytes": 9683,
+      "n_files": 4,
+      "used_by_tasks": [
+        "radar-vital-signs"
+      ]
+    },
+    {
+      "name": "radar-vital-signs",
+      "variant": "radar-vital-signs",
+      "content_hash": "d8df0957b314",
+      "size_bytes": 20400,
+      "n_files": 6,
+      "used_by_tasks": [
+        "radar-vital-signs"
+      ]
+    },
+    {
+      "name": "react-best-practices",
+      "variant": "react-best-practices",
+      "content_hash": "093b642c152c",
+      "size_bytes": 71455,
+      "n_files": 50,
+      "used_by_tasks": [
+        "fix-visual-stability"
+      ]
+    },
+    {
+      "name": "react-best-practices",
+      "variant": "react-best-practices@175ee538059c",
+      "content_hash": "175ee538059c",
+      "size_bytes": 131217,
+      "n_files": 51,
+      "used_by_tasks": [
+        "react-performance-debugging"
+      ]
+    },
+    {
+      "name": "reflow-machine-maintenance-guidance",
+      "variant": "reflow-machine-maintenance-guidance",
+      "content_hash": "70251cc038b2",
+      "size_bytes": 4663,
+      "n_files": 1,
+      "used_by_tasks": [
+        "manufacturing-equipment-maintenance"
+      ]
+    },
+    {
+      "name": "reflow-profile-compliance-toolkit",
+      "variant": "reflow-profile-compliance-toolkit",
+      "content_hash": "c7930c3ddd79",
+      "size_bytes": 7420,
+      "n_files": 1,
+      "used_by_tasks": [
+        "manufacturing-equipment-maintenance"
+      ]
+    },
+    {
+      "name": "report-generator",
+      "variant": "report-generator",
+      "content_hash": "05a61732b210",
+      "size_bytes": 4253,
+      "n_files": 2,
+      "used_by_tasks": [
+        "video-silence-remover"
+      ]
+    },
+    {
+      "name": "restclient-migration",
+      "variant": "restclient-migration",
+      "content_hash": "41c882eada23",
+      "size_bytes": 8515,
+      "n_files": 1,
+      "used_by_tasks": [
+        "spring-boot-jakarta-migration"
+      ]
+    },
+    {
+      "name": "rl-post-training",
+      "variant": "rl-post-training",
+      "content_hash": "91f6eff0dc9b",
+      "size_bytes": 33274,
+      "n_files": 4,
+      "used_by_tasks": [
+        "debug-trl-grpo"
+      ]
+    },
+    {
+      "name": "routing-subtour-elimination",
+      "variant": "routing-subtour-elimination",
+      "content_hash": "989529e394a6",
+      "size_bytes": 8701,
+      "n_files": 1,
+      "used_by_tasks": [
+        "bike-rebalance"
+      ]
+    },
+    {
+      "name": "safety-interlocks",
+      "variant": "safety-interlocks",
+      "content_hash": "02b26f44363b",
+      "size_bytes": 4114,
+      "n_files": 1,
+      "used_by_tasks": [
+        "hvac-control"
+      ]
+    },
+    {
+      "name": "sampling-and-indexing",
+      "variant": "sampling-and-indexing",
+      "content_hash": "96f3c0a1c8cc",
+      "size_bytes": 1479,
+      "n_files": 1,
+      "used_by_tasks": [
+        "dynamic-object-aware-egomotion"
+      ]
+    },
+    {
+      "name": "scip-opt",
+      "variant": "scip-opt",
+      "content_hash": "af86e676bc42",
+      "size_bytes": 7101,
+      "n_files": 1,
+      "used_by_tasks": [
+        "bike-rebalance"
+      ]
+    },
+    {
+      "name": "scipy-curve-fit",
+      "variant": "scipy-curve-fit",
+      "content_hash": "88e13244dfc4",
+      "size_bytes": 4095,
+      "n_files": 1,
+      "used_by_tasks": [
+        "hvac-control"
+      ]
+    },
+    {
+      "name": "search-accommodations",
+      "variant": "search-accommodations",
+      "content_hash": "7bed6cbf195c",
+      "size_bytes": 4040,
+      "n_files": 2,
+      "used_by_tasks": [
+        "travel-planning"
+      ]
+    },
+    {
+      "name": "search-attractions",
+      "variant": "search-attractions",
+      "content_hash": "5bfc80554251",
+      "size_bytes": 3443,
+      "n_files": 2,
+      "used_by_tasks": [
+        "travel-planning"
+      ]
+    },
+    {
+      "name": "search-cities",
+      "variant": "search-cities",
+      "content_hash": "03c36237d889",
+      "size_bytes": 3611,
+      "n_files": 2,
+      "used_by_tasks": [
+        "travel-planning"
+      ]
+    },
+    {
+      "name": "search-driving-distance",
+      "variant": "search-driving-distance",
+      "content_hash": "9830127e7bf4",
+      "size_bytes": 6360,
+      "n_files": 2,
+      "used_by_tasks": [
+        "travel-planning"
+      ]
+    },
+    {
+      "name": "search-flights",
+      "variant": "search-flights",
+      "content_hash": "913eeef51aeb",
+      "size_bytes": 4855,
+      "n_files": 2,
+      "used_by_tasks": [
+        "travel-planning"
+      ]
+    },
+    {
+      "name": "search-restaurants",
+      "variant": "search-restaurants",
+      "content_hash": "6fd189dc8b36",
+      "size_bytes": 4044,
+      "n_files": 2,
+      "used_by_tasks": [
+        "travel-planning"
+      ]
+    },
+    {
+      "name": "segment-combiner",
+      "variant": "segment-combiner",
+      "content_hash": "711192da49fb",
+      "size_bytes": 3209,
+      "n_files": 2,
+      "used_by_tasks": [
+        "video-silence-remover"
+      ]
+    },
+    {
+      "name": "seisbench-model-api",
+      "variant": "seisbench-model-api",
+      "content_hash": "494dc982a6ba",
+      "size_bytes": 7410,
+      "n_files": 1,
+      "used_by_tasks": [
+        "earthquake-phase-association",
+        "seismic-phase-picking"
+      ]
+    },
+    {
+      "name": "seismic-picker-selection",
+      "variant": "seismic-picker-selection",
+      "content_hash": "5a7e943d2e46",
+      "size_bytes": 4109,
+      "n_files": 1,
+      "used_by_tasks": [
+        "earthquake-phase-association",
+        "seismic-phase-picking"
+      ]
+    },
+    {
+      "name": "senior-data-engineer",
+      "variant": "senior-data-engineer",
+      "content_hash": "4ddb766d2a44",
+      "size_bytes": 326969,
+      "n_files": 14,
+      "used_by_tasks": [
+        "flink-query"
+      ]
+    },
+    {
+      "name": "senior-data-scientist",
+      "variant": "senior-data-scientist",
+      "content_hash": "81de03ad228e",
+      "size_bytes": 17476,
+      "n_files": 7,
+      "used_by_tasks": [
+        "powerlifting-coef-calc"
+      ]
+    },
+    {
+      "name": "senior-java",
+      "variant": "senior-java",
+      "content_hash": "844666a1849b",
+      "size_bytes": 215993,
+      "n_files": 25,
+      "used_by_tasks": [
+        "fix-druid-loophole-cve"
+      ]
+    },
+    {
+      "name": "senior-security",
+      "variant": "senior-security",
+      "content_hash": "681edadf479d",
+      "size_bytes": 17963,
+      "n_files": 7,
+      "used_by_tasks": [
+        "fix-erlang-ssh-cve"
+      ]
+    },
+    {
+      "name": "setup-env",
+      "variant": "setup-env",
+      "content_hash": "5c1cc842c0ed",
+      "size_bytes": 1773,
+      "n_files": 1,
+      "used_by_tasks": [
+        "setup-fuzzing-py"
+      ]
+    },
+    {
+      "name": "silence-detector",
+      "variant": "silence-detector",
+      "content_hash": "bc45dfd64dce",
+      "size_bytes": 5644,
+      "n_files": 2,
+      "used_by_tasks": [
+        "video-silence-remover"
+      ]
+    },
+    {
+      "name": "simulation-metrics",
+      "variant": "simulation-metrics",
+      "content_hash": "85c90e43c113",
+      "size_bytes": 2157,
+      "n_files": 1,
+      "used_by_tasks": [
+        "adaptive-cruise-control"
+      ]
+    },
+    {
+      "name": "spring-boot-migration",
+      "variant": "spring-boot-migration",
+      "content_hash": "9310a2b403ff",
+      "size_bytes": 8735,
+      "n_files": 1,
+      "used_by_tasks": [
+        "spring-boot-jakarta-migration"
+      ]
+    },
+    {
+      "name": "spring-security-6",
+      "variant": "spring-security-6",
+      "content_hash": "5b2f184d12ae",
+      "size_bytes": 12988,
+      "n_files": 1,
+      "used_by_tasks": [
+        "spring-boot-jakarta-migration"
+      ]
+    },
+    {
+      "name": "sqlite-map-parser",
+      "variant": "sqlite-map-parser",
+      "content_hash": "7c7f82336304",
+      "size_bytes": 4160,
+      "n_files": 1,
+      "used_by_tasks": [
+        "civ6-adjacency-optimizer"
+      ]
+    },
+    {
+      "name": "ssh-penetration-testing",
+      "variant": "ssh-penetration-testing",
+      "content_hash": "201661b601f8",
+      "size_bytes": 11880,
+      "n_files": 1,
+      "used_by_tasks": [
+        "fix-erlang-ssh-cve"
+      ]
+    },
+    {
+      "name": "state-space-linearization",
+      "variant": "state-space-linearization",
+      "content_hash": "24c32972dcde",
+      "size_bytes": 1018,
+      "n_files": 1,
+      "used_by_tasks": [
+        "r2r-mpc-control"
+      ]
+    },
+    {
+      "name": "stepinfo-3d",
+      "variant": "stepinfo-3d",
+      "content_hash": "8f308a2e7c1a",
+      "size_bytes": 3048,
+      "n_files": 1,
+      "used_by_tasks": [
+        "drone-planning-control"
+      ]
+    },
+    {
+      "name": "suricata-offline-evejson",
+      "variant": "suricata-offline-evejson",
+      "content_hash": "d60ff339d525",
+      "size_bytes": 2564,
+      "n_files": 2,
+      "used_by_tasks": [
+        "suricata-custom-exfil"
+      ]
+    },
+    {
+      "name": "suricata-rules-basics",
+      "variant": "suricata-rules-basics",
+      "content_hash": "c60f9a52d661",
+      "size_bytes": 3429,
+      "n_files": 1,
+      "used_by_tasks": [
+        "suricata-custom-exfil"
+      ]
+    },
+    {
+      "name": "sympy",
+      "variant": "sympy",
+      "content_hash": "7c348b1fd7cb",
+      "size_bytes": 69292,
+      "n_files": 6,
+      "used_by_tasks": [
+        "crystallographic-wyckoff-position-analysis"
+      ]
+    },
+    {
+      "name": "syz-extract-constants",
+      "variant": "syz-extract-constants",
+      "content_hash": "56d2f0ee7a48",
+      "size_bytes": 3136,
+      "n_files": 1,
+      "used_by_tasks": [
+        "syzkaller-ppdev-syzlang"
+      ]
+    },
+    {
+      "name": "syzkaller-build-loop",
+      "variant": "syzkaller-build-loop",
+      "content_hash": "bcc084530780",
+      "size_bytes": 1824,
+      "n_files": 1,
+      "used_by_tasks": [
+        "syzkaller-ppdev-syzlang"
+      ]
+    },
+    {
+      "name": "syzlang-ioctl-basics",
+      "variant": "syzlang-ioctl-basics",
+      "content_hash": "9314aa5f444d",
+      "size_bytes": 2125,
+      "n_files": 1,
+      "used_by_tasks": [
+        "syzkaller-ppdev-syzlang"
+      ]
+    },
+    {
+      "name": "temporal-python-testing",
+      "variant": "temporal-python-testing",
+      "content_hash": "4179a75cf15c",
+      "size_bytes": 51067,
+      "n_files": 5,
+      "used_by_tasks": [
+        "fix-build-agentops"
+      ]
+    },
+    {
+      "name": "testing-python",
+      "variant": "testing-python",
+      "content_hash": "7cf77d5efd75",
+      "size_bytes": 5362,
+      "n_files": 1,
+      "used_by_tasks": [
+        "fix-build-agentops"
+      ]
+    },
+    {
+      "name": "text-parser",
+      "variant": "text-parser",
+      "content_hash": "6f83351cfca1",
+      "size_bytes": 1006,
+      "n_files": 1,
+      "used_by_tasks": [
+        "edit-pdf"
+      ]
+    },
+    {
+      "name": "text-to-speech",
+      "variant": "text-to-speech",
+      "content_hash": "013a9658e103",
+      "size_bytes": 2328,
+      "n_files": 1,
+      "used_by_tasks": [
+        "multilingual-video-dubbing"
+      ]
+    },
+    {
+      "name": "threat-detection",
+      "variant": "threat-detection",
+      "content_hash": "11cd1499c3a6",
+      "size_bytes": 5136,
+      "n_files": 1,
+      "used_by_tasks": [
+        "dapt-intrusion-detection"
+      ]
+    },
+    {
+      "name": "threejs",
+      "variant": "threejs",
+      "content_hash": "68770acb5d62",
+      "size_bytes": 14242,
+      "n_files": 7,
+      "used_by_tasks": [
+        "threejs-structure-parser",
+        "threejs-to-obj"
+      ]
+    },
+    {
+      "name": "timeseries-detrending",
+      "variant": "timeseries-detrending",
+      "content_hash": "cdc9918fb33e",
+      "size_bytes": 4658,
+      "n_files": 1,
+      "used_by_tasks": [
+        "econ-detrending-correlation"
+      ]
+    },
+    {
+      "name": "transaction-concurrency-control-foundations",
+      "variant": "transaction-concurrency-control-foundations",
+      "content_hash": "fea84e9ddcb5",
+      "size_bytes": 24888,
+      "n_files": 7,
+      "used_by_tasks": [
+        "tictoc-unnecessary-abort-detection"
+      ]
+    },
+    {
+      "name": "transaction-protocol-reasoning",
+      "variant": "transaction-protocol-reasoning",
+      "content_hash": "47e8a6116618",
+      "size_bytes": 26989,
+      "n_files": 8,
+      "used_by_tasks": [
+        "tictoc-unnecessary-abort-detection"
+      ]
+    },
+    {
+      "name": "transaction-trace-analysis",
+      "variant": "transaction-trace-analysis",
+      "content_hash": "914c2e65ab9b",
+      "size_bytes": 17232,
+      "n_files": 8,
+      "used_by_tasks": [
+        "tictoc-unnecessary-abort-detection"
+      ]
+    },
+    {
+      "name": "transit-least-squares",
+      "variant": "transit-least-squares",
+      "content_hash": "265833233db2",
+      "size_bytes": 7895,
+      "n_files": 1,
+      "used_by_tasks": [
+        "exoplanet-detection-period"
+      ]
+    },
+    {
+      "name": "trend-analysis",
+      "variant": "trend-analysis",
+      "content_hash": "9712ba187714",
+      "size_bytes": 2788,
+      "n_files": 1,
+      "used_by_tasks": [
+        "lake-warming-attribution"
+      ]
+    },
+    {
+      "name": "trivy-offline-vulnerability-scanning",
+      "variant": "trivy-offline-vulnerability-scanning",
+      "content_hash": "5c07c67e2f98",
+      "size_bytes": 7180,
+      "n_files": 1,
+      "used_by_tasks": [
+        "software-dependency-audit"
+      ]
+    },
+    {
+      "name": "trl",
+      "variant": "trl",
+      "content_hash": "a3395e18fe7c",
+      "size_bytes": 8930,
+      "n_files": 2,
+      "used_by_tasks": [
+        "debug-trl-grpo"
+      ]
+    },
+    {
+      "name": "unit-commitment-data-modeling",
+      "variant": "unit-commitment-data-modeling",
+      "content_hash": "7855b25ced74",
+      "size_bytes": 6924,
+      "n_files": 1,
+      "used_by_tasks": [
+        "energy-unit-commitment"
+      ]
+    },
+    {
+      "name": "unit-commitment-operating-rules",
+      "variant": "unit-commitment-operating-rules",
+      "content_hash": "29b4aef91b6f",
+      "size_bytes": 8199,
+      "n_files": 1,
+      "used_by_tasks": [
+        "energy-unit-commitment"
+      ]
+    },
+    {
+      "name": "usgs-data-download",
+      "variant": "usgs-data-download",
+      "content_hash": "4c97bf0fe2ea",
+      "size_bytes": 3543,
+      "n_files": 1,
+      "used_by_tasks": [
+        "flood-risk-analysis"
+      ]
+    },
+    {
+      "name": "uv-package-manager",
+      "variant": "uv-package-manager",
+      "content_hash": "439a8fe8c0e8",
+      "size_bytes": 16048,
+      "n_files": 1,
+      "used_by_tasks": [
+        "fix-build-agentops"
+      ]
+    },
+    {
+      "name": "vehicle-dynamics",
+      "variant": "vehicle-dynamics",
+      "content_hash": "1e13f2362c62",
+      "size_bytes": 2261,
+      "n_files": 1,
+      "used_by_tasks": [
+        "adaptive-cruise-control"
+      ]
+    },
+    {
+      "name": "video-frame-extraction",
+      "variant": "video-frame-extraction",
+      "content_hash": "77a3871c6dc3",
+      "size_bytes": 14016,
+      "n_files": 1,
+      "used_by_tasks": [
+        "jpg-ocr-stat"
+      ]
+    },
+    {
+      "name": "video-processor",
+      "variant": "video-processor",
+      "content_hash": "1c34254146c9",
+      "size_bytes": 8648,
+      "n_files": 2,
+      "used_by_tasks": [
+        "video-silence-remover"
+      ]
+    },
+    {
+      "name": "vital-sign-extraction",
+      "variant": "vital-sign-extraction",
+      "content_hash": "d4eed2656712",
+      "size_bytes": 10476,
+      "n_files": 3,
+      "used_by_tasks": [
+        "radar-vital-signs"
+      ]
+    },
+    {
+      "name": "vulnerability-csv-reporting",
+      "variant": "vulnerability-csv-reporting",
+      "content_hash": "93d35e057a3c",
+      "size_bytes": 12202,
+      "n_files": 1,
+      "used_by_tasks": [
+        "software-dependency-audit"
+      ]
+    },
+    {
+      "name": "web-interface-guidelines",
+      "variant": "web-interface-guidelines",
+      "content_hash": "76b82b6a062e",
+      "size_bytes": 3960,
+      "n_files": 2,
+      "used_by_tasks": [
+        "fix-visual-stability"
+      ]
+    },
+    {
+      "name": "workload-balancing",
+      "variant": "workload-balancing",
+      "content_hash": "a3be52ad75f1",
+      "size_bytes": 16277,
+      "n_files": 2,
+      "used_by_tasks": [
+        "parallel-tfidf-search"
+      ]
+    },
+    {
+      "name": "xlsx",
+      "variant": "xlsx",
+      "content_hash": "9e515096be41",
+      "size_bytes": 18308,
+      "n_files": 3,
+      "used_by_tasks": [
+        "invoice-fraud-detection",
+        "jpg-ocr-stat",
+        "pdf-excel-diff",
+        "powerlifting-coef-calc",
+        "protein-expression-analysis",
+        "reserves-at-risk-calc",
+        "shock-analysis-demand",
+        "shock-analysis-supply",
+        "weighted-gdp-calc",
+        "xlsx-recover-data"
+      ]
+    },
+    {
+      "name": "xlsx",
+      "variant": "xlsx@1a801fe1bd5f",
+      "content_hash": "1a801fe1bd5f",
+      "size_bytes": 18362,
+      "n_files": 3,
+      "used_by_tasks": [
+        "exceltable-in-ppt"
+      ]
+    },
+    {
+      "name": "xlsx",
+      "variant": "xlsx@b1a6bde518fc",
+      "content_hash": "b1a6bde518fc",
+      "size_bytes": 18507,
+      "n_files": 3,
+      "used_by_tasks": [
+        "financial-modeling-qa"
+      ]
+    },
+    {
+      "name": "xlsx",
+      "variant": "xlsx@8e5fe91c81dc",
+      "content_hash": "8e5fe91c81dc",
+      "size_bytes": 7845,
+      "n_files": 1,
+      "used_by_tasks": [
+        "sales-pivot-analysis"
+      ]
+    },
+    {
+      "name": "yaml-config",
+      "variant": "yaml-config",
+      "content_hash": "38c1d54f59cf",
+      "size_bytes": 1580,
+      "n_files": 1,
+      "used_by_tasks": [
+        "adaptive-cruise-control"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "3d-scan-calc",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "mesh-analysis"
+      ]
+    },
+    {
+      "id": "ada-bathroom-plan-repair",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "ada-plan-view-accessibility",
+        "architectural-dxf-extraction",
+        "geometric-layout-repair"
+      ]
+    },
+    {
+      "id": "adaptive-cruise-control",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "csv-processing",
+        "pid-controller",
+        "simulation-metrics",
+        "vehicle-dynamics",
+        "yaml-config"
+      ]
+    },
+    {
+      "id": "azure-bgp-oscillation-route-leak",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "azure-bgp"
+      ]
+    },
+    {
+      "id": "bike-rebalance",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "geospatial-routing-data",
+        "logistics-rules-to-optimization",
+        "routing-subtour-elimination",
+        "scip-opt"
+      ]
+    },
+    {
+      "id": "citation-check",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "citation-management"
+      ]
+    },
+    {
+      "id": "civ6-adjacency-optimizer",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "civ6lib",
+        "hex-grid-spatial",
+        "map-optimization-strategy",
+        "sqlite-map-parser"
+      ]
+    },
+    {
+      "id": "court-form-filling",
+      "required_skills": [],
+      "difficulty": "easy",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "pdf"
+      ]
+    },
+    {
+      "id": "crystallographic-wyckoff-position-analysis",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "pymatgen",
+        "sympy"
+      ]
+    },
+    {
+      "id": "dapt-intrusion-detection",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "pcap-analysis",
+        "threat-detection"
+      ]
+    },
+    {
+      "id": "data-to-d3",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "d3-visualization"
+      ]
+    },
+    {
+      "id": "debug-trl-grpo",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "grpo",
+        "rl-post-training",
+        "trl"
+      ]
+    },
+    {
+      "id": "dialogue-parser",
+      "required_skills": [],
+      "difficulty": "easy",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "dialogue-graph"
+      ]
+    },
+    {
+      "id": "drone-planning-control",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "attitude-controller-planner",
+        "flight-plan-parser",
+        "motor-model-dynamics",
+        "plot-quadrotor",
+        "position-controller-trajectory-planner",
+        "stepinfo-3d"
+      ]
+    },
+    {
+      "id": "dynamic-object-aware-egomotion",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "dyn-object-masks",
+        "egomotion-estimation",
+        "output-validation",
+        "sampling-and-indexing"
+      ]
+    },
+    {
+      "id": "earthquake-phase-association",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "gamma-phase-associator",
+        "obspy-data-api",
+        "seisbench-model-api",
+        "seismic-picker-selection"
+      ]
+    },
+    {
+      "id": "earthquake-plate-calculation",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "geospatial-analysis"
+      ]
+    },
+    {
+      "id": "econ-detrending-correlation",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "timeseries-detrending"
+      ]
+    },
+    {
+      "id": "edit-pdf",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "pdf-editing",
+        "text-parser"
+      ]
+    },
+    {
+      "id": "energy-ac-optimal-power-flow",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "ac-branch-pi-model",
+        "casadi-ipopt-nlp",
+        "power-flow-data"
+      ]
+    },
+    {
+      "id": "energy-market-pricing",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "dc-power-flow",
+        "economic-dispatch",
+        "locational-marginal-prices",
+        "power-flow-data"
+      ]
+    },
+    {
+      "id": "energy-unit-commitment",
+      "required_skills": [
+        "unit-commitment-operating-rules",
+        "unit-commitment-data-modeling",
+        "milp-solver-workflow"
+      ],
+      "difficulty": "hard",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "milp-solver-workflow",
+        "unit-commitment-data-modeling",
+        "unit-commitment-operating-rules"
+      ]
+    },
+    {
+      "id": "enterprise-information-search",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "enterprise-artifact-search"
+      ]
+    },
+    {
+      "id": "exam-block-sequencing",
+      "required_skills": [
+        "mip-solver-and-solution-audit",
+        "ordered-window-sequencing-mip"
+      ],
+      "difficulty": "hard",
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "mip-solver-and-solution-audit",
+        "ordered-window-sequencing-mip"
+      ]
+    },
+    {
+      "id": "exceltable-in-ppt",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "pptx",
+        "xlsx@1a801fe1bd5f"
+      ]
+    },
+    {
+      "id": "exoplanet-detection-period",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "box-least-squares",
+        "exoplanet-workflows",
+        "light-curve-preprocessing",
+        "lomb-scargle-periodogram",
+        "transit-least-squares"
+      ]
+    },
+    {
+      "id": "financial-modeling-qa",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "pdf@0d4af66f868d",
+        "xlsx@b1a6bde518fc"
+      ]
+    },
+    {
+      "id": "fix-build-agentops",
+      "required_skills": [],
+      "difficulty": "easy",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "analyze-ci",
+        "temporal-python-testing",
+        "testing-python",
+        "uv-package-manager"
+      ]
+    },
+    {
+      "id": "fix-build-google-auto",
+      "required_skills": [],
+      "difficulty": "easy",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "maven-build-lifecycle",
+        "maven-dependency-management",
+        "maven-plugin-configuration"
+      ]
+    },
+    {
+      "id": "fix-druid-loophole-cve",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "jackson-security",
+        "senior-java"
+      ]
+    },
+    {
+      "id": "fix-erlang-ssh-cve",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "erlang-concurrency",
+        "erlang-distribution",
+        "erlang-otp-behaviors",
+        "find-bugs",
+        "senior-security",
+        "ssh-penetration-testing"
+      ]
+    },
+    {
+      "id": "fix-visual-stability",
+      "required_skills": [
+        "browser-testing",
+        "react-best-practices",
+        "web-interface-guidelines"
+      ],
+      "difficulty": "hard",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "browser-testing",
+        "react-best-practices",
+        "web-interface-guidelines"
+      ]
+    },
+    {
+      "id": "flink-query",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "pdf",
+        "senior-data-engineer"
+      ]
+    },
+    {
+      "id": "flood-risk-analysis",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "flood-detection",
+        "nws-flood-thresholds",
+        "usgs-data-download"
+      ]
+    },
+    {
+      "id": "glm-lake-mendota",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "glm-basics",
+        "glm-calibration",
+        "glm-output"
+      ]
+    },
+    {
+      "id": "gravitational-wave-detection",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "conditioning",
+        "matched-filtering"
+      ]
+    },
+    {
+      "id": "grid-dispatch-operator",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "dc-power-flow",
+        "economic-dispatch",
+        "power-flow-data"
+      ]
+    },
+    {
+      "id": "hvac-control",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "excitation-signal-design",
+        "first-order-model-fitting",
+        "imc-tuning-rules",
+        "safety-interlocks",
+        "scipy-curve-fit"
+      ]
+    },
+    {
+      "id": "invoice-fraud-detection",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "fuzzy-match",
+        "pdf",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "jax-computing-basics",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "jax-skills"
+      ]
+    },
+    {
+      "id": "jpg-ocr-stat",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "image-ocr",
+        "openai-vision",
+        "pdf",
+        "video-frame-extraction",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "lab-unit-harmonization",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "lab-unit-harmonization"
+      ]
+    },
+    {
+      "id": "lake-warming-attribution",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "contribution-analysis",
+        "meteorology-driver-classification",
+        "pca-decomposition",
+        "trend-analysis"
+      ]
+    },
+    {
+      "id": "latex-formula-extraction",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "marker",
+        "pdf"
+      ]
+    },
+    {
+      "id": "lean4-proof",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "lean4-memories",
+        "lean4-theorem-proving"
+      ]
+    },
+    {
+      "id": "llm-prefix-cache-replay",
+      "required_skills": [
+        "prefix-cache-replay"
+      ],
+      "difficulty": "medium",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "cache-policy-comparison",
+        "prefix-cache-replay"
+      ]
+    },
+    {
+      "id": "manufacturing-codebook-normalization",
+      "required_skills": [
+        "manufacturing-failure-reason-codebook-normalization"
+      ],
+      "difficulty": "medium",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "manufacturing-failure-reason-codebook-normalization"
+      ]
+    },
+    {
+      "id": "manufacturing-equipment-maintenance",
+      "required_skills": [
+        "reflow-machine-maintenance-guidance"
+      ],
+      "difficulty": "medium",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "reflow-machine-maintenance-guidance",
+        "reflow-profile-compliance-toolkit"
+      ]
+    },
+    {
+      "id": "manufacturing-fjsp-optimization",
+      "required_skills": [
+        "fjsp-baseline-repair-with-downtime-and-policy"
+      ],
+      "difficulty": "medium",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "fjsp-baseline-repair-with-downtime-and-policy"
+      ]
+    },
+    {
+      "id": "mario-coin-counting",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "media-content-production",
+      "curated_skill_variants": [
+        "ffmpeg-keyframe-extraction",
+        "image-editing",
+        "object-counter"
+      ]
+    },
+    {
+      "id": "mars-clouds-clustering",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "custom-distance-metrics",
+        "parallel-processing",
+        "pareto-optimization"
+      ]
+    },
+    {
+      "id": "multilingual-video-dubbing",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "media-content-production",
+      "curated_skill_variants": [
+        "ffmpeg-audio-processing",
+        "ffmpeg-format-conversion",
+        "ffmpeg-media-info",
+        "ffmpeg-video-editing",
+        "ffmpeg-video-filters",
+        "text-to-speech"
+      ]
+    },
+    {
+      "id": "offer-letter-generator",
+      "required_skills": [],
+      "difficulty": "easy",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "docx"
+      ]
+    },
+    {
+      "id": "organize-messy-files",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "docx@d3cfe519dca2",
+        "file-organizer",
+        "pdf",
+        "planning-with-files",
+        "pptx@3ad72806f38c"
+      ]
+    },
+    {
+      "id": "paper-anonymizer",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "academic-pdf-redaction",
+        "pdf@31b77156e562"
+      ]
+    },
+    {
+      "id": "parallel-tfidf-search",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "memory-optimization",
+        "python-parallelization",
+        "workload-balancing"
+      ]
+    },
+    {
+      "id": "paratransit-routing",
+      "required_skills": [
+        "ortools-routing-modeling",
+        "ortools-pickup-delivery-routing"
+      ],
+      "difficulty": "hard",
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "ortools-pickup-delivery-routing",
+        "ortools-routing-modeling"
+      ]
+    },
+    {
+      "id": "pddl-airport-planning",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "pddl-skills"
+      ]
+    },
+    {
+      "id": "pddl-tpp-planning",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "pddl-skills@3a838435e9e2"
+      ]
+    },
+    {
+      "id": "pdf-excel-diff",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "pdf",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "powerlifting-coef-calc",
+      "required_skills": [],
+      "difficulty": "easy",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "powerlifting",
+        "senior-data-scientist",
+        "xlsx"
+      ]
+    },
+    {
+      "id": "pptx-reference-formatting",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "pptx@5f3f8d7402fa"
+      ]
+    },
+    {
+      "id": "protein-expression-analysis",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "xlsx"
+      ]
+    },
+    {
+      "id": "python-scala-translation",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "python-scala-collections",
+        "python-scala-functional",
+        "python-scala-idioms",
+        "python-scala-libraries",
+        "python-scala-oop",
+        "python-scala-syntax-mapping"
+      ]
+    },
+    {
+      "id": "quantum-numerical-simulation",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "qutip"
+      ]
+    },
+    {
+      "id": "r2r-mpc-control",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "industrial-physical-systems",
+      "curated_skill_variants": [
+        "finite-horizon-lqr",
+        "integral-action-design",
+        "mpc-horizon-tuning",
+        "state-space-linearization"
+      ]
+    },
+    {
+      "id": "radar-vital-signs",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "radar-signal-processing",
+        "radar-vital-signs",
+        "vital-sign-extraction"
+      ]
+    },
+    {
+      "id": "react-performance-debugging",
+      "required_skills": [
+        "playwright-cdp",
+        "react-best-practices"
+      ],
+      "difficulty": "hard",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "browser-testing@ebcae60ef709",
+        "react-best-practices@175ee538059c"
+      ]
+    },
+    {
+      "id": "reserves-at-risk-calc",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "xlsx"
+      ]
+    },
+    {
+      "id": "sales-pivot-analysis",
+      "required_skills": [
+        "xlsx",
+        "pdf"
+      ],
+      "difficulty": "medium",
+      "category": "office-white-collar",
+      "curated_skill_variants": [
+        "pdf@a963d991212a",
+        "xlsx@8e5fe91c81dc"
+      ]
+    },
+    {
+      "id": "sec-financial-report",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "13f-analyzer",
+        "fuzzy-name-search"
+      ]
+    },
+    {
+      "id": "seismic-phase-picking",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "natural-science",
+      "curated_skill_variants": [
+        "obspy-data-api",
+        "obspy-datacenter-client",
+        "seisbench-model-api",
+        "seismic-picker-selection"
+      ]
+    },
+    {
+      "id": "setup-fuzzing-py",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "discover-important-function",
+        "fuzzing-python",
+        "setup-env"
+      ]
+    },
+    {
+      "id": "shock-analysis-demand",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "xlsx"
+      ]
+    },
+    {
+      "id": "shock-analysis-supply",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "xlsx"
+      ]
+    },
+    {
+      "id": "simpo-code-reproduction",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "nlp-research-repo-package-installment",
+        "pdf@ba530d0bb107"
+      ]
+    },
+    {
+      "id": "software-dependency-audit",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "cvss-score-extraction",
+        "trivy-offline-vulnerability-scanning",
+        "vulnerability-csv-reporting"
+      ]
+    },
+    {
+      "id": "spring-boot-jakarta-migration",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "hibernate-upgrade",
+        "jakarta-namespace",
+        "restclient-migration",
+        "spring-boot-migration",
+        "spring-security-6"
+      ]
+    },
+    {
+      "id": "suricata-custom-exfil",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "pcap-triage-tshark",
+        "suricata-offline-evejson",
+        "suricata-rules-basics"
+      ]
+    },
+    {
+      "id": "syzkaller-ppdev-syzlang",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "cybersecurity",
+      "curated_skill_variants": [
+        "syz-extract-constants",
+        "syzkaller-build-loop",
+        "syzlang-ioctl-basics"
+      ]
+    },
+    {
+      "id": "threejs-structure-parser",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "media-content-production",
+      "curated_skill_variants": [
+        "obj-exporter",
+        "threejs"
+      ]
+    },
+    {
+      "id": "threejs-to-obj",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "media-content-production",
+      "curated_skill_variants": [
+        "obj-exporter@b6d1bcf98031",
+        "threejs"
+      ]
+    },
+    {
+      "id": "tictoc-unnecessary-abort-detection",
+      "required_skills": [
+        "transaction-concurrency-control-foundations",
+        "transaction-protocol-reasoning",
+        "transaction-trace-analysis"
+      ],
+      "difficulty": "hard",
+      "category": "software-engineering",
+      "curated_skill_variants": [
+        "transaction-concurrency-control-foundations",
+        "transaction-protocol-reasoning",
+        "transaction-trace-analysis"
+      ]
+    },
+    {
+      "id": "travel-planning",
+      "required_skills": [
+        "search-cities",
+        "search-accommodation",
+        "search-restaurant",
+        "search-attraction",
+        "search-driving-distance"
+      ],
+      "difficulty": "medium",
+      "category": "mathematics-or-formal-reasoning",
+      "curated_skill_variants": [
+        "search-accommodations",
+        "search-attractions",
+        "search-cities",
+        "search-driving-distance",
+        "search-flights",
+        "search-restaurants"
+      ]
+    },
+    {
+      "id": "video-silence-remover",
+      "required_skills": [],
+      "difficulty": "hard",
+      "category": "media-content-production",
+      "curated_skill_variants": [
+        "audio-extractor",
+        "energy-calculator",
+        "pause-detector",
+        "report-generator",
+        "segment-combiner",
+        "silence-detector",
+        "video-processor"
+      ]
+    },
+    {
+      "id": "weighted-gdp-calc",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "xlsx"
+      ]
+    },
+    {
+      "id": "xlsx-recover-data",
+      "required_skills": [],
+      "difficulty": "medium",
+      "category": "finance-economics",
+      "curated_skill_variants": [
+        "data-reconciliation",
+        "xlsx"
+      ]
+    }
+  ],
+  "skill_semantics": {
+    "curated_skill_variants": "task-local upstream authored bundle; not an empirical oracle set",
+    "empirical_oracle_required_fields": [
+      "task_id",
+      "model_id",
+      "backend",
+      "harness_mode",
+      "tau",
+      "candidate_pool_hash",
+      "repeats",
+      "skill_ids"
+    ],
+    "skill_directory_rule": "directory must contain SKILL.md"
+  }
+}

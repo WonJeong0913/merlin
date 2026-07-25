@@ -1,0 +1,44 @@
+{
+  "id": "live-read-only-tool-boundary-v1",
+  "metadata": {
+    "candidate_evolution_claim": false,
+    "source_contract": "HarnessX H=(M,C), C=(P,S)"
+  },
+  "parent_id": null,
+  "policy": {
+    "dimensions": [
+      "D4",
+      "D7",
+      "D8"
+    ],
+    "exact_input_match": true,
+    "pre_execution_enforcement": true
+  },
+  "processors": [
+    {
+      "after": [],
+      "config": {
+        "allowed_commands": [
+          "/bin/pwd",
+          "pwd"
+        ],
+        "command_tool": "Bash",
+        "denied_tools": [
+          "apply_patch"
+        ]
+      },
+      "hook": "before_tool",
+      "name": "exact_tool_input_policy",
+      "order": -100,
+      "singleton_group": "live_tool_input_policy"
+    }
+  ],
+  "slots": {
+    "plugin_list": "codex_session",
+    "sandbox_provider": "codex_workspace_write",
+    "tool_registry": "codex_builtin_tools",
+    "tracer": "harnessx_live_hook_audit",
+    "workspace": "codex_hook_input.cwd"
+  },
+  "summary": "Parent exact live tool policy before trace-backed expansion."
+}

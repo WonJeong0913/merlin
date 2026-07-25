@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.the-king/
+.merlin/
+experiments/skillsbench/runs/
+experiments/skillsbench/tasks/
+experiments/mvp/runs/
+experiments/mvp/workspaces/
+experiments/mvp/results/*/raw/
+apps/merlin-macos/.build/
+docs/lineage/session_*.md

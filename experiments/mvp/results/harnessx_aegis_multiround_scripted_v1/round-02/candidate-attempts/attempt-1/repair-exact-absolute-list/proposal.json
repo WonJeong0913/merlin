@@ -1,0 +1,12 @@
+{
+  "add_exact_commands": [
+    "/bin/ls -1"
+  ],
+  "candidate_id": "repair-exact-absolute-list",
+  "expected_improve_case_ids": [
+    "exact-absolute-list"
+  ],
+  "expected_regress_case_ids": [],
+  "rationale": "Add only the exact command for exact-absolute-list and preserve the parent allowlist.",
+  "remove_exact_commands": []
+}

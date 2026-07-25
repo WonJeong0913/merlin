@@ -1,0 +1,198 @@
+{
+  "bundle_contract": "merlin-m3k-preregistered-policy-proposal-v1",
+  "candidate_hypothesis": {
+    "candidate_value": 3,
+    "control_dimension": "exposure_budget",
+    "parent_value": 10,
+    "selection_basis": "controlled-overload-informed; not full87-held-out-tuned"
+  },
+  "claim_boundary": {
+    "bundle_creation_is_benchmark_result": false,
+    "bundle_creation_is_model_execution": false,
+    "candidate_is_promoted": false,
+    "full87_result_claimed": false,
+    "held_out_improvement_claimed": false,
+    "provider_native_skill_invocation_claimed": false
+  },
+  "construction_evidence": {
+    "full87_held_out_task_ids_used_for_construction": [],
+    "full87_verifier_or_oracle_used_for_construction": false,
+    "overload": {
+      "pass_rate": 0.1,
+      "passed": 1,
+      "pi_m": 0.8888888888888888,
+      "pi_o": 0.1111111111111111,
+      "route_counts": {
+        "empty_no_oracle": 1,
+        "oracle_only": 1,
+        "wrong": 8
+      },
+      "task_count": 10
+    },
+    "recovered": {
+      "pass_rate": 0.9,
+      "passed": 9,
+      "pi_m": 0.0,
+      "pi_o": 1.0,
+      "route_counts": {
+        "empty_no_oracle": 1,
+        "oracle_only": 9
+      },
+      "task_count": 10
+    },
+    "route_risk_trace_ids": [
+      "overloaded_library-create-audit-log-20ae45c3",
+      "overloaded_library-create-notes-file-f91723ea",
+      "overloaded_library-create-output-json-15255aca",
+      "overloaded_library-create-report-md-0efe41c0",
+      "overloaded_library-create-result-file-6f8fcdb6",
+      "overloaded_library-count-errors-aa3182ac",
+      "overloaded_library-count-items-26227aec",
+      "overloaded_library-count-records-24411535"
+    ],
+    "route_risk_trace_ids_sha256": "de14f995e5f6e278af69f1895fb8cf6d7e2c304d2e587b01b6428eb8a1ec0973",
+    "source_file_sha256": "da8a407971f070216e726a4d9f005dff737a683211801f93b319421faaa5ffce",
+    "source_is_full87_result": false,
+    "source_is_model_execution": false,
+    "source_path": "experiments/mvp/results/lifecycle_recovery/lifecycle_recovery.json",
+    "source_scope": "Deterministic controlled MVP; not a full benchmark or model-performance claim.",
+    "source_semantic_sha256": "01ffe9a9590012bcb42a1d88d6bdfe88223791b9ebb8af6e2bfe8fe8a835f30a"
+  },
+  "parent_variant": {
+    "id": "m3k-full87-m2k-parent-budget10-v1",
+    "metadata": {
+      "arm": "M2-K-parent",
+      "bundle_contract": "merlin-m3k-preregistered-policy-proposal-v1"
+    },
+    "parent_id": null,
+    "policy": {
+      "exposure_budget": 10
+    },
+    "processor_manifest": {
+      "after_select": [
+        {
+          "config": {},
+          "kind": "monitor",
+          "name": "shadowing_monitor"
+        }
+      ],
+      "after_verify": [
+        {
+          "config": {},
+          "kind": "monitor",
+          "name": "shadowing_monitor"
+        }
+      ],
+      "before_provision": [
+        {
+          "config": {},
+          "kind": "provisioning",
+          "name": "skill_state_filter"
+        },
+        {
+          "config": {
+            "max_exposure_budget": 10
+          },
+          "kind": "policy",
+          "name": "exposure_budget"
+        }
+      ],
+      "before_select": [
+        {
+          "config": {
+            "min_token_overlap": 0.6
+          },
+          "kind": "selection_guard",
+          "name": "do_not_use_constraints"
+        }
+      ],
+      "trace_closed": [
+        {
+          "config": {},
+          "kind": "monitor",
+          "name": "shadowing_monitor"
+        }
+      ]
+    },
+    "summary": "M2-K parent with the runner's bounded 10-skill exposure ceiling"
+  },
+  "proposal": {
+    "candidate": {
+      "id": "m3k-full87-candidate-budget3-v1",
+      "metadata": {
+        "arm": "M3-K-candidate",
+        "bundle_contract": "merlin-m3k-preregistered-policy-proposal-v1",
+        "candidate_is_performance_result": false,
+        "full87_held_out_used_for_construction": false
+      },
+      "parent_id": "m3k-full87-m2k-parent-budget10-v1",
+      "policy": {
+        "exposure_budget": 3
+      },
+      "processor_manifest": {
+        "after_select": [
+          {
+            "config": {},
+            "kind": "monitor",
+            "name": "shadowing_monitor"
+          }
+        ],
+        "after_verify": [
+          {
+            "config": {},
+            "kind": "monitor",
+            "name": "shadowing_monitor"
+          }
+        ],
+        "before_provision": [
+          {
+            "config": {},
+            "kind": "provisioning",
+            "name": "skill_state_filter"
+          },
+          {
+            "config": {
+              "max_exposure_budget": 3
+            },
+            "kind": "policy",
+            "name": "exposure_budget"
+          }
+        ],
+        "before_select": [
+          {
+            "config": {
+              "min_token_overlap": 0.6
+            },
+            "kind": "selection_guard",
+            "name": "do_not_use_constraints"
+          }
+        ],
+        "trace_closed": [
+          {
+            "config": {},
+            "kind": "monitor",
+            "name": "shadowing_monitor"
+          }
+        ]
+      },
+      "summary": "M3-K candidate that clamps model-visible exposure to three skills"
+    },
+    "changed_hooks": [
+      "before_provision"
+    ],
+    "evidence_trace_ids": [
+      "overloaded_library-create-audit-log-20ae45c3",
+      "overloaded_library-create-notes-file-f91723ea",
+      "overloaded_library-create-output-json-15255aca",
+      "overloaded_library-create-report-md-0efe41c0",
+      "overloaded_library-create-result-file-6f8fcdb6",
+      "overloaded_library-count-errors-aa3182ac",
+      "overloaded_library-count-items-26227aec",
+      "overloaded_library-count-records-24411535"
+    ],
+    "id": "m3k-full87-exposure-budget-proposal-v1",
+    "parent_variant_id": "m3k-full87-m2k-parent-budget10-v1",
+    "rationale": "Pre-register a bounded exposure-budget reduction after controlled route-risk evidence showed overload shadowing; the 3-skill candidate is a hypothesis, not a full-87 or held-out-tuned result."
+  },
+  "schema_version": 2
+}

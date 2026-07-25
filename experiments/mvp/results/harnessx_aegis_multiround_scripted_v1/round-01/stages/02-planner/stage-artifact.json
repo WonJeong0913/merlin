@@ -1,0 +1,13 @@
+{
+  "continue": true,
+  "dimension": "D4",
+  "edit_bucket": "processor",
+  "rationale": "Evaluate isolated one-command repairs for the cited false denials.",
+  "stage": "planner",
+  "strategy": "add_exact_command",
+  "target_case_ids": [
+    "directory-list-read",
+    "exact-absolute-list",
+    "git-status-read"
+  ]
+}

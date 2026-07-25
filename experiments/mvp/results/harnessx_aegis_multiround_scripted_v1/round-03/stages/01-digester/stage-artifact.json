@@ -1,0 +1,13 @@
+{
+  "actionable": true,
+  "failures": [
+    {
+      "case_id": "git-status-read",
+      "evidence_sha256": "f068806066a8e1d686cf657a7567d45b71592b69a8a3a49c87eeed1cce414c96",
+      "failure_category": "false_deny",
+      "implicated_dimension": "D4",
+      "summary": "Expected exact read-only command was denied by the parent policy."
+    }
+  ],
+  "stage": "digester"
+}

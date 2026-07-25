@@ -1,0 +1,121 @@
+{
+  "run_id": "claude-cli-smoke-20260709-answer-yes",
+  "backend": "claude",
+  "model": "sonnet",
+  "task_id": "answer-yes",
+  "success": true,
+  "score": 1.0,
+  "condition": "claude-cli-smoke",
+  "trace": {
+    "id": "claude-cli-smoke-answer-yes-d56ebff3",
+    "task_id": "answer-yes",
+    "condition": "claude-cli-smoke",
+    "events": [
+      {
+        "type": "THINK",
+        "message": "deterministic runner attempt",
+        "condition": "claude-cli-smoke"
+      },
+      {
+        "type": "MODEL_CALL",
+        "provider": "claude-code",
+        "model": "sonnet",
+        "auth_mode": "account",
+        "command": [
+          "claude",
+          "-p",
+          "--output-format",
+          "json"
+        ]
+      },
+      {
+        "type": "ANSWER",
+        "answer": "yes"
+      },
+      {
+        "type": "VALIDATION",
+        "verifier": "exact_yes",
+        "passed": true,
+        "score": 1.0,
+        "evidence": "expected='yes' actual='yes'"
+      }
+    ],
+    "invocation": {
+      "task_id": "answer-yes",
+      "provisioned_skill_ids": [],
+      "selected_skill_ids": [],
+      "oracle_skill_ids": [],
+      "success": true,
+      "score": 1.0,
+      "cost": null,
+      "latency_s": null
+    },
+    "validation": [
+      {
+        "name": "exact_yes",
+        "passed": true,
+        "score": 1.0,
+        "evidence": "expected='yes' actual='yes'",
+        "cost": null
+      }
+    ],
+    "failure_label": null,
+    "metadata": {
+      "workspace": "<legacy-source-root>/experiments/model_backends/workspaces/claude-cli-smoke-20260709-answer-yes/answer-yes",
+      "executor": "cli_model",
+      "executor_metadata": {
+        "executor": "cli_model",
+        "provider": "claude-code",
+        "model": "sonnet",
+        "auth_mode": "account",
+        "returncode": 0,
+        "cli_metadata": {
+          "type": "result",
+          "subtype": "success",
+          "is_error": false,
+          "duration_ms": 2439,
+          "duration_api_ms": 2297,
+          "num_turns": 1,
+          "stop_reason": "end_turn",
+          "session_id": "9de260df-2868-4e60-853e-c9a673ff0724",
+          "total_cost_usd": 0.0153675,
+          "usage": {
+            "input_tokens": 3,
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 50595,
+            "output_tokens": 12,
+            "server_tool_use": {
+              "web_search_requests": 0,
+              "web_fetch_requests": 0
+            },
+            "service_tier": "standard",
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 0,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "inference_geo": "",
+            "iterations": [],
+            "speed": "standard"
+          },
+          "modelUsage": {
+            "claude-sonnet-4-6": {
+              "inputTokens": 3,
+              "outputTokens": 12,
+              "cacheReadInputTokens": 50595,
+              "cacheCreationInputTokens": 0,
+              "webSearchRequests": 0,
+              "costUSD": 0.0153675,
+              "contextWindow": 200000,
+              "maxOutputTokens": 32000
+            }
+          },
+          "permission_denials": [],
+          "fast_mode_state": "off",
+          "uuid": "66e4dac6-8c23-41fc-955b-3d55f53d0916"
+        },
+        "stderr_preview": "",
+        "raw_output_preview": "{\"answer\":\"yes\",\"files\":[]}"
+      }
+    }
+  }
+}

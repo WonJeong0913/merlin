@@ -1,0 +1,12 @@
+{
+  "add_exact_commands": [
+    "git status --short"
+  ],
+  "candidate_id": "repair-git-status-read",
+  "expected_improve_case_ids": [
+    "git-status-read"
+  ],
+  "expected_regress_case_ids": [],
+  "rationale": "Add only the exact command for git-status-read and preserve the parent allowlist.",
+  "remove_exact_commands": []
+}

@@ -1,0 +1,1583 @@
+{
+  "created": "2026-07-10",
+  "source": "https://github.com/benchflow-ai/skillsbench",
+  "commit": "5433cf15c343f0da5fb942b80dc7dcb7c76506df",
+  "license": "Apache-2.0",
+  "seed": 20260708,
+  "task_count": 87,
+  "split_policy": {
+    "targets": {
+      "adaptation": 35,
+      "held_out": 30,
+      "regression": 22
+    },
+    "strata": [
+      "category",
+      "difficulty"
+    ],
+    "assignment": "stable hash inside each stratum, then lowest fill-ratio split assignment",
+    "regression_definition": "This is the pre-registered regression-candidate split. The final regression set is the subset passed by the t0 harness.",
+    "held_out_power_rule": "Use n_heldout_tasks * n_seeds >= 100 for headline claims."
+  },
+  "summary": {
+    "counts": {
+      "adaptation": 35,
+      "held_out": 30,
+      "regression": 22
+    },
+    "category_counts": {
+      "adaptation": {
+        "cybersecurity": 3,
+        "finance-economics": 3,
+        "industrial-physical-systems": 6,
+        "mathematics-or-formal-reasoning": 3,
+        "media-content-production": 2,
+        "natural-science": 6,
+        "office-white-collar": 5,
+        "software-engineering": 7
+      },
+      "held_out": {
+        "cybersecurity": 2,
+        "finance-economics": 4,
+        "industrial-physical-systems": 4,
+        "mathematics-or-formal-reasoning": 3,
+        "media-content-production": 2,
+        "natural-science": 5,
+        "office-white-collar": 5,
+        "software-engineering": 5
+      },
+      "regression": {
+        "cybersecurity": 2,
+        "finance-economics": 2,
+        "industrial-physical-systems": 4,
+        "mathematics-or-formal-reasoning": 2,
+        "media-content-production": 1,
+        "natural-science": 3,
+        "office-white-collar": 4,
+        "software-engineering": 4
+      }
+    },
+    "difficulty_counts": {
+      "adaptation": {
+        "easy": 3,
+        "hard": 11,
+        "medium": 21
+      },
+      "held_out": {
+        "easy": 1,
+        "hard": 9,
+        "medium": 20
+      },
+      "regression": {
+        "easy": 2,
+        "hard": 8,
+        "medium": 12
+      }
+    },
+    "held_out_min_seeds_for_100_trials": 4
+  },
+  "splits": {
+    "adaptation": [
+      {
+        "task_id": "fix-druid-loophole-cve",
+        "category": "cybersecurity",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "jackson-security",
+          "senior-java"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "setup-fuzzing-py",
+        "category": "cybersecurity",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "discover-important-function",
+          "fuzzing-python",
+          "setup-env"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "syzkaller-ppdev-syzlang",
+        "category": "cybersecurity",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "syz-extract-constants",
+          "syzkaller-build-loop",
+          "syzlang-ioctl-basics"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "sec-financial-report",
+        "category": "finance-economics",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "13f-analyzer",
+          "fuzzy-name-search"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "weighted-gdp-calc",
+        "category": "finance-economics",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "xlsx"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "econ-detrending-correlation",
+        "category": "finance-economics",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "timeseries-detrending"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "3d-scan-calc",
+        "category": "industrial-physical-systems",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "mesh-analysis"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "ada-bathroom-plan-repair",
+        "category": "industrial-physical-systems",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "ada-plan-view-accessibility",
+          "architectural-dxf-extraction",
+          "geometric-layout-repair"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "drone-planning-control",
+        "category": "industrial-physical-systems",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "attitude-controller-planner",
+          "flight-plan-parser",
+          "motor-model-dynamics",
+          "plot-quadrotor",
+          "position-controller-trajectory-planner",
+          "stepinfo-3d"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "manufacturing-codebook-normalization",
+        "category": "industrial-physical-systems",
+        "difficulty": "medium",
+        "required_skills": [
+          "manufacturing-failure-reason-codebook-normalization"
+        ],
+        "curated_skill_variants": [
+          "manufacturing-failure-reason-codebook-normalization"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "hvac-control",
+        "category": "industrial-physical-systems",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "excitation-signal-design",
+          "first-order-model-fitting",
+          "imc-tuning-rules",
+          "safety-interlocks",
+          "scipy-curve-fit"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "grid-dispatch-operator",
+        "category": "industrial-physical-systems",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "dc-power-flow",
+          "economic-dispatch",
+          "power-flow-data"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "civ6-adjacency-optimizer",
+        "category": "mathematics-or-formal-reasoning",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "civ6lib",
+          "hex-grid-spatial",
+          "map-optimization-strategy",
+          "sqlite-map-parser"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "bike-rebalance",
+        "category": "mathematics-or-formal-reasoning",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "geospatial-routing-data",
+          "logistics-rules-to-optimization",
+          "routing-subtour-elimination",
+          "scip-opt"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "pddl-tpp-planning",
+        "category": "mathematics-or-formal-reasoning",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "pddl-skills@3a838435e9e2"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "video-silence-remover",
+        "category": "media-content-production",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "audio-extractor",
+          "energy-calculator",
+          "pause-detector",
+          "report-generator",
+          "segment-combiner",
+          "silence-detector",
+          "video-processor"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "threejs-to-obj",
+        "category": "media-content-production",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "obj-exporter@b6d1bcf98031",
+          "threejs"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "mars-clouds-clustering",
+        "category": "natural-science",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "custom-distance-metrics",
+          "parallel-processing",
+          "pareto-optimization"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "earthquake-phase-association",
+        "category": "natural-science",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "gamma-phase-associator",
+          "obspy-data-api",
+          "seisbench-model-api",
+          "seismic-picker-selection"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "radar-vital-signs",
+        "category": "natural-science",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "radar-signal-processing",
+          "radar-vital-signs",
+          "vital-sign-extraction"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "crystallographic-wyckoff-position-analysis",
+        "category": "natural-science",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "pymatgen",
+          "sympy"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "lab-unit-harmonization",
+        "category": "natural-science",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "lab-unit-harmonization"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "earthquake-plate-calculation",
+        "category": "natural-science",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "geospatial-analysis"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "court-form-filling",
+        "category": "office-white-collar",
+        "difficulty": "easy",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "pdf"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "enterprise-information-search",
+        "category": "office-white-collar",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "enterprise-artifact-search"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "paper-anonymizer",
+        "category": "office-white-collar",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "academic-pdf-redaction",
+          "pdf@31b77156e562"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "latex-formula-extraction",
+        "category": "office-white-collar",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "marker",
+          "pdf"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "edit-pdf",
+        "category": "office-white-collar",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "pdf-editing",
+          "text-parser"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "fix-build-google-auto",
+        "category": "software-engineering",
+        "difficulty": "easy",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "maven-build-lifecycle",
+          "maven-dependency-management",
+          "maven-plugin-configuration"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "dialogue-parser",
+        "category": "software-engineering",
+        "difficulty": "easy",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "dialogue-graph"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "debug-trl-grpo",
+        "category": "software-engineering",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "grpo",
+          "rl-post-training",
+          "trl"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "flink-query",
+        "category": "software-engineering",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "pdf",
+          "senior-data-engineer"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker",
+          "workspace_seed"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "python-scala-translation",
+        "category": "software-engineering",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "python-scala-collections",
+          "python-scala-functional",
+          "python-scala-idioms",
+          "python-scala-libraries",
+          "python-scala-oop",
+          "python-scala-syntax-mapping"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "parallel-tfidf-search",
+        "category": "software-engineering",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "memory-optimization",
+          "python-parallelization",
+          "workload-balancing"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker",
+          "workspace_seed"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "data-to-d3",
+        "category": "software-engineering",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "d3-visualization"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      }
+    ],
+    "held_out": [
+      {
+        "task_id": "dapt-intrusion-detection",
+        "category": "cybersecurity",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "pcap-analysis",
+          "threat-detection"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "suricata-custom-exfil",
+        "category": "cybersecurity",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "pcap-triage-tshark",
+          "suricata-offline-evejson",
+          "suricata-rules-basics"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "shock-analysis-supply",
+        "category": "finance-economics",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "xlsx"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "invoice-fraud-detection",
+        "category": "finance-economics",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "fuzzy-match",
+          "pdf",
+          "xlsx"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "shock-analysis-demand",
+        "category": "finance-economics",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "xlsx"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "xlsx-recover-data",
+        "category": "finance-economics",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "data-reconciliation",
+          "xlsx"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "energy-market-pricing",
+        "category": "industrial-physical-systems",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "dc-power-flow",
+          "economic-dispatch",
+          "locational-marginal-prices",
+          "power-flow-data"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "dynamic-object-aware-egomotion",
+        "category": "industrial-physical-systems",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "dyn-object-masks",
+          "egomotion-estimation",
+          "output-validation",
+          "sampling-and-indexing"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "energy-ac-optimal-power-flow",
+        "category": "industrial-physical-systems",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "ac-branch-pi-model",
+          "casadi-ipopt-nlp",
+          "power-flow-data"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "manufacturing-equipment-maintenance",
+        "category": "industrial-physical-systems",
+        "difficulty": "medium",
+        "required_skills": [
+          "reflow-machine-maintenance-guidance"
+        ],
+        "curated_skill_variants": [
+          "reflow-machine-maintenance-guidance",
+          "reflow-profile-compliance-toolkit"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "exam-block-sequencing",
+        "category": "mathematics-or-formal-reasoning",
+        "difficulty": "hard",
+        "required_skills": [
+          "mip-solver-and-solution-audit",
+          "ordered-window-sequencing-mip"
+        ],
+        "curated_skill_variants": [
+          "mip-solver-and-solution-audit",
+          "ordered-window-sequencing-mip"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "pddl-airport-planning",
+        "category": "mathematics-or-formal-reasoning",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "pddl-skills"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "travel-planning",
+        "category": "mathematics-or-formal-reasoning",
+        "difficulty": "medium",
+        "required_skills": [
+          "search-cities",
+          "search-accommodation",
+          "search-restaurant",
+          "search-attraction",
+          "search-driving-distance"
+        ],
+        "curated_skill_variants": [
+          "search-accommodations",
+          "search-attractions",
+          "search-cities",
+          "search-driving-distance",
+          "search-flights",
+          "search-restaurants"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "mario-coin-counting",
+        "category": "media-content-production",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "ffmpeg-keyframe-extraction",
+          "image-editing",
+          "object-counter"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "threejs-structure-parser",
+        "category": "media-content-production",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "obj-exporter",
+          "threejs"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "seismic-phase-picking",
+        "category": "natural-science",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "obspy-data-api",
+          "obspy-datacenter-client",
+          "seisbench-model-api",
+          "seismic-picker-selection"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "protein-expression-analysis",
+        "category": "natural-science",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "xlsx"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "exoplanet-detection-period",
+        "category": "natural-science",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "box-least-squares",
+          "exoplanet-workflows",
+          "light-curve-preprocessing",
+          "lomb-scargle-periodogram",
+          "transit-least-squares"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "flood-risk-analysis",
+        "category": "natural-science",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "flood-detection",
+          "nws-flood-thresholds",
+          "usgs-data-download"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "gravitational-wave-detection",
+        "category": "natural-science",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "conditioning",
+          "matched-filtering"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "offer-letter-generator",
+        "category": "office-white-collar",
+        "difficulty": "easy",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "docx"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "citation-check",
+        "category": "office-white-collar",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "citation-management"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "pdf-excel-diff",
+        "category": "office-white-collar",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "pdf",
+          "xlsx"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "organize-messy-files",
+        "category": "office-white-collar",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "docx@d3cfe519dca2",
+          "file-organizer",
+          "pdf",
+          "planning-with-files",
+          "pptx@3ad72806f38c"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "pptx-reference-formatting",
+        "category": "office-white-collar",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "pptx@5f3f8d7402fa"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "fix-visual-stability",
+        "category": "software-engineering",
+        "difficulty": "hard",
+        "required_skills": [
+          "browser-testing",
+          "react-best-practices",
+          "web-interface-guidelines"
+        ],
+        "curated_skill_variants": [
+          "browser-testing",
+          "react-best-practices",
+          "web-interface-guidelines"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker",
+          "node"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "react-performance-debugging",
+        "category": "software-engineering",
+        "difficulty": "hard",
+        "required_skills": [
+          "playwright-cdp",
+          "react-best-practices"
+        ],
+        "curated_skill_variants": [
+          "browser-testing@ebcae60ef709",
+          "react-best-practices@175ee538059c"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker",
+          "node"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "tictoc-unnecessary-abort-detection",
+        "category": "software-engineering",
+        "difficulty": "hard",
+        "required_skills": [
+          "transaction-concurrency-control-foundations",
+          "transaction-protocol-reasoning",
+          "transaction-trace-analysis"
+        ],
+        "curated_skill_variants": [
+          "transaction-concurrency-control-foundations",
+          "transaction-protocol-reasoning",
+          "transaction-trace-analysis"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "jax-computing-basics",
+        "category": "software-engineering",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "jax-skills"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "azure-bgp-oscillation-route-leak",
+        "category": "software-engineering",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "azure-bgp"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      }
+    ],
+    "regression": [
+      {
+        "task_id": "fix-erlang-ssh-cve",
+        "category": "cybersecurity",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "erlang-concurrency",
+          "erlang-distribution",
+          "erlang-otp-behaviors",
+          "find-bugs",
+          "senior-security",
+          "ssh-penetration-testing"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker",
+          "workspace_seed"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "software-dependency-audit",
+        "category": "cybersecurity",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "cvss-score-extraction",
+          "trivy-offline-vulnerability-scanning",
+          "vulnerability-csv-reporting"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "financial-modeling-qa",
+        "category": "finance-economics",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "pdf@0d4af66f868d",
+          "xlsx@b1a6bde518fc"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "reserves-at-risk-calc",
+        "category": "finance-economics",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "xlsx"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "energy-unit-commitment",
+        "category": "industrial-physical-systems",
+        "difficulty": "hard",
+        "required_skills": [
+          "unit-commitment-operating-rules",
+          "unit-commitment-data-modeling",
+          "milp-solver-workflow"
+        ],
+        "curated_skill_variants": [
+          "milp-solver-workflow",
+          "unit-commitment-data-modeling",
+          "unit-commitment-operating-rules"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "r2r-mpc-control",
+        "category": "industrial-physical-systems",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "finite-horizon-lqr",
+          "integral-action-design",
+          "mpc-horizon-tuning",
+          "state-space-linearization"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "adaptive-cruise-control",
+        "category": "industrial-physical-systems",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "csv-processing",
+          "pid-controller",
+          "simulation-metrics",
+          "vehicle-dynamics",
+          "yaml-config"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "manufacturing-fjsp-optimization",
+        "category": "industrial-physical-systems",
+        "difficulty": "medium",
+        "required_skills": [
+          "fjsp-baseline-repair-with-downtime-and-policy"
+        ],
+        "curated_skill_variants": [
+          "fjsp-baseline-repair-with-downtime-and-policy"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "paratransit-routing",
+        "category": "mathematics-or-formal-reasoning",
+        "difficulty": "hard",
+        "required_skills": [
+          "ortools-routing-modeling",
+          "ortools-pickup-delivery-routing"
+        ],
+        "curated_skill_variants": [
+          "ortools-pickup-delivery-routing",
+          "ortools-routing-modeling"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "lean4-proof",
+        "category": "mathematics-or-formal-reasoning",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "lean4-memories",
+          "lean4-theorem-proving"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker",
+          "workspace_seed"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "multilingual-video-dubbing",
+        "category": "media-content-production",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "ffmpeg-audio-processing",
+          "ffmpeg-format-conversion",
+          "ffmpeg-media-info",
+          "ffmpeg-video-editing",
+          "ffmpeg-video-filters",
+          "text-to-speech"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "glm-lake-mendota",
+        "category": "natural-science",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "glm-basics",
+          "glm-calibration",
+          "glm-output"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "lake-warming-attribution",
+        "category": "natural-science",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "contribution-analysis",
+          "meteorology-driver-classification",
+          "pca-decomposition",
+          "trend-analysis"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "quantum-numerical-simulation",
+        "category": "natural-science",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "qutip"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "powerlifting-coef-calc",
+        "category": "office-white-collar",
+        "difficulty": "easy",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "powerlifting",
+          "senior-data-scientist",
+          "xlsx"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "jpg-ocr-stat",
+        "category": "office-white-collar",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "image-ocr",
+          "openai-vision",
+          "pdf",
+          "video-frame-extraction",
+          "xlsx"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker",
+          "workspace_seed"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "sales-pivot-analysis",
+        "category": "office-white-collar",
+        "difficulty": "medium",
+        "required_skills": [
+          "xlsx",
+          "pdf"
+        ],
+        "curated_skill_variants": [
+          "pdf@a963d991212a",
+          "xlsx@8e5fe91c81dc"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "exceltable-in-ppt",
+        "category": "office-white-collar",
+        "difficulty": "medium",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "pptx",
+          "xlsx@1a801fe1bd5f"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "fix-build-agentops",
+        "category": "software-engineering",
+        "difficulty": "easy",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "analyze-ci",
+          "temporal-python-testing",
+          "testing-python",
+          "uv-package-manager"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "spring-boot-jakarta-migration",
+        "category": "software-engineering",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "hibernate-upgrade",
+          "jakarta-namespace",
+          "restclient-migration",
+          "spring-boot-migration",
+          "spring-security-6"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker",
+          "workspace_seed"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "simpo-code-reproduction",
+        "category": "software-engineering",
+        "difficulty": "hard",
+        "required_skills": [],
+        "curated_skill_variants": [
+          "nlp-research-repo-package-installment",
+          "pdf@ba530d0bb107"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      },
+      {
+        "task_id": "llm-prefix-cache-replay",
+        "category": "software-engineering",
+        "difficulty": "medium",
+        "required_skills": [
+          "prefix-cache-replay"
+        ],
+        "curated_skill_variants": [
+          "cache-policy-comparison",
+          "prefix-cache-replay"
+        ],
+        "static_status": "needs_infrastructure_review",
+        "infrastructure_flags": [
+          "docker"
+        ],
+        "has_oracle": true,
+        "has_verifier": true
+      }
+    ]
+  }
+}

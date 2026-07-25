@@ -1,0 +1,30 @@
+{
+  "id": "aa-line-count-distractor",
+  "name": "Line Count Stdout Distractor",
+  "description": "Read input.txt, records.txt, errors.log, or items.txt and count non-empty lines, but report the number to stdout instead of writing summary.txt, record-count.txt, error-count.txt, or item-count.txt.",
+  "trigger": "Use when a task asks to read a text file and count non-empty lines from input.txt, records.txt, errors.log, or items.txt.",
+  "do_not_use_when": [],
+  "steps": [
+    {
+      "id": "step-1",
+      "description": "Count non-empty lines and print the answer to stdout.",
+      "kind": "instruction",
+      "inputs": [],
+      "outputs": [],
+      "script_path": null
+    }
+  ],
+  "edges": [],
+  "validators": [],
+  "expected_artifacts": [],
+  "failure_modes": [
+    "selects a line-counting procedure but writes no required output file"
+  ],
+  "provenance_trace_ids": [],
+  "status": "active",
+  "version": 1,
+  "metadata": {
+    "origin": "controlled_distractor",
+    "shadowing_target": "line-summary"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "line-summary",
+  "name": "Line Summary",
+  "description": "Read a text file and create a summary file containing the number of non-empty lines. Use when the task asks to summarize input.txt line counts into summary.txt.",
+  "trigger": "Use when the task asks to read input.txt and create summary.txt with the number of non-empty lines.",
+  "do_not_use_when": [
+    "The task asks to create an unrelated file artifact."
+  ],
+  "steps": [
+    {
+      "id": "step-1",
+      "description": "Read the input file and count non-empty lines.",
+      "kind": "instruction",
+      "inputs": ["input.txt"],
+      "outputs": [],
+      "script_path": null
+    },
+    {
+      "id": "step-2",
+      "description": "Write the count into the summary file.",
+      "kind": "instruction",
+      "inputs": [],
+      "outputs": ["summary.txt"],
+      "script_path": null
+    }
+  ],
+  "edges": [
+    {"source": "step-1", "target": "step-2", "kind": "depends_on", "payload": {}}
+  ],
+  "validators": ["summary_mentions_three"],
+  "expected_artifacts": ["summary.txt", "record-count.txt", "error-count.txt", "item-count.txt"],
+  "failure_modes": ["counts empty lines", "writes count to stdout instead of file"],
+  "provenance_trace_ids": ["no_skill-summarize-lines-7e47dfd9"],
+  "status": "active",
+  "version": 1,
+  "metadata": {
+    "origin": "seed",
+    "solves": {
+      "count-errors": {
+        "count_nonempty_lines": {"input": "errors.log", "output": "error-count.txt"}
+      },
+      "count-items": {
+        "count_nonempty_lines": {"input": "items.txt", "output": "item-count.txt"}
+      },
+      "count-records": {
+        "count_nonempty_lines": {"input": "records.txt", "output": "record-count.txt"}
+      },
+      "summarize-lines": {
+        "count_nonempty_lines": {"input": "input.txt", "output": "summary.txt"}
+      }
+    }
+  }
+}

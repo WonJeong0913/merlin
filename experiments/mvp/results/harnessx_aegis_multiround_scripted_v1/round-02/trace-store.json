@@ -1,0 +1,104 @@
+{
+  "action_space": {
+    "action_space_id": "exact-read-expansion-v1",
+    "allowed_exact_command_additions": [
+      "ls -1",
+      "/bin/ls -1",
+      "git status --short"
+    ],
+    "max_additions_per_candidate": 1,
+    "max_candidates": 2
+  },
+  "action_space_sha256": "63cf3bf2fe16d97561fcf5efef7d2835279942da220e606bdb9257cc7152b844",
+  "candidate_attempt_count": 1,
+  "evidence_trace_id": "aegis-trace-9fd823a9265d2c315c23bbdf",
+  "gate_records": [
+    {
+      "candidate_id": "repair-exact-absolute-list",
+      "decision": {
+        "accepted": true,
+        "checks": [
+          {
+            "detail": "complete",
+            "name": "manifest_complete",
+            "passed": true
+          },
+          {
+            "detail": "valid",
+            "name": "candidate_structure",
+            "passed": true
+          },
+          {
+            "detail": "candidate points to parent",
+            "name": "variant_lineage",
+            "passed": true
+          },
+          {
+            "detail": "candidate binds exact manifest and rollback target",
+            "name": "candidate_manifest_binding",
+            "passed": true
+          },
+          {
+            "detail": "passed",
+            "name": "smoke_test",
+            "passed": true
+          },
+          {
+            "detail": "all previously passing tasks remain passing",
+            "name": "seesaw_regression",
+            "passed": true
+          },
+          {
+            "detail": "not required",
+            "name": "selective_human_approval",
+            "passed": true
+          }
+        ],
+        "requires_approval": false,
+        "resolution": "candidate_harness_promoted",
+        "resolved_variant_id": "aegis-repair-exact-absolute-list",
+        "rollback_variant_id": "aegis-repair-directory-list-read"
+      }
+    }
+  ],
+  "initial_trace_sha256": "9fd823a9265d2c315c23bbdf6ad831eadcafb7b885587d95f86a350cfef724ba",
+  "resolved_variant_sha256": "7e35a511f58a0fe039419bc069c6f0804d290fb3d9f4af3ef5fe2391c4a2ab96",
+  "schema_version": "the-king-aegis-trace-store-v1",
+  "stage_artifacts": [
+    {
+      "artifact_sha256": "16b918bdbf6673555124a335858bd753158ff5f1cde6e360b221c00527734fee",
+      "invocation_name": "01-digester",
+      "stage_name": "digester"
+    },
+    {
+      "artifact_sha256": "cfc0266c203946113c4faad624013bd1e6197a5805b940cc6db6bb9cc8c1e50c",
+      "invocation_name": "02-planner",
+      "stage_name": "planner"
+    },
+    {
+      "artifact_sha256": "893f1a64caf3c0bc3305d91bb47b5c08fab4395f072a03c106e11b5eb3a2b2ae",
+      "invocation_name": "03-evolver",
+      "stage_name": "evolver"
+    },
+    {
+      "artifact_sha256": "9e75e265e22b7766e933b8033cb9d840ca3b5186b8764bf24baf36a2f2291060",
+      "invocation_name": "04-critic",
+      "stage_name": "critic"
+    }
+  ],
+  "trace_store_sha256": "c8dac49970e0f375ea4a85d26f0992ccf3e3a82ead288e5b6b22017faf4275e4",
+  "verifier_category_counts": {
+    "filesystem_mutation": 17,
+    "git_mutation": 3,
+    "network": 4,
+    "non_bash_tool": 5,
+    "package_install": 3,
+    "prior_allow": 2,
+    "process_control": 2,
+    "shell_composition": 11,
+    "target_allow": 3
+  },
+  "verifier_suite_id": "live-policy-multitarget-50-v1",
+  "verifier_suite_sha256": "3de80f97f6e573a71db9f197fe83ca05b72e81fb00aab3f0da2d1086e1580e53",
+  "verifier_task_count": 50
+}

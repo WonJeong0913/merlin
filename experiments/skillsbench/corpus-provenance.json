@@ -1,0 +1,23 @@
+{
+  "generated_at_utc": "2026-07-10T03:05:42.465223+00:00",
+  "upstream_commit": "5433cf15c343f0da5fb942b80dc7dcb7c76506df",
+  "expected_commit": "5433cf15c343f0da5fb942b80dc7dcb7c76506df",
+  "regular_blob_count": 2160,
+  "local_regular_file_count": 2160,
+  "regular_blobs_exact": true,
+  "expected_manifest_sha256": "0f6d4d6e66bdef4d8bf9bcbf4982ac344cfe4a8da771a935e93acdab681ff041",
+  "local_manifest_sha256": "0f6d4d6e66bdef4d8bf9bcbf4982ac344cfe4a8da771a935e93acdab681ff041",
+  "missing": [],
+  "extra": [],
+  "mismatched": [],
+  "gitlinks": [
+    {
+      "path": "simpo-code-reproduction/environment/SimPO/alignment-handbook",
+      "object_id": "ae3f44fc7d8003d706752ca06f689574dffa3b76",
+      "placeholder_exists": true,
+      "materialized_file_count": 0
+    }
+  ],
+  "gitlink_placeholders_present": true,
+  "claim": "all regular task blobs match the pinned upstream commit; gitlinks are reported separately"
+}

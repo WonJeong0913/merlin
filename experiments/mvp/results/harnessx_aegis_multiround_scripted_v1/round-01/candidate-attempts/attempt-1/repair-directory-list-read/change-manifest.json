@@ -1,0 +1,41 @@
+{
+  "candidate_variant_id": "aegis-repair-directory-list-read",
+  "edits": [
+    {
+      "dimension": "D4",
+      "hook": "before_tool",
+      "kind": "replace",
+      "processor": {
+        "after": [],
+        "config": {
+          "allowed_commands": [
+            "/bin/pwd",
+            "ls -1",
+            "pwd"
+          ],
+          "command_tool": "Bash",
+          "denied_tools": [
+            "apply_patch"
+          ]
+        },
+        "hook": "before_tool",
+        "name": "exact_tool_input_policy",
+        "order": -100,
+        "singleton_group": "live_tool_input_policy"
+      },
+      "singleton_group": "live_tool_input_policy"
+    }
+  ],
+  "evidence_trace_ids": [
+    "aegis-trace-d34dcec4f48444a0eb0ba0c5"
+  ],
+  "expected_improve_task_ids": [
+    "directory-list-read"
+  ],
+  "expected_regress_task_ids": [],
+  "id": "aegis-repair-directory-list-read-manifest",
+  "parent_variant_sha256": "cb063379ee75a72bbe1bb0f357baa737a366ca664c7f134ffdb18524fe839b72",
+  "rationale": "Add only the exact command for directory-list-read and preserve the parent allowlist.",
+  "risk_tier": "medium",
+  "rollback_variant_sha256": "cb063379ee75a72bbe1bb0f357baa737a366ca664c7f134ffdb18524fe839b72"
+}

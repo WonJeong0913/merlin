@@ -1,0 +1,46 @@
+{
+  "id": "file-artifact-basic",
+  "name": "File Artifact Basic",
+  "description": "Create a named file artifact in the workspace. Use when the task asks to create a file such as result.txt in the workspace.",
+  "trigger": "Use when the task asks to create a file named result.txt or another simple file artifact in the workspace.",
+  "do_not_use_when": [
+    "The task asks to read or transform an existing file."
+  ],
+  "steps": [
+    {
+      "id": "step-1",
+      "description": "Write the requested file into the workspace root.",
+      "kind": "instruction",
+      "inputs": [],
+      "outputs": ["result.txt"],
+      "script_path": null
+    }
+  ],
+  "edges": [],
+  "validators": ["result_file_exists"],
+  "expected_artifacts": ["result.txt", "audit.log", "notes.txt", "output.json", "report.md"],
+  "failure_modes": ["writes to the wrong directory", "wrong file name"],
+  "provenance_trace_ids": ["no_skill-create-result-file-cbbb52f3"],
+  "status": "active",
+  "version": 1,
+  "metadata": {
+    "origin": "seed",
+    "solves": {
+      "create-audit-log": {
+        "write_file": {"path": "audit.log", "content": "audit complete\n"}
+      },
+      "create-notes-file": {
+        "write_file": {"path": "notes.txt", "content": "notes\n"}
+      },
+      "create-output-json": {
+        "write_file": {"path": "output.json", "content": "{}\n"}
+      },
+      "create-report-md": {
+        "write_file": {"path": "report.md", "content": "# Report\n"}
+      },
+      "create-result-file": {
+        "write_file": {"path": "result.txt", "content": "done\n"}
+      }
+    }
+  }
+}

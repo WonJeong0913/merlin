@@ -1,0 +1,30 @@
+{
+  "id": "count-items",
+  "instruction": "Read items.txt and create item-count.txt containing the number of non-empty lines.",
+  "metadata": {
+    "benchmark_family": "SkillsBench-style",
+    "capability": "Tool Use",
+    "difficulty": "C",
+    "domain": "Office & White Collar",
+    "mvp_tier": "mvp",
+    "shadowing_role": "oracle_target",
+    "skill_dependency": "medium"
+  },
+  "oracle_skill_ids": [
+    "line-summary"
+  ],
+  "regression_group": "file-transform",
+  "setup_files": {
+    "items.txt": "one\ntwo\n\nthree\nfour\n"
+  },
+  "verifier": {
+    "command": [
+      "python3",
+      "-c",
+      "from pathlib import Path; p=Path('item-count.txt'); raise SystemExit(0 if p.exists() and p.read_text().strip() == '4' else 1)"
+    ],
+    "kind": "command",
+    "name": "item_count_is_four",
+    "timeout_s": 5.0
+  }
+}

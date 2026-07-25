@@ -1,0 +1,1310 @@
+{
+  "campaign_id": "merlin-personal-workload-50-longitudinal-v1",
+  "manifest_sha256": "a82244246c0cfa2a3f125805119bf753fa7508e5e25afb12c78d430e857fe46c",
+  "ordering": "balanced two-period crossover by task ordinal and repetition",
+  "pair_count": 100,
+  "pairs": [
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-01-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "deeffae1c125ab837a447329c23921b72b11c28502da7c3b2756725a4c1d5be9",
+      "task_id": "pw-rd-01"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-02-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "ee2dcb25f62b1218492e26fc839ec0d87eb38bc4dcd1812f75eae680a8e7230d",
+      "task_id": "pw-rd-02"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-03-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "14d2e558f3aceb5126ee1b686ce72427947ff5009fcbadcbb32db6596755c8c1",
+      "task_id": "pw-rd-03"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-04-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "0cd4c003d8c820681da1637c01f7de511657ec88261026d198fd6114e723ae52",
+      "task_id": "pw-rd-04"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-05-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "f3d335b33c88a140b9956aa4e98c3c6d620432b7fff1b5c9697a45ec53f6bf23",
+      "task_id": "pw-rd-05"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-06-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "217b94ea500fcffafe25c73f0681d12d1858d5557e4d722948bf824604b75334",
+      "task_id": "pw-rd-06"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-07-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "1330ec5062a931241d03404bf582948d2d34bcc74e01c7d80a9aec0047b7410f",
+      "task_id": "pw-rd-07"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-08-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "485170b34ad498a4813411120b35e6d9df3010cba4d45786de7032089f039a33",
+      "task_id": "pw-rd-08"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-09-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "8a95467a39f99d7180ee318cdad954f6c91b3a9237543114a9b998a7334d9f00",
+      "task_id": "pw-rd-09"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-10-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "dec8793e5621b18db1c7e288b0f3f15573a4edd072a6cc12fd56ac097a68d040",
+      "task_id": "pw-rd-10"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-11-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "da40612cf06fa2d3f5bfda5510776ef3c4ed17b8595136c646d5ae13348ab717",
+      "task_id": "pw-rd-11"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-12-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "4d968d01fe688431fcad5bcd014b354ab23eaeea232491dd3083b0ab79aa02d3",
+      "task_id": "pw-rd-12"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-01-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "90adc2f4766087ca48a922d650585461a113e51d35ec7bd8236ccb0bbad604a3",
+      "task_id": "pw-ke-01"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-02-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "ac8e41f58a9fa74c1a0bdca59cf62127b724aa679d6dd38694ed652f53fb3f04",
+      "task_id": "pw-ke-02"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-03-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "fb888501fbc95247ad42118083fb6a55ac1f157041b323c5c06f36482be906a3",
+      "task_id": "pw-ke-03"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-04-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "ed3a3c27125381f934562577c3b409eebf83a3f3571c5b4d23a5d578bdf9748f",
+      "task_id": "pw-ke-04"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-05-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "cf5edede1d10a4a99e5cdb663d2aa342ef4415ec86035dcc6c1da45bebb583a5",
+      "task_id": "pw-ke-05"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-06-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "8132b171f4d113cd0f4774c6a4c150a0d32f1c620b835854df54605b682d31ce",
+      "task_id": "pw-ke-06"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-07-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "6e95de105e60ba608ad2498bafba964e45b5c93f7cf5451b32a7d9accf2f1be0",
+      "task_id": "pw-ke-07"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-08-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "abc145e27c564c841e6f512cebebeac90f725ea58b58b74defa3e39bad6bc426",
+      "task_id": "pw-ke-08"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-09-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "b5da2aeea56e48bec1d556d9aa47b545f5607d50f37ae44653bba803318c3c35",
+      "task_id": "pw-ke-09"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-10-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "303c6b783ae89ebf1445bf79c0d79e258126385dabe4cf73ac8503eef7d28684",
+      "task_id": "pw-ke-10"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-01-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "8cc10c1b9285faaab7c9dcad6953e5155b2a0ef7d39bd4d49a0ef78649a8c974",
+      "task_id": "pw-fp-01"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-02-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "eb2e88b4fb6320bc2d10537fc6b3fcc9a6b6f9871614bfdf9add204b3d04b859",
+      "task_id": "pw-fp-02"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-03-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "744987551458508bf0196ffbd601501c51713766e7dd117fc5cb15f956fc7767",
+      "task_id": "pw-fp-03"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-04-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "4c9efccf3a88345dd43f6fbe1c7b2707d889a7f4d4cedcc3419d21b4355efb6e",
+      "task_id": "pw-fp-04"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-05-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "5b45d02c771b1e0e6328a614c5c5138cbeb757864747a33d1a2bb636e43b7b52",
+      "task_id": "pw-fp-05"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-06-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "3708ba7d24c58617c22eb45917da5f291889b9d741aa28a4b208cad61f97e431",
+      "task_id": "pw-fp-06"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-07-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "5ca07b32e22f3ca6bc918514dee766a33a2b932031d7caa9c79cfc9d6aac475d",
+      "task_id": "pw-fp-07"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-08-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "602d9e2c9cd7c0a943fc0a4f01c23143a39065ce73086350665727d2e1d43ada",
+      "task_id": "pw-fp-08"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-01-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "4721928775d87859dceb5a38bd8bb92d9c6c948fb55ce7748805bce51d15b2ed",
+      "task_id": "pw-ap-01"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-02-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "5627ef4eeb4eec173fd355679feaa9ae322bb153081a4a0b46edbcd1f10e23e7",
+      "task_id": "pw-ap-02"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-03-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "9ca7c528821b6f246eee342189a1bc9b37fb1a128d8535d91c861046d0671fb7",
+      "task_id": "pw-ap-03"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-04-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "4c87482e7be174684b4b152f2dfc443b81aa858fcb24b586d5d9e2c420d6ebbe",
+      "task_id": "pw-ap-04"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-05-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "780d4ea1c5d199c04e5db9c6102c993b837e418babe40c03d2cbf40e96080411",
+      "task_id": "pw-ap-05"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-06-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "11129f6ba07280e158ccd76fa6bd36000babcffaa796018687a77680b1ffcea2",
+      "task_id": "pw-ap-06"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-07-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "01237ad23c606efdceb1b6cfcd33b12fd3fc6f91b02a827e0da78a15024c5a6a",
+      "task_id": "pw-ap-07"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-08-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "4390c3e1ecc028a953950cbc7a21b7f4080bb31e146832ebbddb835306b01956",
+      "task_id": "pw-ap-08"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ml-01-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "30aed912a2fbaef46a41b1412428a0ecfb8469a2ee5840cbdfdacf7cf0b308f0",
+      "task_id": "pw-ml-01"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ml-02-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "7aec4074160c0b42bca9756f6b02d0303fa248cd82d4e24b6b18d18a1f0aadd3",
+      "task_id": "pw-ml-02"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ml-03-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "6bc8659ab19dc42cbe8f362beb64c0c30cc715e8fe9b7d57f6cf85058a341afe",
+      "task_id": "pw-ml-03"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ml-04-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "1833d4284ddbd7ac1b16c88de42a996d77b2b4cf3c0180e719d4cefc670b6233",
+      "task_id": "pw-ml-04"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ml-05-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "8707688a8326f30b542faee30f824d6f932897c644abc25a7da9773ce31c0e5f",
+      "task_id": "pw-ml-05"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ml-06-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "2042dce40e6c3388829a646d7e24dbefb73114f7b8687e42661830fe7d9865ec",
+      "task_id": "pw-ml-06"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ba-01-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "34d865182f8e10fa10b15df1d0e7249442c25af2597e38a0765d786a6bbd323d",
+      "task_id": "pw-ba-01"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ba-02-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "5c6eebd40b8068de82688f723c5ce0aa4168f746112b9e387950a0ab497ecfa0",
+      "task_id": "pw-ba-02"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ba-03-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "a3bc917630772115b176b532baea568ea3d8548a3a170b70ac6919f7e8ff44c2",
+      "task_id": "pw-ba-03"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ba-04-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "6e784969bfdf4c520e47ee9d4d859c84d6bd141b6451be1ba6a676ec00e3fa5d",
+      "task_id": "pw-ba-04"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ba-05-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "e9c8085df11ddc95d1f015f7b0deaf24f0a1f246b283b456e68b08d53a119801",
+      "task_id": "pw-ba-05"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ba-06-r1",
+      "phase": 1,
+      "repetition": 1,
+      "task_contract_sha256": "486badde7f0bb2ed58384898342ec49abe6692b9fd34979abec3f26c26f488bc",
+      "task_id": "pw-ba-06"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-01-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "deeffae1c125ab837a447329c23921b72b11c28502da7c3b2756725a4c1d5be9",
+      "task_id": "pw-rd-01"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-02-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "ee2dcb25f62b1218492e26fc839ec0d87eb38bc4dcd1812f75eae680a8e7230d",
+      "task_id": "pw-rd-02"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-03-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "14d2e558f3aceb5126ee1b686ce72427947ff5009fcbadcbb32db6596755c8c1",
+      "task_id": "pw-rd-03"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-04-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "0cd4c003d8c820681da1637c01f7de511657ec88261026d198fd6114e723ae52",
+      "task_id": "pw-rd-04"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-05-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "f3d335b33c88a140b9956aa4e98c3c6d620432b7fff1b5c9697a45ec53f6bf23",
+      "task_id": "pw-rd-05"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-06-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "217b94ea500fcffafe25c73f0681d12d1858d5557e4d722948bf824604b75334",
+      "task_id": "pw-rd-06"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-07-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "1330ec5062a931241d03404bf582948d2d34bcc74e01c7d80a9aec0047b7410f",
+      "task_id": "pw-rd-07"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-08-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "485170b34ad498a4813411120b35e6d9df3010cba4d45786de7032089f039a33",
+      "task_id": "pw-rd-08"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-09-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "8a95467a39f99d7180ee318cdad954f6c91b3a9237543114a9b998a7334d9f00",
+      "task_id": "pw-rd-09"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-10-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "dec8793e5621b18db1c7e288b0f3f15573a4edd072a6cc12fd56ac097a68d040",
+      "task_id": "pw-rd-10"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-11-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "da40612cf06fa2d3f5bfda5510776ef3c4ed17b8595136c646d5ae13348ab717",
+      "task_id": "pw-rd-11"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-rd-12-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "4d968d01fe688431fcad5bcd014b354ab23eaeea232491dd3083b0ab79aa02d3",
+      "task_id": "pw-rd-12"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-01-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "90adc2f4766087ca48a922d650585461a113e51d35ec7bd8236ccb0bbad604a3",
+      "task_id": "pw-ke-01"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-02-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "ac8e41f58a9fa74c1a0bdca59cf62127b724aa679d6dd38694ed652f53fb3f04",
+      "task_id": "pw-ke-02"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-03-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "fb888501fbc95247ad42118083fb6a55ac1f157041b323c5c06f36482be906a3",
+      "task_id": "pw-ke-03"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-04-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "ed3a3c27125381f934562577c3b409eebf83a3f3571c5b4d23a5d578bdf9748f",
+      "task_id": "pw-ke-04"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-05-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "cf5edede1d10a4a99e5cdb663d2aa342ef4415ec86035dcc6c1da45bebb583a5",
+      "task_id": "pw-ke-05"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-06-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "8132b171f4d113cd0f4774c6a4c150a0d32f1c620b835854df54605b682d31ce",
+      "task_id": "pw-ke-06"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-07-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "6e95de105e60ba608ad2498bafba964e45b5c93f7cf5451b32a7d9accf2f1be0",
+      "task_id": "pw-ke-07"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-08-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "abc145e27c564c841e6f512cebebeac90f725ea58b58b74defa3e39bad6bc426",
+      "task_id": "pw-ke-08"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-09-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "b5da2aeea56e48bec1d556d9aa47b545f5607d50f37ae44653bba803318c3c35",
+      "task_id": "pw-ke-09"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ke-10-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "303c6b783ae89ebf1445bf79c0d79e258126385dabe4cf73ac8503eef7d28684",
+      "task_id": "pw-ke-10"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-01-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "8cc10c1b9285faaab7c9dcad6953e5155b2a0ef7d39bd4d49a0ef78649a8c974",
+      "task_id": "pw-fp-01"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-02-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "eb2e88b4fb6320bc2d10537fc6b3fcc9a6b6f9871614bfdf9add204b3d04b859",
+      "task_id": "pw-fp-02"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-03-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "744987551458508bf0196ffbd601501c51713766e7dd117fc5cb15f956fc7767",
+      "task_id": "pw-fp-03"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-04-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "4c9efccf3a88345dd43f6fbe1c7b2707d889a7f4d4cedcc3419d21b4355efb6e",
+      "task_id": "pw-fp-04"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-05-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "5b45d02c771b1e0e6328a614c5c5138cbeb757864747a33d1a2bb636e43b7b52",
+      "task_id": "pw-fp-05"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-06-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "3708ba7d24c58617c22eb45917da5f291889b9d741aa28a4b208cad61f97e431",
+      "task_id": "pw-fp-06"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-07-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "5ca07b32e22f3ca6bc918514dee766a33a2b932031d7caa9c79cfc9d6aac475d",
+      "task_id": "pw-fp-07"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-fp-08-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "602d9e2c9cd7c0a943fc0a4f01c23143a39065ce73086350665727d2e1d43ada",
+      "task_id": "pw-fp-08"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-01-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "4721928775d87859dceb5a38bd8bb92d9c6c948fb55ce7748805bce51d15b2ed",
+      "task_id": "pw-ap-01"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-02-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "5627ef4eeb4eec173fd355679feaa9ae322bb153081a4a0b46edbcd1f10e23e7",
+      "task_id": "pw-ap-02"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-03-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "9ca7c528821b6f246eee342189a1bc9b37fb1a128d8535d91c861046d0671fb7",
+      "task_id": "pw-ap-03"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-04-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "4c87482e7be174684b4b152f2dfc443b81aa858fcb24b586d5d9e2c420d6ebbe",
+      "task_id": "pw-ap-04"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-05-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "780d4ea1c5d199c04e5db9c6102c993b837e418babe40c03d2cbf40e96080411",
+      "task_id": "pw-ap-05"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-06-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "11129f6ba07280e158ccd76fa6bd36000babcffaa796018687a77680b1ffcea2",
+      "task_id": "pw-ap-06"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-07-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "01237ad23c606efdceb1b6cfcd33b12fd3fc6f91b02a827e0da78a15024c5a6a",
+      "task_id": "pw-ap-07"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ap-08-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "4390c3e1ecc028a953950cbc7a21b7f4080bb31e146832ebbddb835306b01956",
+      "task_id": "pw-ap-08"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ml-01-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "30aed912a2fbaef46a41b1412428a0ecfb8469a2ee5840cbdfdacf7cf0b308f0",
+      "task_id": "pw-ml-01"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ml-02-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "7aec4074160c0b42bca9756f6b02d0303fa248cd82d4e24b6b18d18a1f0aadd3",
+      "task_id": "pw-ml-02"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ml-03-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "6bc8659ab19dc42cbe8f362beb64c0c30cc715e8fe9b7d57f6cf85058a341afe",
+      "task_id": "pw-ml-03"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ml-04-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "1833d4284ddbd7ac1b16c88de42a996d77b2b4cf3c0180e719d4cefc670b6233",
+      "task_id": "pw-ml-04"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ml-05-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "8707688a8326f30b542faee30f824d6f932897c644abc25a7da9773ce31c0e5f",
+      "task_id": "pw-ml-05"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ml-06-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "2042dce40e6c3388829a646d7e24dbefb73114f7b8687e42661830fe7d9865ec",
+      "task_id": "pw-ml-06"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ba-01-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "34d865182f8e10fa10b15df1d0e7249442c25af2597e38a0765d786a6bbd323d",
+      "task_id": "pw-ba-01"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ba-02-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "5c6eebd40b8068de82688f723c5ce0aa4168f746112b9e387950a0ab497ecfa0",
+      "task_id": "pw-ba-02"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ba-03-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "a3bc917630772115b176b532baea568ea3d8548a3a170b70ac6919f7e8ff44c2",
+      "task_id": "pw-ba-03"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ba-04-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "6e784969bfdf4c520e47ee9d4d859c84d6bd141b6451be1ba6a676ec00e3fa5d",
+      "task_id": "pw-ba-04"
+    },
+    {
+      "arm_order": [
+        "managed",
+        "baseline"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ba-05-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "e9c8085df11ddc95d1f015f7b0deaf24f0a1f246b283b456e68b08d53a119801",
+      "task_id": "pw-ba-05"
+    },
+    {
+      "arm_order": [
+        "baseline",
+        "managed"
+      ],
+      "carryover_prohibited": true,
+      "clean_input_snapshot_required": true,
+      "pair_id": "pw-ba-06-r2",
+      "phase": 2,
+      "repetition": 2,
+      "task_contract_sha256": "486badde7f0bb2ed58384898342ec49abe6692b9fd34979abec3f26c26f488bc",
+      "task_id": "pw-ba-06"
+    }
+  ],
+  "schedule_sha256": "d4e1aa3654eb6aa3bfdb078d3f968e828b4d554af3ef62b0f134028f391fa037",
+  "schema_version": "merlin-personal-workload-schedule-v1"
+}

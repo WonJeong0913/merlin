@@ -1,0 +1,908 @@
+{
+  "aggregate": {
+    "by_arm": {
+      "governed-authoring-policy": {
+        "eligible_run_count": 4,
+        "excluded_contract_run_count": 2,
+        "format_pass_rate": 0.8333333333333334,
+        "mean_candidate_bytes": 2867.1666666666665,
+        "mean_generation_latency_seconds": 20.926977347175125,
+        "mean_held_out_pass_rate": 1.0,
+        "mean_input_tokens": 14930.0,
+        "mean_negative_route_accuracy": 0.5,
+        "mean_output_tokens": 811.5,
+        "mean_target_pass_rate": 1.0,
+        "promotion_rate": 0.25,
+        "run_count": 6,
+        "safety_pass_rate": 1.0
+      },
+      "target-contract-only": {
+        "eligible_run_count": 4,
+        "excluded_contract_run_count": 2,
+        "format_pass_rate": 0.0,
+        "mean_candidate_bytes": 2278.0,
+        "mean_generation_latency_seconds": 15.256860694498755,
+        "mean_held_out_pass_rate": 1.0,
+        "mean_input_tokens": 14056.166666666666,
+        "mean_negative_route_accuracy": 0.5,
+        "mean_output_tokens": 628.5,
+        "mean_target_pass_rate": 1.0,
+        "promotion_rate": 0.0,
+        "run_count": 6,
+        "safety_pass_rate": 1.0
+      }
+    },
+    "paired_deltas": [
+      {
+        "held_out_pass_rate_delta": 0.0,
+        "negative_route_accuracy_delta": 0.0,
+        "promotion_delta": 0,
+        "repeat": 1,
+        "target_pass_rate_delta": 0.0,
+        "task": "extract-todo-items"
+      },
+      {
+        "held_out_pass_rate_delta": 0.0,
+        "negative_route_accuracy_delta": 0.0,
+        "promotion_delta": 0,
+        "repeat": 1,
+        "target_pass_rate_delta": 0.0,
+        "task": "parse-key-value-config"
+      },
+      {
+        "held_out_pass_rate_delta": 0.0,
+        "negative_route_accuracy_delta": 0.0,
+        "promotion_delta": 1,
+        "repeat": 2,
+        "target_pass_rate_delta": 0.0,
+        "task": "extract-todo-items"
+      },
+      {
+        "held_out_pass_rate_delta": 0.0,
+        "negative_route_accuracy_delta": 0.0,
+        "promotion_delta": 0,
+        "repeat": 2,
+        "target_pass_rate_delta": 0.0,
+        "task": "parse-key-value-config"
+      }
+    ]
+  },
+  "contract_findings": {
+    "frontmatter": "safe YAML plain scalars are valid Agent Skills input; the previous quote-only validator was over-restrictive",
+    "markdown_links": "top-level JSON shape was not frozen; all four runs are excluded from primary behavioral comparison",
+    "unicode": "task contracts did not require ensure_ascii=False, so semantic JSON equality replaces literal Unicode byte equality"
+  },
+  "evidence_boundary": {
+    "broad_generalization_claim": false,
+    "candidate_and_workspace_hashes_reverified": true,
+    "candidate_reexecuted": false,
+    "candidate_regenerated": false,
+    "live_library_mutated": false,
+    "new_provider_calls": false,
+    "post_hoc_contract_relaxation_hidden": false,
+    "submission_package_mutated": false
+  },
+  "experiment": "authoring-policy-ablation-v1-reassessed",
+  "new_provider_calls": 0,
+  "original_recorded_runs": 12,
+  "original_report_sha256": "9d30e8b81825f1bae046da526229c343194c5108beab74ca98cc7d722efddef5",
+  "runs": [
+    {
+      "arm": "target-contract-only",
+      "candidate": {
+        "bytes": 2196,
+        "description_chars": 85,
+        "exclusion_count": 0,
+        "file_count": 3,
+        "manifest_sha256": "9e080b909451e6792bc5b96b4a3e15b28fb56bdc9ad75209c619d4dba798ba09",
+        "skill_md_lines": 16,
+        "skill_md_sha256": "845f129e69c70800ba4354d034302f9f08a9b6c64566c7e7c2d5bfabfcc6c9cd"
+      },
+      "contract_eligible": true,
+      "contract_issue": null,
+      "execution_report_sha256": "19209d6295cb29ae12d5feec59f193cfda1f471f9ef7d92628d6550914d2deaa",
+      "generation": {
+        "cached_input_tokens": 0,
+        "generation_latency_seconds": 14.767081207945012,
+        "input_tokens": 14119,
+        "model_evidence_level": "requested_cli_contract_only",
+        "output_tokens": 590,
+        "provider_reported_model_ids": [],
+        "raw_trace_sha256": "ae9d55c6ef5ae0f077f3deed0ede672de1d1908bdabefef7072fb1efdbf53eb2",
+        "requested_model_id": "gpt-5.6-terra",
+        "response_sha256": "f9a55dc80ef3aa05d35095fe2d5b70111d74bd8cf46fb83352293dae70aa0632"
+      },
+      "metrics": {
+        "format_gate": false,
+        "held_out_pass_rate": 1.0,
+        "negative_route_accuracy": 1.0,
+        "off_task_artifact_count": 0,
+        "positive_route_accuracy": 1.0,
+        "promotion": false,
+        "safety_gate": true,
+        "target_pass_rate": 1.0
+      },
+      "policy_sha256": null,
+      "prompt_sha256": "24d8ca01eb02b99e21817eeb06f3486d1efc2724a2607a6e153dddfbb87f9c84",
+      "repeat": 1,
+      "run_id": "r1-extract-todo-items-target-contract-only",
+      "semantic_cases": [
+        {
+          "actual_top_level": "dict",
+          "case_id": "todo-target-basic",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "db1730a9194ddcc45329655dabc74a56e7e94d355ecc2908abaefb8485cb395c"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "todo-target-spacing",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "ad185973d09552521da4f6e27ec09ecae0c07c95881f12ac9f603f692529eaf6"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "todo-held-korean",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "held_out",
+          "workspace_manifest_sha256": "4e1c0831b6f0a546b1793fe1c4acfc7eecee7f9b2aeff51e179d0a0eb329de1f"
+        }
+      ],
+      "task": "extract-todo-items",
+      "task_contract_sha256": "9d1f1ddf5c34568d7201272eb849889cf2d7d2c7c1f84bc9c2466154e746e916"
+    },
+    {
+      "arm": "governed-authoring-policy",
+      "candidate": {
+        "bytes": 2173,
+        "description_chars": 177,
+        "exclusion_count": 0,
+        "file_count": 3,
+        "manifest_sha256": "a6216ee151049b890dfad3066361cb5f2a80281cf8434831fdb64e701c15f2aa",
+        "skill_md_lines": 18,
+        "skill_md_sha256": "50a1a8b119a219e79b4651b5ff6dfbd215de293ca10ef7b19fc55b326a354227"
+      },
+      "contract_eligible": true,
+      "contract_issue": null,
+      "execution_report_sha256": "21c889f8db63f78bece4b7c73e1f1b0e7362f61f86e07fdb0c07b9ca3e4871da",
+      "generation": {
+        "cached_input_tokens": 0,
+        "generation_latency_seconds": 17.446999999927357,
+        "input_tokens": 14937,
+        "model_evidence_level": "requested_cli_contract_only",
+        "output_tokens": 579,
+        "provider_reported_model_ids": [],
+        "raw_trace_sha256": "067248696ebd6d8dd612fb79b5578fc6bd376bf629864971456fe16b70b16f5b",
+        "requested_model_id": "gpt-5.6-terra",
+        "response_sha256": "2c3b4293047d4d32988c4a73919b18c687490a477ce65b91a3e7d53abb16fd99"
+      },
+      "metrics": {
+        "format_gate": false,
+        "held_out_pass_rate": 1.0,
+        "negative_route_accuracy": 1.0,
+        "off_task_artifact_count": 0,
+        "positive_route_accuracy": 1.0,
+        "promotion": false,
+        "safety_gate": true,
+        "target_pass_rate": 1.0
+      },
+      "policy_sha256": "b99c899363f15e01979c08358f738aa0e9d9afeabcac211585778c58c9543394",
+      "prompt_sha256": "a59f28bc7d56529b8070dc6882d6c997fcb8480f8134c64e7751fdfeb41bc476",
+      "repeat": 1,
+      "run_id": "r1-extract-todo-items-governed-authoring-policy",
+      "semantic_cases": [
+        {
+          "actual_top_level": "dict",
+          "case_id": "todo-target-basic",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "db1730a9194ddcc45329655dabc74a56e7e94d355ecc2908abaefb8485cb395c"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "todo-target-spacing",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "ad185973d09552521da4f6e27ec09ecae0c07c95881f12ac9f603f692529eaf6"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "todo-held-korean",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "held_out",
+          "workspace_manifest_sha256": "4e1c0831b6f0a546b1793fe1c4acfc7eecee7f9b2aeff51e179d0a0eb329de1f"
+        }
+      ],
+      "task": "extract-todo-items",
+      "task_contract_sha256": "9d1f1ddf5c34568d7201272eb849889cf2d7d2c7c1f84bc9c2466154e746e916"
+    },
+    {
+      "arm": "target-contract-only",
+      "candidate": {
+        "bytes": 2260,
+        "description_chars": 103,
+        "exclusion_count": 0,
+        "file_count": 3,
+        "manifest_sha256": "8623f3356aa543a12dfb31fcf3fa6a49ffac04a001940865584bb58e369eb14b",
+        "skill_md_lines": 20,
+        "skill_md_sha256": "74e6e4fcf9ca2ebfd9d7450183b8314b06d1f852a4455e48d3617206a840ad7b"
+      },
+      "contract_eligible": false,
+      "contract_issue": "top_level_json_shape_not_frozen_before_generation",
+      "execution_report_sha256": "2ec7af11d83dead153bec5488fb9c368b1f09658ed25119257a4859ad79936b8",
+      "generation": {
+        "cached_input_tokens": 0,
+        "generation_latency_seconds": 14.58851237501949,
+        "input_tokens": 14049,
+        "model_evidence_level": "requested_cli_contract_only",
+        "output_tokens": 637,
+        "provider_reported_model_ids": [],
+        "raw_trace_sha256": "19de852a9ad38dd08998eb63827deeefa998eecaf805e1fa688e1774b9f15f45",
+        "requested_model_id": "gpt-5.6-terra",
+        "response_sha256": "0379955899304eb9ddaee943dedba5134a0233a6f0daff2ee7c34c10006b6d92"
+      },
+      "metrics": {
+        "format_gate": false,
+        "held_out_pass_rate": 0.0,
+        "negative_route_accuracy": 0.5,
+        "off_task_artifact_count": 0,
+        "positive_route_accuracy": 1.0,
+        "promotion": false,
+        "safety_gate": true,
+        "target_pass_rate": 0.0
+      },
+      "policy_sha256": null,
+      "prompt_sha256": "954db76013c16c4eee588c8cf93b6f48bcd1b52d52ec74d463f396d5ea2d4cd0",
+      "repeat": 1,
+      "run_id": "r1-extract-markdown-links-target-contract-only",
+      "semantic_cases": [
+        {
+          "actual_top_level": "list",
+          "case_id": "links-target-basic",
+          "expected_top_level": "dict",
+          "semantic_json_match": false,
+          "split": "target",
+          "workspace_manifest_sha256": "38ff28e6beedcd366d0fb45ca665cae63af7b144ded427f53b642c071defe173"
+        },
+        {
+          "actual_top_level": "list",
+          "case_id": "links-target-ignore-image",
+          "expected_top_level": "dict",
+          "semantic_json_match": false,
+          "split": "target",
+          "workspace_manifest_sha256": "e5723f6bdd8332d084ebefdfed127ee0da347eb0750dd768480ee84f8ed3ce96"
+        },
+        {
+          "actual_top_level": "list",
+          "case_id": "links-held-unicode",
+          "expected_top_level": "dict",
+          "semantic_json_match": false,
+          "split": "held_out",
+          "workspace_manifest_sha256": "060bacc838808d8ca432571c7deb2149a2c21b4bd9753f6d230da440bfc77892"
+        }
+      ],
+      "task": "extract-markdown-links",
+      "task_contract_sha256": "b04f34f1d7baa7e372b8c3059d1aef911b95f244e0673a8b8cd1cd51f49d5563"
+    },
+    {
+      "arm": "governed-authoring-policy",
+      "candidate": {
+        "bytes": 2885,
+        "description_chars": 200,
+        "exclusion_count": 0,
+        "file_count": 3,
+        "manifest_sha256": "b045d10792b8d710bb4d28d85fb99f3e7012968c9dfe45f21e26e235716bcd76",
+        "skill_md_lines": 17,
+        "skill_md_sha256": "24b31156bceb3534d16430ceb97dd6c04e0449497a3deea826e8497496eee91c"
+      },
+      "contract_eligible": false,
+      "contract_issue": "top_level_json_shape_not_frozen_before_generation",
+      "execution_report_sha256": "957d62fc9ee283e47b5ad15135459cff5af755bec856d07db098a241402c6da4",
+      "generation": {
+        "cached_input_tokens": 0,
+        "generation_latency_seconds": 31.963331833016127,
+        "input_tokens": 14934,
+        "model_evidence_level": "requested_cli_contract_only",
+        "output_tokens": 1085,
+        "provider_reported_model_ids": [],
+        "raw_trace_sha256": "6995c3cfe2804d11ddeaf7b8df02e0ae5d80cf90dd91d2dd362dd3daea994e8b",
+        "requested_model_id": "gpt-5.6-terra",
+        "response_sha256": "a3f0021faaabb9023af1c59c8360d65745798307c837d806bd030ac1fd4d3bcb"
+      },
+      "metrics": {
+        "format_gate": true,
+        "held_out_pass_rate": 0.0,
+        "negative_route_accuracy": 0.5,
+        "off_task_artifact_count": 0,
+        "positive_route_accuracy": 1.0,
+        "promotion": false,
+        "safety_gate": true,
+        "target_pass_rate": 0.0
+      },
+      "policy_sha256": "b99c899363f15e01979c08358f738aa0e9d9afeabcac211585778c58c9543394",
+      "prompt_sha256": "b982931d0a54fc445719a3528172f465412098b2046f4ff2b6040d4b46aebfff",
+      "repeat": 1,
+      "run_id": "r1-extract-markdown-links-governed-authoring-policy",
+      "semantic_cases": [
+        {
+          "actual_top_level": "list",
+          "case_id": "links-target-basic",
+          "expected_top_level": "dict",
+          "semantic_json_match": false,
+          "split": "target",
+          "workspace_manifest_sha256": "38ff28e6beedcd366d0fb45ca665cae63af7b144ded427f53b642c071defe173"
+        },
+        {
+          "actual_top_level": "list",
+          "case_id": "links-target-ignore-image",
+          "expected_top_level": "dict",
+          "semantic_json_match": false,
+          "split": "target",
+          "workspace_manifest_sha256": "e5723f6bdd8332d084ebefdfed127ee0da347eb0750dd768480ee84f8ed3ce96"
+        },
+        {
+          "actual_top_level": "list",
+          "case_id": "links-held-unicode",
+          "expected_top_level": "dict",
+          "semantic_json_match": false,
+          "split": "held_out",
+          "workspace_manifest_sha256": "b99ada581dc0cafd75f7de0b1dbfa6a735aef96ce64d632f5fcc7a8a4c519719"
+        }
+      ],
+      "task": "extract-markdown-links",
+      "task_contract_sha256": "b04f34f1d7baa7e372b8c3059d1aef911b95f244e0673a8b8cd1cd51f49d5563"
+    },
+    {
+      "arm": "target-contract-only",
+      "candidate": {
+        "bytes": 2527,
+        "description_chars": 162,
+        "exclusion_count": 0,
+        "file_count": 3,
+        "manifest_sha256": "3fe1a022a1d7cb1591ad72175e73eb9e2013b417534796caf95c19f3c549d043",
+        "skill_md_lines": 32,
+        "skill_md_sha256": "5f5583e0264f7ba9fe2ef0003b4219f36e90f5113e0bb5b43c9a9dc199c14848"
+      },
+      "contract_eligible": true,
+      "contract_issue": null,
+      "execution_report_sha256": "28454b0a65e780d63823b90e0ac42160e0cbdfbd0e459570679e72d3708b7a17",
+      "generation": {
+        "cached_input_tokens": 0,
+        "generation_latency_seconds": 15.076201750081964,
+        "input_tokens": 14034,
+        "model_evidence_level": "requested_cli_contract_only",
+        "output_tokens": 673,
+        "provider_reported_model_ids": [],
+        "raw_trace_sha256": "ce1fd85ab7aa209f3c6cbe7daf8583f1515fb12f28744b467e1a0388db7e81ac",
+        "requested_model_id": "gpt-5.6-terra",
+        "response_sha256": "8136ace86420ecce1705de6161d892c60422e846ebc16367b53b3f7a9848cf0c"
+      },
+      "metrics": {
+        "format_gate": false,
+        "held_out_pass_rate": 1.0,
+        "negative_route_accuracy": 0.0,
+        "off_task_artifact_count": 0,
+        "positive_route_accuracy": 1.0,
+        "promotion": false,
+        "safety_gate": true,
+        "target_pass_rate": 1.0
+      },
+      "policy_sha256": null,
+      "prompt_sha256": "945c061e4cdec31b593a7033fa292d2b6fe54fed7685b880d51f0a4c3b52aa7f",
+      "repeat": 1,
+      "run_id": "r1-parse-key-value-config-target-contract-only",
+      "semantic_cases": [
+        {
+          "actual_top_level": "dict",
+          "case_id": "config-target-basic",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "947e0dc8f5f14706f587d666c34bd4f7edc601d28095bff50dc274b6a10d1413"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "config-target-first-equals",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "be1a4f195a5f99ddd56e0fba4be2d70121f719c06919f8f2b1be06be7a80a396"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "config-held-unicode",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "held_out",
+          "workspace_manifest_sha256": "dc4bfdac5d353fabff7b696b52d803b49344e45eb563d545b0fab3a11e9a9409"
+        }
+      ],
+      "task": "parse-key-value-config",
+      "task_contract_sha256": "3ca4f093c975448981c1d61a6b2855a939232a945d028a754e5f07abbb309636"
+    },
+    {
+      "arm": "governed-authoring-policy",
+      "candidate": {
+        "bytes": 3405,
+        "description_chars": 208,
+        "exclusion_count": 0,
+        "file_count": 3,
+        "manifest_sha256": "54b812b72decaabbfce9cefc82c6708ef095d36114a61ccd99b76fd2125c34f5",
+        "skill_md_lines": 25,
+        "skill_md_sha256": "9c950f51f91a93aed31654c761999a07be53862550dd2d03f043a58aa3ef301d"
+      },
+      "contract_eligible": true,
+      "contract_issue": null,
+      "execution_report_sha256": "bf0d7fa5408798c12b13ff1fcb65f9a19b505af81018159eb80052dd7fe1ecd8",
+      "generation": {
+        "cached_input_tokens": 0,
+        "generation_latency_seconds": 21.36392141703982,
+        "input_tokens": 14919,
+        "model_evidence_level": "requested_cli_contract_only",
+        "output_tokens": 882,
+        "provider_reported_model_ids": [],
+        "raw_trace_sha256": "7511eb0d83e49a2427c73f428e0187f0e611f7ab27a74db5b1a6bd331d487541",
+        "requested_model_id": "gpt-5.6-terra",
+        "response_sha256": "23322e7fba2d8cc4ed2454c7b2a4f871681ca63449749aa212a3c6248a18d11c"
+      },
+      "metrics": {
+        "format_gate": true,
+        "held_out_pass_rate": 1.0,
+        "negative_route_accuracy": 0.0,
+        "off_task_artifact_count": 0,
+        "positive_route_accuracy": 1.0,
+        "promotion": false,
+        "safety_gate": true,
+        "target_pass_rate": 1.0
+      },
+      "policy_sha256": "b99c899363f15e01979c08358f738aa0e9d9afeabcac211585778c58c9543394",
+      "prompt_sha256": "77abf88922d0d1c1eaa9a46c9e2eb9694f3eef373b4e3c67ae70009a0facacbd",
+      "repeat": 1,
+      "run_id": "r1-parse-key-value-config-governed-authoring-policy",
+      "semantic_cases": [
+        {
+          "actual_top_level": "dict",
+          "case_id": "config-target-basic",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "947e0dc8f5f14706f587d666c34bd4f7edc601d28095bff50dc274b6a10d1413"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "config-target-first-equals",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "be1a4f195a5f99ddd56e0fba4be2d70121f719c06919f8f2b1be06be7a80a396"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "config-held-unicode",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "held_out",
+          "workspace_manifest_sha256": "dc4bfdac5d353fabff7b696b52d803b49344e45eb563d545b0fab3a11e9a9409"
+        }
+      ],
+      "task": "parse-key-value-config",
+      "task_contract_sha256": "3ca4f093c975448981c1d61a6b2855a939232a945d028a754e5f07abbb309636"
+    },
+    {
+      "arm": "governed-authoring-policy",
+      "candidate": {
+        "bytes": 2618,
+        "description_chars": 150,
+        "exclusion_count": 0,
+        "file_count": 3,
+        "manifest_sha256": "a0ccdb4291653a599a4deff3cd25f972b11fdb44e1dc4558058ba5166e13a54f",
+        "skill_md_lines": 21,
+        "skill_md_sha256": "19663e19341af3979a0c5cc80eab9d5eac00d510934c13e660881bc13a74751d"
+      },
+      "contract_eligible": true,
+      "contract_issue": null,
+      "execution_report_sha256": "c9c7aa752b9965d6cf6c8a05d4ded2daa67c87ab018659273edc3c8a0fc713c7",
+      "generation": {
+        "cached_input_tokens": 0,
+        "generation_latency_seconds": 17.526423958013766,
+        "input_tokens": 14937,
+        "model_evidence_level": "requested_cli_contract_only",
+        "output_tokens": 693,
+        "provider_reported_model_ids": [],
+        "raw_trace_sha256": "09b34aac420f0b896e043fae6505a8c0ae7af2c38e25624686df72e69cf6ec61",
+        "requested_model_id": "gpt-5.6-terra",
+        "response_sha256": "25ad94d94fd8f6fbb8314336ab8a87dc33e38fe7148586824db2f417c816bff4"
+      },
+      "metrics": {
+        "format_gate": true,
+        "held_out_pass_rate": 1.0,
+        "negative_route_accuracy": 1.0,
+        "off_task_artifact_count": 0,
+        "positive_route_accuracy": 1.0,
+        "promotion": true,
+        "safety_gate": true,
+        "target_pass_rate": 1.0
+      },
+      "policy_sha256": "b99c899363f15e01979c08358f738aa0e9d9afeabcac211585778c58c9543394",
+      "prompt_sha256": "a59f28bc7d56529b8070dc6882d6c997fcb8480f8134c64e7751fdfeb41bc476",
+      "repeat": 2,
+      "run_id": "r2-extract-todo-items-governed-authoring-policy",
+      "semantic_cases": [
+        {
+          "actual_top_level": "dict",
+          "case_id": "todo-target-basic",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "db1730a9194ddcc45329655dabc74a56e7e94d355ecc2908abaefb8485cb395c"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "todo-target-spacing",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "ad185973d09552521da4f6e27ec09ecae0c07c95881f12ac9f603f692529eaf6"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "todo-held-korean",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "held_out",
+          "workspace_manifest_sha256": "4e1c0831b6f0a546b1793fe1c4acfc7eecee7f9b2aeff51e179d0a0eb329de1f"
+        }
+      ],
+      "task": "extract-todo-items",
+      "task_contract_sha256": "9d1f1ddf5c34568d7201272eb849889cf2d7d2c7c1f84bc9c2466154e746e916"
+    },
+    {
+      "arm": "target-contract-only",
+      "candidate": {
+        "bytes": 2095,
+        "description_chars": 99,
+        "exclusion_count": 0,
+        "file_count": 3,
+        "manifest_sha256": "fbe61407407c54d09a1f088ba2cb31f06c2015d1466b896342a445e24625ef11",
+        "skill_md_lines": 32,
+        "skill_md_sha256": "858ec70e4cf8b3994c622d5fc7b208d583cd58c207f15f0cc0e493adaaa6f71d"
+      },
+      "contract_eligible": true,
+      "contract_issue": null,
+      "execution_report_sha256": "ed41e779b0e90a0098bc403beeaa6f6eb9371ee01e7ccb76218efe282111e5ed",
+      "generation": {
+        "cached_input_tokens": 12544,
+        "generation_latency_seconds": 14.979134583030827,
+        "input_tokens": 14052,
+        "model_evidence_level": "requested_cli_contract_only",
+        "output_tokens": 585,
+        "provider_reported_model_ids": [],
+        "raw_trace_sha256": "cf2c2754ca9b74d629777e4a00c0a0c5aa741b98d5bd810bbf1a43856acb463d",
+        "requested_model_id": "gpt-5.6-terra",
+        "response_sha256": "b270481df009a0d22047388ff8bf0ff7bcbb4a5a14b637aecb2de65e5d745a04"
+      },
+      "metrics": {
+        "format_gate": false,
+        "held_out_pass_rate": 1.0,
+        "negative_route_accuracy": 1.0,
+        "off_task_artifact_count": 0,
+        "positive_route_accuracy": 1.0,
+        "promotion": false,
+        "safety_gate": true,
+        "target_pass_rate": 1.0
+      },
+      "policy_sha256": null,
+      "prompt_sha256": "24d8ca01eb02b99e21817eeb06f3486d1efc2724a2607a6e153dddfbb87f9c84",
+      "repeat": 2,
+      "run_id": "r2-extract-todo-items-target-contract-only",
+      "semantic_cases": [
+        {
+          "actual_top_level": "dict",
+          "case_id": "todo-target-basic",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "db1730a9194ddcc45329655dabc74a56e7e94d355ecc2908abaefb8485cb395c"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "todo-target-spacing",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "ad185973d09552521da4f6e27ec09ecae0c07c95881f12ac9f603f692529eaf6"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "todo-held-korean",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "held_out",
+          "workspace_manifest_sha256": "4e1c0831b6f0a546b1793fe1c4acfc7eecee7f9b2aeff51e179d0a0eb329de1f"
+        }
+      ],
+      "task": "extract-todo-items",
+      "task_contract_sha256": "9d1f1ddf5c34568d7201272eb849889cf2d7d2c7c1f84bc9c2466154e746e916"
+    },
+    {
+      "arm": "governed-authoring-policy",
+      "candidate": {
+        "bytes": 2613,
+        "description_chars": 187,
+        "exclusion_count": 0,
+        "file_count": 3,
+        "manifest_sha256": "b2c2b0bea46417ba54d9290d593799a81f9de486f4d5f57fc74639f261506c7b",
+        "skill_md_lines": 18,
+        "skill_md_sha256": "ca4551a2773f212b3a14f4bc871fd74c234e1212ac3ca758d2867213e7a50704"
+      },
+      "contract_eligible": false,
+      "contract_issue": "top_level_json_shape_not_frozen_before_generation",
+      "execution_report_sha256": "220625821ec4e8e226591ca9279d2e5b511c60ba5f3cbcafb6af863a00af670f",
+      "generation": {
+        "cached_input_tokens": 0,
+        "generation_latency_seconds": 15.957612666999921,
+        "input_tokens": 14934,
+        "model_evidence_level": "requested_cli_contract_only",
+        "output_tokens": 713,
+        "provider_reported_model_ids": [],
+        "raw_trace_sha256": "76e64a46f84414d8b6b54339d7d0b80691cbf90afbf98626d0ab5c89c7fcef66",
+        "requested_model_id": "gpt-5.6-terra",
+        "response_sha256": "4d219df6068d5fbd39b6341c2a7a247605864e6a8d74f335855ad23e10482836"
+      },
+      "metrics": {
+        "format_gate": true,
+        "held_out_pass_rate": 0.0,
+        "negative_route_accuracy": 0.0,
+        "off_task_artifact_count": 0,
+        "positive_route_accuracy": 1.0,
+        "promotion": false,
+        "safety_gate": true,
+        "target_pass_rate": 0.0
+      },
+      "policy_sha256": "b99c899363f15e01979c08358f738aa0e9d9afeabcac211585778c58c9543394",
+      "prompt_sha256": "b982931d0a54fc445719a3528172f465412098b2046f4ff2b6040d4b46aebfff",
+      "repeat": 2,
+      "run_id": "r2-extract-markdown-links-governed-authoring-policy",
+      "semantic_cases": [
+        {
+          "actual_top_level": "list",
+          "case_id": "links-target-basic",
+          "expected_top_level": "dict",
+          "semantic_json_match": false,
+          "split": "target",
+          "workspace_manifest_sha256": "38ff28e6beedcd366d0fb45ca665cae63af7b144ded427f53b642c071defe173"
+        },
+        {
+          "actual_top_level": "list",
+          "case_id": "links-target-ignore-image",
+          "expected_top_level": "dict",
+          "semantic_json_match": false,
+          "split": "target",
+          "workspace_manifest_sha256": "e5723f6bdd8332d084ebefdfed127ee0da347eb0750dd768480ee84f8ed3ce96"
+        },
+        {
+          "actual_top_level": "list",
+          "case_id": "links-held-unicode",
+          "expected_top_level": "dict",
+          "semantic_json_match": false,
+          "split": "held_out",
+          "workspace_manifest_sha256": "060bacc838808d8ca432571c7deb2149a2c21b4bd9753f6d230da440bfc77892"
+        }
+      ],
+      "task": "extract-markdown-links",
+      "task_contract_sha256": "b04f34f1d7baa7e372b8c3059d1aef911b95f244e0673a8b8cd1cd51f49d5563"
+    },
+    {
+      "arm": "target-contract-only",
+      "candidate": {
+        "bytes": 2109,
+        "description_chars": 125,
+        "exclusion_count": 0,
+        "file_count": 3,
+        "manifest_sha256": "7d00a0cd8604012ae91a30b2977421691a41cfb5edd07682b451723aa9b4b1fa",
+        "skill_md_lines": 28,
+        "skill_md_sha256": "bf5ba19ba6f36b896532317e415e32ba4b786e75635888edcdbd58f033fb452c"
+      },
+      "contract_eligible": false,
+      "contract_issue": "top_level_json_shape_not_frozen_before_generation",
+      "execution_report_sha256": "8fae15ac8f0f4943d0d41591108fe6fc3137eb3924c162fda819643b5990e7c4",
+      "generation": {
+        "cached_input_tokens": 12544,
+        "generation_latency_seconds": 15.187512542004697,
+        "input_tokens": 14049,
+        "model_evidence_level": "requested_cli_contract_only",
+        "output_tokens": 627,
+        "provider_reported_model_ids": [],
+        "raw_trace_sha256": "657e569dcbc12a456ad339313ed07ae3b6a56a2897869e5038a89f8fd643de6b",
+        "requested_model_id": "gpt-5.6-terra",
+        "response_sha256": "e721bf45edc693242a420338bb12977557ec2b93c7ef456355afa1e363f0c87e"
+      },
+      "metrics": {
+        "format_gate": false,
+        "held_out_pass_rate": 0.0,
+        "negative_route_accuracy": 0.5,
+        "off_task_artifact_count": 0,
+        "positive_route_accuracy": 1.0,
+        "promotion": false,
+        "safety_gate": true,
+        "target_pass_rate": 0.0
+      },
+      "policy_sha256": null,
+      "prompt_sha256": "954db76013c16c4eee588c8cf93b6f48bcd1b52d52ec74d463f396d5ea2d4cd0",
+      "repeat": 2,
+      "run_id": "r2-extract-markdown-links-target-contract-only",
+      "semantic_cases": [
+        {
+          "actual_top_level": "list",
+          "case_id": "links-target-basic",
+          "expected_top_level": "dict",
+          "semantic_json_match": false,
+          "split": "target",
+          "workspace_manifest_sha256": "38ff28e6beedcd366d0fb45ca665cae63af7b144ded427f53b642c071defe173"
+        },
+        {
+          "actual_top_level": "list",
+          "case_id": "links-target-ignore-image",
+          "expected_top_level": "dict",
+          "semantic_json_match": false,
+          "split": "target",
+          "workspace_manifest_sha256": "e5723f6bdd8332d084ebefdfed127ee0da347eb0750dd768480ee84f8ed3ce96"
+        },
+        {
+          "actual_top_level": "list",
+          "case_id": "links-held-unicode",
+          "expected_top_level": "dict",
+          "semantic_json_match": false,
+          "split": "held_out",
+          "workspace_manifest_sha256": "060bacc838808d8ca432571c7deb2149a2c21b4bd9753f6d230da440bfc77892"
+        }
+      ],
+      "task": "extract-markdown-links",
+      "task_contract_sha256": "b04f34f1d7baa7e372b8c3059d1aef911b95f244e0673a8b8cd1cd51f49d5563"
+    },
+    {
+      "arm": "governed-authoring-policy",
+      "candidate": {
+        "bytes": 3509,
+        "description_chars": 209,
+        "exclusion_count": 0,
+        "file_count": 3,
+        "manifest_sha256": "db435a4ed61529b0669b642243ab6a09d8afd7c35d14a59e047a1adb6ecd694a",
+        "skill_md_lines": 39,
+        "skill_md_sha256": "14c9977d7a54af18ee9c044a39800b9ec03422caeca3497241c9c24eb4c7e787"
+      },
+      "contract_eligible": true,
+      "contract_issue": null,
+      "execution_report_sha256": "e3a57d3d021d683e37d2784bc699a71e19f2097b064a51a90087e9c0f573a14f",
+      "generation": {
+        "cached_input_tokens": 0,
+        "generation_latency_seconds": 21.30357420805376,
+        "input_tokens": 14919,
+        "model_evidence_level": "requested_cli_contract_only",
+        "output_tokens": 917,
+        "provider_reported_model_ids": [],
+        "raw_trace_sha256": "8df0d398dc6fc625c2ffba88c8c1f863cdf596916dfd624ec36cf5efb502f4db",
+        "requested_model_id": "gpt-5.6-terra",
+        "response_sha256": "1c8676524c515b2c517dbb0c035fdb51ff58093f58230f44ff7214a576d51371"
+      },
+      "metrics": {
+        "format_gate": true,
+        "held_out_pass_rate": 1.0,
+        "negative_route_accuracy": 0.0,
+        "off_task_artifact_count": 0,
+        "positive_route_accuracy": 1.0,
+        "promotion": false,
+        "safety_gate": true,
+        "target_pass_rate": 1.0
+      },
+      "policy_sha256": "b99c899363f15e01979c08358f738aa0e9d9afeabcac211585778c58c9543394",
+      "prompt_sha256": "77abf88922d0d1c1eaa9a46c9e2eb9694f3eef373b4e3c67ae70009a0facacbd",
+      "repeat": 2,
+      "run_id": "r2-parse-key-value-config-governed-authoring-policy",
+      "semantic_cases": [
+        {
+          "actual_top_level": "dict",
+          "case_id": "config-target-basic",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "947e0dc8f5f14706f587d666c34bd4f7edc601d28095bff50dc274b6a10d1413"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "config-target-first-equals",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "be1a4f195a5f99ddd56e0fba4be2d70121f719c06919f8f2b1be06be7a80a396"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "config-held-unicode",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "held_out",
+          "workspace_manifest_sha256": "dc4bfdac5d353fabff7b696b52d803b49344e45eb563d545b0fab3a11e9a9409"
+        }
+      ],
+      "task": "parse-key-value-config",
+      "task_contract_sha256": "3ca4f093c975448981c1d61a6b2855a939232a945d028a754e5f07abbb309636"
+    },
+    {
+      "arm": "target-contract-only",
+      "candidate": {
+        "bytes": 2481,
+        "description_chars": 160,
+        "exclusion_count": 0,
+        "file_count": 3,
+        "manifest_sha256": "de186a9d9896b6cff585478a8e7862ddc922235bfe75c76587f8197602e7b775",
+        "skill_md_lines": 30,
+        "skill_md_sha256": "c6d0d3bbac76b0d8f9ba24bd35a78b5ba0a4b6e35bbe18df41cd8afa15b1a2c7"
+      },
+      "contract_eligible": true,
+      "contract_issue": null,
+      "execution_report_sha256": "5a4b13caba27fe5b006ab3b72369c478216e0db383e368a3cdf2037415056666",
+      "generation": {
+        "cached_input_tokens": 12544,
+        "generation_latency_seconds": 16.94272170891054,
+        "input_tokens": 14034,
+        "model_evidence_level": "requested_cli_contract_only",
+        "output_tokens": 659,
+        "provider_reported_model_ids": [],
+        "raw_trace_sha256": "540f54e010a79e6055c02faaf652007761bfc065aafb2ef70d24469191bce4b1",
+        "requested_model_id": "gpt-5.6-terra",
+        "response_sha256": "572aad7cc2ccb8218128639462e9b12ba4bf37fddd2d6759b38e48b51c2373b0"
+      },
+      "metrics": {
+        "format_gate": false,
+        "held_out_pass_rate": 1.0,
+        "negative_route_accuracy": 0.0,
+        "off_task_artifact_count": 0,
+        "positive_route_accuracy": 1.0,
+        "promotion": false,
+        "safety_gate": true,
+        "target_pass_rate": 1.0
+      },
+      "policy_sha256": null,
+      "prompt_sha256": "945c061e4cdec31b593a7033fa292d2b6fe54fed7685b880d51f0a4c3b52aa7f",
+      "repeat": 2,
+      "run_id": "r2-parse-key-value-config-target-contract-only",
+      "semantic_cases": [
+        {
+          "actual_top_level": "dict",
+          "case_id": "config-target-basic",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "947e0dc8f5f14706f587d666c34bd4f7edc601d28095bff50dc274b6a10d1413"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "config-target-first-equals",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "target",
+          "workspace_manifest_sha256": "be1a4f195a5f99ddd56e0fba4be2d70121f719c06919f8f2b1be06be7a80a396"
+        },
+        {
+          "actual_top_level": "dict",
+          "case_id": "config-held-unicode",
+          "expected_top_level": "dict",
+          "semantic_json_match": true,
+          "split": "held_out",
+          "workspace_manifest_sha256": "dc4bfdac5d353fabff7b696b52d803b49344e45eb563d545b0fab3a11e9a9409"
+        }
+      ],
+      "task": "parse-key-value-config",
+      "task_contract_sha256": "3ca4f093c975448981c1d61a6b2855a939232a945d028a754e5f07abbb309636"
+    }
+  ],
+  "schema_version": 1
+}

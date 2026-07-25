@@ -1,0 +1,9 @@
+{"request_id":"1","command":"bridge.hello","payload":{}}
+{"request_id":"2","command":"account.status","payload":{}}
+{"request_id":"3","command":"account.connect_spec","payload":{}}
+{"request_id":"4","command":"session.start","payload":{"workspace":"/absolute/path/to/project","model":"gpt-5.6-terra","effort":"high","routing_mode":"semantic","autonomy_mode":"managed"}}
+{"request_id":"5","command":"chat.send","payload":{"text":"Inspect this project and fix the failing unit test."}}
+{"request_id":"6","command":"session.status","payload":{}}
+{"request_id":"7","command":"approval.resolve","payload":{"approved":true}}
+{"request_id":"8","command":"feedback.record","payload":{"outcome":"pass"}}
+{"request_id":"9","command":"session.new_thread","payload":{}}

@@ -1,0 +1,10 @@
+{
+  "evidence_supported": true,
+  "interaction_assessment": "Candidates are isolated exact-command replacements; rank by frozen action-space order and leave promotion to the deterministic gate.",
+  "revision_request": null,
+  "ship_ranking": [
+    "repair-git-status-read"
+  ],
+  "stage": "critic",
+  "verdict": "ship"
+}

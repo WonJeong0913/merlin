@@ -1,0 +1,12 @@
+{
+  "invocation_name": "01-digester",
+  "prompt_sha256": null,
+  "provider_call_observed": false,
+  "provider_reported_model_ids": [],
+  "raw_trace_pointer": null,
+  "raw_trace_sha256": null,
+  "requested_effort": null,
+  "requested_model_id": null,
+  "response_sha256": null,
+  "stage_name": "digester"
+}

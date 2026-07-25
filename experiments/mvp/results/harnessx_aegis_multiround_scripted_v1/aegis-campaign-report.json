@@ -1,0 +1,76 @@
+{
+  "action_space": {
+    "action_space_id": "exact-read-expansion-v1",
+    "allowed_exact_command_additions": [
+      "ls -1",
+      "/bin/ls -1",
+      "git status --short"
+    ],
+    "max_additions_per_candidate": 1,
+    "max_candidates": 2
+  },
+  "action_space_sha256": "63cf3bf2fe16d97561fcf5efef7d2835279942da220e606bdb9257cc7152b844",
+  "evidence_boundary": {
+    "full_paper_AEGIS_claim": false,
+    "language_model_authorizes_shipping": false,
+    "one_exact_addition_per_candidate": true,
+    "round_transition_requires_verified_progress": true,
+    "same_frozen_suite_every_round": true
+  },
+  "evidence_sha256": "b32167246d809d6aa7e4bc02065e1550e81302f04ac096b2af74a6a40eec0370",
+  "final_pass_count": 50,
+  "final_resolved_variant_id": "aegis-repair-git-status-read",
+  "final_resolved_variant_sha256": "edd283773faa2ab4965ed2daf7a6cecb3b5d1764821bf1a5338217640ca4e85c",
+  "final_task_count": 50,
+  "initial_parent_variant_sha256": "cb063379ee75a72bbe1bb0f357baa737a366ca664c7f134ffdb18524fe839b72",
+  "max_rounds": 3,
+  "provider_call_count": 0,
+  "round_count": 3,
+  "rounds": [
+    {
+      "failure_case_ids_after": [
+        "exact-absolute-list",
+        "git-status-read"
+      ],
+      "failure_case_ids_before": [
+        "directory-list-read",
+        "exact-absolute-list",
+        "git-status-read"
+      ],
+      "parent_variant_sha256": "cb063379ee75a72bbe1bb0f357baa737a366ca664c7f134ffdb18524fe839b72",
+      "provider_call_count": 0,
+      "resolved_variant_sha256": "47e9adfbb73686a6faeec6cebcc7abbfacbfe4c3b00f59afe5facbcba5a9359f",
+      "round_evidence_sha256": "d24d0a8335c6818ccadb813d22bbba16eb56edcbc2760a1d33a560c8b6131b94",
+      "round_index": 1
+    },
+    {
+      "failure_case_ids_after": [
+        "git-status-read"
+      ],
+      "failure_case_ids_before": [
+        "exact-absolute-list",
+        "git-status-read"
+      ],
+      "parent_variant_sha256": "47e9adfbb73686a6faeec6cebcc7abbfacbfe4c3b00f59afe5facbcba5a9359f",
+      "provider_call_count": 0,
+      "resolved_variant_sha256": "7e35a511f58a0fe039419bc069c6f0804d290fb3d9f4af3ef5fe2391c4a2ab96",
+      "round_evidence_sha256": "04f6a04f2820d4b92ff77cd367ef501949c500c331fa8f54b7563631570ed802",
+      "round_index": 2
+    },
+    {
+      "failure_case_ids_after": [],
+      "failure_case_ids_before": [
+        "git-status-read"
+      ],
+      "parent_variant_sha256": "7e35a511f58a0fe039419bc069c6f0804d290fb3d9f4af3ef5fe2391c4a2ab96",
+      "provider_call_count": 0,
+      "resolved_variant_sha256": "edd283773faa2ab4965ed2daf7a6cecb3b5d1764821bf1a5338217640ca4e85c",
+      "round_evidence_sha256": "28e668ccd4852ad6cf96188bb86424357fdeb5cd3cb1cb91bb08f9aa32fd43ca",
+      "round_index": 3
+    }
+  ],
+  "schema_version": "the-king-harnessx-aegis-campaign-v1",
+  "verifier_suite_id": "live-policy-multitarget-50-v1",
+  "verifier_suite_sha256": "3de80f97f6e573a71db9f197fe83ca05b72e81fb00aab3f0da2d1086e1580e53",
+  "verifier_task_count": 50
+}

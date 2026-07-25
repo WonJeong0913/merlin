@@ -1,0 +1,4 @@
+interface:
+  display_name: "Author Governed Skills"
+  short_description: "Create verifier-governed portable agent skills"
+  default_prompt: "Use $author-governed-skills to author a minimal portable skill candidate with frozen positive and negative cases."
