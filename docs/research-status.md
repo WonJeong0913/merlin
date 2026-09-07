@@ -1,6 +1,6 @@
 # Research status and evidence
 
-Snapshot: **2026-09-07, 16:46 KST**. This is a dated development checkpoint,
+Snapshot: **2026-09-07, after the v67 terminal audit**. This is a dated development checkpoint,
 not a live dashboard. [Project overview](../README.md) · [한국어 포트폴리오](portfolio.md)
 
 ## Publication scope
@@ -20,11 +20,11 @@ sample or an official 87×3 benchmark reproduction. Model: `gpt-5.6-luna`,
 reasoning effort: `medium`. Run state can inherit permitted previous-epoch
 experience; versions are not independent repetitions.
 
-| Development task | Ordinal | v63 reward | v65 reward | v66 reward |
-| --- | ---: | ---: | ---: | ---: |
-| fix-druid-loophole-cve | 30 | 0 | Unscored / blocked | 0 |
-| setup-fuzzing-py | 73 | 0.16 | 0.50 | 0.16 |
-| syzkaller-ppdev-syzlang | 80 | 0 | 0 | 0 |
+| Development task | Ordinal | v63 reward | v65 reward | v66 reward | v67 reward |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| fix-druid-loophole-cve | 30 | 0 | Unscored / blocked | 0 | 0 |
+| setup-fuzzing-py | 73 | 0.16 | 0.50 | 0.16 | 0 |
+| syzkaller-ppdev-syzlang | 80 | 0 | 0 | 0 | 0 |
 
 For v66:
 
@@ -45,7 +45,7 @@ of scorer/image/resources and total computation has not been established.
 They are descriptive references, not proof that Merlin causally outperforms
 C0/G. There is no current corrected Full87 result.
 
-## v67: implementation verified, actual efficacy pending
+## v67: completed execution, no performance recovery
 
 v66 gave a corrective turn to completed public-check failures, but not to
 observed timeout diagnostics. v67 changes that eligibility rule: a validated
@@ -67,21 +67,50 @@ Verified development-workspace checks:
 | Source consistency | 241 pins checked, including 234 unchanged previous-version pins | Third-party attestation |
 | Source handoff | 108 snapshots: G87 + 21 Merlin versions; 3 lessons and 1 retained bundle | All prior experience has proven utility |
 
-Actual fresh run `full87-managed-growth-v67-dev3-r1` started with source epoch12
-to13. At this checkpoint, ordinal30 has four observed AEGIS stage calls, a new
-quarantined repair candidate, HSEG `READY_FULL` selection with one skill, and
-an exact request-bound body verified by the first runtime hook.
+Run `full87-managed-growth-v67-dev3-r1`, source epoch12 to13, completed
+with runner exit0 and **3/3 official verifier-complete results**. Rewards were
+**0 / 0 / 0**: mean0, strict pass0/3, positive reward0/3, official zeros3/3,
+missing/nonofficial0 and earned promotion0.
 
-That body occurs once in the serialized initial request. This is injection
-evidence, not provider-native skill invocation or proof that every instruction
-was followed. Public declaration/contract binding is not a completed
-container-level functional check. Official v67 results are **pending**, not zero.
-Full87 remains gated on development outcomes and readiness.
+The paired three-task mean decreased by **5.33 percentage points** from v66.
+Strict rescue/harm was0/0. Single-run variation and different generated/selected
+skills prevent attributing that difference to the corrective-turn change alone.
+This is not evidence of improvement over C0/G or of general management efficacy.
+
+Four AEGIS rounds produced at least16 completed stage calls. Selected skill
+counts were1/2/1; each selected raw body occurred exactly once in its initial
+serialized request. All three tasks received one bounded same-session correction:
+six ACP prompt calls across three solver attempts. These counts have different
+denominators and must not be conflated. Engine sequence elapsed about58.01 minutes.
+Final token snapshots are not established as cumulative multi-prompt totals.
+
+Public checks still showed Maven configuration failure on ordinal30 and a full
+build failure on ordinal80. Ordinal73 changed from an external timeout to a
+completed nonzero fuzz check; this alone proves neither improvement nor cause.
+Request injection and persisted dialogue matching are not provider-native
+skill invocation; no native invocation was observed.
+
+The terminal handoff loaded111 snapshots,3 singleton lessons and2 bundle records,
+including the newest ordinal73 two-skill failure bundle. This proves preserved
+lineage and loadable experience, not useful skills or a future successful repair.
+
+## v68: diagnostic delivery under development
+
+The next forward version targets bounded, allowlisted public failure signatures
+through collection, corrective feedback and next-epoch singleton/bundle learning.
+Coarse return codes and categories alone can omit information needed for repair.
+This is a supported information-loss finding, not a proven explanation of every
+official zero or a promise of higher scores. Integration and independent
+verification remain incomplete; no v68 actual performance result is claimed.
+Full87 remains closed pending development outcomes and readiness.
 
 ## Compact evidence index
 
 | Artifact | SHA-256 |
 | --- | --- |
+| v67 final result, 165,379 bytes | `80dd564d4b91fa0cb26df69e2016b0532168710dfaf66febe29a211677d82087` |
+| v67 ledger event tip, 170 events | `f27d82f2a3278778e62fc77fd7513992974422b6c6884fa9b1c37c8b56bbdfdd` |
+| v67 terminal handoff | `07822da77c6607efa06c01d8d0f9cffe708a60f62959249f4ac56accab0bc6ea` |
 | v66 final result, 134,670 bytes | `9147a39d944c641a185a37280d519b61164393b6a2cf4b74a16b003388c36ad3` |
 | v66 ledger event tip, 170 events | `eec8237d88f635065c9a3f3839bb6f590167ce7864713cbccccdc698e4c0d0d0` |
 | v66-to-v67 authenticated handoff | `bbf0a9ff82903231c3ea5c44ce6715cdc9aa2b58ab039c8e253f762191da5821` |
