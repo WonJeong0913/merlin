@@ -1,6 +1,6 @@
 # Research status and evidence
 
-Snapshot: **2026-09-07, after the v69 terminal-result check**. This is a dated development checkpoint,
+Snapshot: **2026-09-07, v69 terminal results and v70 launch checkpoint**. This is a dated development checkpoint,
 not a live dashboard. [Project overview](../README.md) · [한국어 포트폴리오](portfolio.md)
 
 ## Publication scope
@@ -183,6 +183,41 @@ Terminal execution and official coverage are complete; this snapshot does not
 claim a separately revalidated terminal handoff or cumulative multi-prompt token
 totals. Further work is to connect permitted diagnostic experience to useful
 repair and confirm improvement before broader evaluation.
+
+## v70: observational experience delivery — launch checkpoint
+
+Checkpoint dated 2026-09-07; not a live progress feed. V69 remains the latest
+completed run reported here. No V70 terminal result is included in this update.
+
+A sealed public timeout observation can exist without qualifying as a failure
+lesson. V70 routes that observation separately to the next epoch's digester,
+planner and evolver for the same public task. The observation remains UNKNOWN:
+no quality failure, individual blame or promotion is inferred. The critic,
+selector, scorer and existing quality transition rules are unchanged.
+
+Sixteen focused tests passed in the development workspace and were independently
+rerun. The provider-free plan matched exactly and binds 283 artifacts (276 prior
+pins plus seven new files). The authenticated V69 handoff contains 117 snapshots,
+three lessons and one bundle. These counts establish traceability, not skill utility.
+
+After readiness checks, the three-task V70 development run was started once.
+At the recorded initial checkpoint, ordinal30 had four completed AEGIS stage
+receipts and one selected body appearing exactly once in the initial request.
+The new observational packet targets ordinal73, not ordinal30; its delivery in
+an actual ordinal73 run is not claimed from ordinal30's evidence. Reused development
+tasks and previous-epoch experience remain repeated-workload adaptation.
+
+| V70 checkpoint artifact | SHA-256 |
+| --- | --- |
+| Observational guidance source | `27aac6620361c0087165af63152a47c870696b3458bf35da79bb616f46753d24` |
+| Engine integration source | `624d9ca295b8353ff7ea0bfdd655a53719fafe4f5c0d33b6f933ec070343f66e` |
+| Dev3 adapter source | `e9bf3214d507f87620753d5bd7305b97aa24dc0c43c411f9fa50eaff66c2a2af` |
+| Provider-free plan stdout, 204,731 bytes including LF | `2a199cd7c51520dbbbb459b21c6cce435d98f8c337edd36ede6217810c901903` |
+| Authenticated V69 handoff | `7b925807160a3dd7d954878ec69ded1bda258869c2b892c416bebdd9cb3cbb3d` |
+
+This documentation update does not publish those source files or private runtime
+artifacts. It does not establish public reproducibility, native invocation,
+performance improvement or readiness for Full87.
 
 ## Compact evidence index
 
