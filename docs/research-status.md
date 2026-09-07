@@ -1,6 +1,6 @@
 # Research status and evidence
 
-Snapshot: **2026-09-07, after the v68 terminal audit**. This is a dated development checkpoint,
+Snapshot: **2026-09-07, after the v69 terminal-result check**. This is a dated development checkpoint,
 not a live dashboard. [Project overview](../README.md) · [한국어 포트폴리오](portfolio.md)
 
 ## Publication scope
@@ -20,11 +20,11 @@ sample or an official 87×3 benchmark reproduction. Model: `gpt-5.6-luna`,
 reasoning effort: `medium`. Run state can inherit permitted previous-epoch
 experience; versions are not independent repetitions.
 
-| Development task | Ordinal | v63 reward | v65 reward | v66 reward | v67 reward | v68 reward |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| fix-druid-loophole-cve | 30 | 0 | Unscored / blocked | 0 | 0 | 0 |
-| setup-fuzzing-py | 73 | 0.16 | 0.50 | 0.16 | 0 | 0.16 |
-| syzkaller-ppdev-syzlang | 80 | 0 | 0 | 0 | 0 | 0 |
+| Development task | Ordinal | v63 reward | v65 reward | v66 reward | v67 reward | v68 reward | v69 reward |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| fix-druid-loophole-cve | 30 | 0 | Unscored / blocked | 0 | 0 | 0 | 0 |
+| setup-fuzzing-py | 73 | 0.16 | 0.50 | 0.16 | 0 | 0.16 | 0.16 |
+| syzkaller-ppdev-syzlang | 80 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 For v66:
 
@@ -150,10 +150,47 @@ closed pending development outcomes and readiness.
 Readiness tests do not establish efficacy. The terminal results above establish
 completed execution with partial reward, not reliable performance recovery.
 
+## v69: toolchain observations connected; official performance unchanged
+
+Run `full87-managed-growth-v69-dev3-r1` completed its three scheduled
+development tasks. The terminal summary and individual official rows record
+**0 / 0.16 / 0**, mean **0.05333 (5.33/100)**, strict pass **0/3**, positive
+reward **1/3**, official zeros **2/3**, and missing/nonofficial **0**.
+The three-task mean is unchanged from v68. This is not a Full87 result or
+evidence of reliable performance recovery.
+
+The forward change adds a bounded same-container public toolchain observation
+immediately before an eligible corrective turn. Requested tools come from the
+public check commands. The observer does not install tools or rewrite official
+configuration, and its facts are not yet imported as new next-epoch lessons.
+The selector, public functional recipes, scorer and existing learning path remain
+unchanged. Observation is capped at ten seconds within the original remaining
+solver deadline, not additional unbounded solving time.
+
+Nineteen focused development-workspace tests passed with independent
+re-execution (12 probe/corrective-plane tests and 7 adapter tests). The plan binds
+276 source artifacts: 268 previous pins and eight new files. This is scoped
+regression evidence, not an independently reproducible public package.
+
+The terminal summary records four AEGIS rounds and at least sixteen completed
+stage calls. Task30's observed Java configuration inconsistency persisted in its
+public Maven check after correction. Task73's public check remained
+`UNKNOWN/CHECK_TIMEOUT`, while its official reward was 0.16. A timeout is not
+relabeled as a quality failure or an explanation of the official score.
+Request injection remains distinct from native invocation.
+
+Terminal execution and official coverage are complete; this snapshot does not
+claim a separately revalidated terminal handoff or cumulative multi-prompt token
+totals. Further work is to connect permitted diagnostic experience to useful
+repair and confirm improvement before broader evaluation.
+
 ## Compact evidence index
 
 | Artifact | SHA-256 |
 | --- | --- |
+| v69 final result, 167,055 bytes | `fbb7b443bbdd2d80efb3ac553c8d6abd9e4cd6dc4891232f50fcfa74e164f692` |
+| v69 provider-free plan stdout, 201,870 bytes including LF | `3ffe11b81f0627b4a16084a831e0428cdcfe0fcb0c17a0a4dd11caec470e9493` |
+| v69 adapter source | `6534950fb43961268a8dac044066bc82602261cb6962283ece7d6e7fe8212863` |
 | v68 final result, 135,062 bytes | `5cd0d3fe174125b5272fc2bb73513453bed9cae96607dd54917f93593ec97674` |
 | v68 ledger event tip, 170 events | `8c2e7be08bbc86a1b118acfa2f15c9097a76b4d28dc16cb764fa378c2dd55e07` |
 | v68 terminal handoff | `90ca6c7a9b56e8025d82701a9ded393a3c2d3f592c15617cff85af5bcd44a3b4` |
