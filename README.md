@@ -67,10 +67,11 @@ earn official-success promotion.
 | Public feedback | Same-session corrective turn bounded by the original deadline; timeout remains `UNKNOWN` |
 | Prior run, v66 | 3/3 official results; rewards `0 / 0.16 / 0`; strict pass `0/3` |
 | Prior run, v67 | 3/3 official results; rewards `0 / 0 / 0`; one corrective turn per task; no earned promotion |
-| Latest completed run, v68 | 3/3 official results; rewards `0 / 0.16 / 0`; mean 5.33/100; strict pass `0/3`; no earned promotion |
+| Prior run, v68 | 3/3 official results; rewards `0 / 0.16 / 0`; mean 5.33/100; strict pass `0/3`; no earned promotion |
+| Latest completed run, v69 | 3/3 official results; rewards `0 / 0.16 / 0`; mean 5.33/100; strict pass `0/3`; unchanged from v68 |
 | Wider evaluation | Corrected Full87 run not launched; performance recovery remains an open goal |
 
-The v67 focused protocol, runtime-plane and adapter suites passed **17 tests**
+The v69 public toolchain/corrective-plane and adapter suites passed **19 focused tests**
 in the development workspace, with independent re-execution. This is a focused
 regression result, not full-suite coverage or evidence of task success.
 
@@ -95,7 +96,7 @@ milestones; [research status](docs/research-status.md) is the current summary.
 
 The September experimental runner, pinned benchmark inputs and operational
 artifacts are not all published in this documentation update. A fresh clone
-therefore does **not** reproduce v66–v68 by itself. Some historical tests depend
+therefore does **not** reproduce v66–v69 by itself. Some historical tests depend
 on intentionally excluded fixtures. Do not interpret this repository as a
 turnkey benchmark launcher or the latest full test suite as verified here.
 
