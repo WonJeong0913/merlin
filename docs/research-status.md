@@ -1,6 +1,6 @@
 # Research status and evidence
 
-Snapshot: **2026-09-07, after the v67 terminal audit**. This is a dated development checkpoint,
+Snapshot: **2026-09-07, after the v68 terminal audit**. This is a dated development checkpoint,
 not a live dashboard. [Project overview](../README.md) · [한국어 포트폴리오](portfolio.md)
 
 ## Publication scope
@@ -20,11 +20,11 @@ sample or an official 87×3 benchmark reproduction. Model: `gpt-5.6-luna`,
 reasoning effort: `medium`. Run state can inherit permitted previous-epoch
 experience; versions are not independent repetitions.
 
-| Development task | Ordinal | v63 reward | v65 reward | v66 reward | v67 reward |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| fix-druid-loophole-cve | 30 | 0 | Unscored / blocked | 0 | 0 |
-| setup-fuzzing-py | 73 | 0.16 | 0.50 | 0.16 | 0 |
-| syzkaller-ppdev-syzlang | 80 | 0 | 0 | 0 | 0 |
+| Development task | Ordinal | v63 reward | v65 reward | v66 reward | v67 reward | v68 reward |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| fix-druid-loophole-cve | 30 | 0 | Unscored / blocked | 0 | 0 | 0 |
+| setup-fuzzing-py | 73 | 0.16 | 0.50 | 0.16 | 0 | 0.16 |
+| syzkaller-ppdev-syzlang | 80 | 0 | 0 | 0 | 0 | 0 |
 
 For v66:
 
@@ -94,7 +94,7 @@ The terminal handoff loaded111 snapshots,3 singleton lessons and2 bundle records
 including the newest ordinal73 two-skill failure bundle. This proves preserved
 lineage and loadable experience, not useful skills or a future successful repair.
 
-## v68: diagnostic integration verified; development run started
+## v68: completed development run; performance recovery still unproven
 
 The next forward version targets bounded, allowlisted public failure signatures
 through collection, corrective feedback and next-epoch singleton/bundle learning.
@@ -114,12 +114,32 @@ the newest ordinal73 bundle at source epoch13 while preserving older history.
 The plan-summary defect in adapter r1 is retained as failed-version evidence;
 only the forward r2 adapter was admitted to this development run.
 
-After environment checks and source re-verification, the fresh run
-`full87-managed-growth-v68-dev3-r2` was started once for ordinals30/73/80.
-At this documentation checkpoint the launch intent is present and no terminal
-result is present. No v68 official performance result is claimed. This is
-previous-epoch repeated-workload adaptation, not independent replication.
-Full87 remains closed pending development outcomes and readiness.
+Run `full87-managed-growth-v68-dev3-r2` completed once for ordinals30/73/80,
+with exit0 and three finite official results: **0 / 0.16 / 0**. Mean reward
+was **0.05333 (5.33/100)**, strict pass0/3, positive reward1/3, official zeros2/3,
+missing/nonofficial0 and earned promotion0. This is **+5.33 percentage points**
+versus v67 and equal to v66, not consistent improvement across versions.
+
+All three tasks received one bounded corrective turn: six persisted ACP prompts
+across three solver attempts. Each selected body appeared exactly once in both
+its initial and corrective request. Three AEGIS rounds completed 12 stage calls.
+Engine sequence time was approximately48.89 minutes; this is not a total
+project-time estimate. Native skill invocation was not observed.
+
+The Maven configuration and full-build public failures persisted after
+correction. The fuzzing check completed nonzero with a syntax-error marker;
+that marker alone does not identify the originating component or explain
+official scoring. These observations narrow investigation but do not prove
+all causes of official zero.
+
+All268 source pins were rechecked without drift. An independent read-only
+handoff check loaded114 snapshots,3 lessons and2 bundles at source epoch14,
+preserving score semantics and experience lineage. Loadable experience is
+not evidence of useful repair.
+
+This is previous-epoch repeated-workload adaptation on reused development
+tasks, not independent replication or held-out validation. Full87 remains
+closed pending development outcomes and readiness.
 
 | v68 readiness artifact | SHA-256 |
 | --- | --- |
@@ -127,12 +147,16 @@ Full87 remains closed pending development outcomes and readiness.
 | Final dev3-r2 adapter | `2de5f0e294cf95f1cac343af5feaf54846fe35e10a3985894e710271b1d66961` |
 | Source-pinned launch consent | `6e1cac490269256616b4c1b4dbe01c18e34c45cc96eee0a37e1c64b3e87295ea` |
 
-Readiness and launch evidence do not establish successful execution or efficacy.
+Readiness tests do not establish efficacy. The terminal results above establish
+completed execution with partial reward, not reliable performance recovery.
 
 ## Compact evidence index
 
 | Artifact | SHA-256 |
 | --- | --- |
+| v68 final result, 135,062 bytes | `5cd0d3fe174125b5272fc2bb73513453bed9cae96607dd54917f93593ec97674` |
+| v68 ledger event tip, 170 events | `8c2e7be08bbc86a1b118acfa2f15c9097a76b4d28dc16cb764fa378c2dd55e07` |
+| v68 terminal handoff | `90ca6c7a9b56e8025d82701a9ded393a3c2d3f592c15617cff85af5bcd44a3b4` |
 | v67 final result, 165,379 bytes | `80dd564d4b91fa0cb26df69e2016b0532168710dfaf66febe29a211677d82087` |
 | v67 ledger event tip, 170 events | `f27d82f2a3278778e62fc77fd7513992974422b6c6884fa9b1c37c8b56bbdfdd` |
 | v67 terminal handoff | `07822da77c6607efa06c01d8d0f9cffe708a60f62959249f4ac56accab0bc6ea` |
