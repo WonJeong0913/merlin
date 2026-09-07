@@ -69,6 +69,7 @@ earn official-success promotion.
 | Prior run, v67 | 3/3 official results; rewards `0 / 0 / 0`; one corrective turn per task; no earned promotion |
 | Prior run, v68 | 3/3 official results; rewards `0 / 0.16 / 0`; mean 5.33/100; strict pass `0/3`; no earned promotion |
 | Latest completed run, v69 | 3/3 official results; rewards `0 / 0.16 / 0`; mean 5.33/100; strict pass `0/3`; unchanged from v68 |
+| Latest forward change, v70 | 16 focused tests independently rerun; permitted prior timeout observations connected to AEGIS authoring; dev3 launch recorded, no terminal performance claim |
 | Wider evaluation | Corrected Full87 run not launched; performance recovery remains an open goal |
 
 The v69 public toolchain/corrective-plane and adapter suites passed **19 focused tests**
