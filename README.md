@@ -68,8 +68,9 @@ earn official-success promotion.
 | Prior run, v66 | 3/3 official results; rewards `0 / 0.16 / 0`; strict pass `0/3` |
 | Prior run, v67 | 3/3 official results; rewards `0 / 0 / 0`; one corrective turn per task; no earned promotion |
 | Prior run, v68 | 3/3 official results; rewards `0 / 0.16 / 0`; mean 5.33/100; strict pass `0/3`; no earned promotion |
-| Latest completed run, v69 | 3/3 official results; rewards `0 / 0.16 / 0`; mean 5.33/100; strict pass `0/3`; unchanged from v68 |
-| Latest forward change, v70 | 16 focused tests independently rerun; permitted prior timeout observations connected to AEGIS authoring; dev3 launch recorded, no terminal performance claim |
+| Previous fully scored run, v69 | 3/3 official results; rewards `0 / 0.16 / 0`; mean 5.33/100; strict pass `0/3`; unchanged from v68 |
+| Latest terminal sequence, v70 | Official coverage 2/3: rewards `0 / 0 / unscored`; task80 blocked before dispatch; no performance recovery |
+| Forward repair, v71 | In development: align the new candidate identity across planning, repair and review; no new execution or efficacy claim at this checkpoint |
 | Wider evaluation | Corrected Full87 run not launched; performance recovery remains an open goal |
 
 The v69 public toolchain/corrective-plane and adapter suites passed **19 focused tests**
@@ -97,7 +98,7 @@ milestones; [research status](docs/research-status.md) is the current summary.
 
 The September experimental runner, pinned benchmark inputs and operational
 artifacts are not all published in this documentation update. A fresh clone
-therefore does **not** reproduce v66–v69 by itself. Some historical tests depend
+therefore does **not** reproduce v66–v70 by itself. Some historical tests depend
 on intentionally excluded fixtures. Do not interpret this repository as a
 turnkey benchmark launcher or the latest full test suite as verified here.
 
