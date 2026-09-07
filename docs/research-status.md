@@ -94,15 +94,40 @@ The terminal handoff loaded111 snapshots,3 singleton lessons and2 bundle records
 including the newest ordinal73 two-skill failure bundle. This proves preserved
 lineage and loadable experience, not useful skills or a future successful repair.
 
-## v68: diagnostic delivery under development
+## v68: diagnostic integration verified; development run started
 
 The next forward version targets bounded, allowlisted public failure signatures
 through collection, corrective feedback and next-epoch singleton/bundle learning.
 Coarse return codes and categories alone can omit information needed for repair.
 This is a supported information-loss finding, not a proven explanation of every
-official zero or a promise of higher scores. Integration and independent
-verification remain incomplete; no v68 actual performance result is claimed.
+official zero or a promise of higher scores.
+
+The V68_R2 collector/protocol, runtime planes and singleton learner passed
+29 focused tests, with independent re-execution. The sealed-source engine and
+bundle repair/request fixtures were checked separately. The final dev3-r2
+adapter passed seven focused tests independently; its provider-free plan was
+reproduced exactly. These are overlapping scoped regression checks, not a
+full-suite or performance claim.
+
+The plan binds 268 source artifacts and imports 111 prior snapshots. It keeps
+the newest ordinal73 bundle at source epoch13 while preserving older history.
+The plan-summary defect in adapter r1 is retained as failed-version evidence;
+only the forward r2 adapter was admitted to this development run.
+
+After environment checks and source re-verification, the fresh run
+`full87-managed-growth-v68-dev3-r2` was started once for ordinals30/73/80.
+At this documentation checkpoint the launch intent is present and no terminal
+result is present. No v68 official performance result is claimed. This is
+previous-epoch repeated-workload adaptation, not independent replication.
 Full87 remains closed pending development outcomes and readiness.
+
+| v68 readiness artifact | SHA-256 |
+| --- | --- |
+| Provider-free plan, 200,321 canonical bytes without LF | `1c89abde6ee9ee77aabf4d1b14a50ca3b11182946e60eafcde783e318a02d250` |
+| Final dev3-r2 adapter | `2de5f0e294cf95f1cac343af5feaf54846fe35e10a3985894e710271b1d66961` |
+| Source-pinned launch consent | `6e1cac490269256616b4c1b4dbe01c18e34c45cc96eee0a37e1c64b3e87295ea` |
+
+Readiness and launch evidence do not establish successful execution or efficacy.
 
 ## Compact evidence index
 
