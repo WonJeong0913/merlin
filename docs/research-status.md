@@ -1,6 +1,6 @@
 # Research status and evidence
 
-Snapshot: **2026-09-07, v69 terminal results and v70 launch checkpoint**. This is a dated development checkpoint,
+Snapshot: **2026-09-07, v70 terminal results and v71 development checkpoint**. This is a dated development checkpoint,
 not a live dashboard. [Project overview](../README.md) · [한국어 포트폴리오](portfolio.md)
 
 ## Publication scope
@@ -20,11 +20,11 @@ sample or an official 87×3 benchmark reproduction. Model: `gpt-5.6-luna`,
 reasoning effort: `medium`. Run state can inherit permitted previous-epoch
 experience; versions are not independent repetitions.
 
-| Development task | Ordinal | v63 reward | v65 reward | v66 reward | v67 reward | v68 reward | v69 reward |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| fix-druid-loophole-cve | 30 | 0 | Unscored / blocked | 0 | 0 | 0 | 0 |
-| setup-fuzzing-py | 73 | 0.16 | 0.50 | 0.16 | 0 | 0.16 | 0.16 |
-| syzkaller-ppdev-syzlang | 80 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Development task | Ordinal | v63 reward | v65 reward | v66 reward | v67 reward | v68 reward | v69 reward | v70 reward |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| fix-druid-loophole-cve | 30 | 0 | Unscored / blocked | 0 | 0 | 0 | 0 | 0 |
+| setup-fuzzing-py | 73 | 0.16 | 0.50 | 0.16 | 0 | 0.16 | 0.16 | 0 |
+| syzkaller-ppdev-syzlang | 80 | 0 | 0 | 0 | 0 | 0 | 0 | Unscored / blocked |
 
 For v66:
 
@@ -184,40 +184,53 @@ claim a separately revalidated terminal handoff or cumulative multi-prompt token
 totals. Further work is to connect permitted diagnostic experience to useful
 repair and confirm improvement before broader evaluation.
 
-## v70: observational experience delivery — launch checkpoint
+## v70: experience delivered; no performance recovery
 
-Checkpoint dated 2026-09-07; not a live progress feed. V69 remains the latest
-completed run reported here. No V70 terminal result is included in this update.
+Run `full87-managed-growth-v70-dev3-r1` terminated with runner exit0,
+but official coverage is **2/3**, not complete. Ordinals30/73 have official
+reward0 with completed verification and no reported infrastructure error.
+Ordinal80 was blocked before solver dispatch after two rejected candidates:
+it is nonofficial/unscored, not an official zero.
 
-A sealed public timeout observation can exist without qualifying as a failure
-lesson. V70 routes that observation separately to the next epoch's digester,
-planner and evolver for the same public task. The observation remains UNKNOWN:
-no quality failure, individual blame or promotion is inferred. The critic,
-selector, scorer and existing quality transition rules are unchanged.
+- Completed-official mean: 0 across two results; strict pass0/2, positive0/2.
+- Scheduled three-task mean: unavailable, not zero.
+- Shared scored subset30/73: v70 mean0 versus v69 mean0.08, a descriptive
+  decrease of8 percentage points; not a causal estimate.
+- Four AEGIS rounds and16 completed stage calls; sequence elapsed approximately
+  36.94 minutes. These are development execution counts, not Full87 progress.
 
-Sixteen focused tests passed in the development workspace and were independently
-rerun. The provider-free plan matched exactly and binds 283 artifacts (276 prior
-pins plus seven new files). The authenticated V69 handoff contains 117 snapshots,
-three lessons and one bundle. These counts establish traceability, not skill utility.
+The final adapter record confirms the permitted prior timeout observation
+reached ordinal73's digester, planner and evolver. No reward/response rewriting,
+extra calls, critic injection or promotion credit was inferred from that delivery.
+The retained history loaded119 snapshots (G87 plus32 Merlin versions),
+three lessons and two bundles. Loadable experience does not prove useful repair.
 
-After readiness checks, the three-task V70 development run was started once.
-At the recorded initial checkpoint, ordinal30 had four completed AEGIS stage
-receipts and one selected body appearing exactly once in the initial request.
-The new observational packet targets ordinal73, not ordinal30; its delivery in
-an actual ordinal73 run is not claimed from ordinal30's evidence. Reused development
-tasks and previous-epoch experience remain repeated-workload adaptation.
+Ordinal80's two candidates retained their checked contract connections, but
+the critic rejected naming inconsistencies. In round1 the new skill identity
+conflicted with an old self-invocation name in a supporting file. In round2
+the planner required the parent identity while repair used the fresh child
+identity. This identifies a cross-stage contract defect; it does not explain
+all official zeros on the other tasks.
 
-| V70 checkpoint artifact | SHA-256 |
+## v71: forward repair in development
+
+The new implementation connects planning, repair and review to the same
+fresh candidate identity, including instructions to update necessary
+self-references in the new package. Old source/results remain preserved;
+critic decisions are not overridden. Selection and quality rules are not
+changed by this identity repair.
+
+At this checkpoint, implementation and focused regression verification are
+in progress. No v71 actual launch, earned promotion, performance improvement
+or Full87 readiness is claimed. This is an engineering milestone, not an
+efficacy result. Latest experimental code is not included in this docs update.
+
+| v70 terminal artifact | SHA-256 |
 | --- | --- |
-| Observational guidance source | `27aac6620361c0087165af63152a47c870696b3458bf35da79bb616f46753d24` |
-| Engine integration source | `624d9ca295b8353ff7ea0bfdd655a53719fafe4f5c0d33b6f933ec070343f66e` |
-| Dev3 adapter source | `e9bf3214d507f87620753d5bd7305b97aa24dc0c43c411f9fa50eaff66c2a2af` |
-| Provider-free plan stdout, 204,731 bytes including LF | `2a199cd7c51520dbbbb459b21c6cce435d98f8c337edd36ede6217810c901903` |
-| Authenticated V69 handoff | `7b925807160a3dd7d954878ec69ded1bda258869c2b892c416bebdd9cb3cbb3d` |
-
-This documentation update does not publish those source files or private runtime
-artifacts. It does not establish public reproducibility, native invocation,
-performance improvement or readiness for Full87.
+| Final result, 169,670 bytes | `d288ef950cc2f359b25c9e6c49524478704d35a8dd04da3319ba5f80b59efb4d` |
+| Ledger event tip, 150 events | `6187583c054a2712198c91aca142b84b698e203136cbf6e885743c8fcfcd3ce0` |
+| Terminal handoff | `845897d922452fb55d8fecb548bac7c0608143121270a682d8178bc6cd2f5f62` |
+| Final adapter accounting | `03b6ee48441bcc249e2e554b810c27345f5ca7b98b4f0e7d6422406d1927eb11` |
 
 ## Compact evidence index
 
