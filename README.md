@@ -67,7 +67,7 @@ earn official-success promotion.
 | Public feedback | Same-session corrective turn bounded by the original deadline; timeout remains `UNKNOWN` |
 | Prior run, v66 | 3/3 official results; rewards `0 / 0.16 / 0`; strict pass `0/3` |
 | Latest completed run, v67 | 3/3 official results; rewards `0 / 0 / 0`; one corrective turn per task; no earned promotion |
-| Current development, v68 | More specific bounded public diagnostics for correction and next-epoch learning; integration incomplete, not an actual result |
+| Current development, v68 | Diagnostic integration and focused independent checks completed; fresh three-task development run started, official results pending |
 | Wider evaluation | Corrected Full87 run not launched; performance recovery remains an open goal |
 
 The v67 focused protocol, runtime-plane and adapter suites passed **17 tests**
