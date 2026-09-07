@@ -65,8 +65,9 @@ earn official-success promotion.
 | AEGIS/HSEG integration | Actual repair, selection and contract-binding records observed; repair efficacy remains unproven |
 | Exact skill delivery | Selected raw bodies bound to serialized requests; not relabeled as native invocation |
 | Public feedback | Same-session corrective turn bounded by the original deadline; timeout remains `UNKNOWN` |
-| Latest completed run, v66 | 3/3 official results; rewards `0 / 0.16 / 0`; strict pass `0/3` |
-| Current run, v67 | Started; first repaired skill selected and request-bound; official results pending at the checkpoint |
+| Prior run, v66 | 3/3 official results; rewards `0 / 0.16 / 0`; strict pass `0/3` |
+| Latest completed run, v67 | 3/3 official results; rewards `0 / 0 / 0`; one corrective turn per task; no earned promotion |
+| Current development, v68 | More specific bounded public diagnostics for correction and next-epoch learning; integration incomplete, not an actual result |
 | Wider evaluation | Corrected Full87 run not launched; performance recovery remains an open goal |
 
 The v67 focused protocol, runtime-plane and adapter suites passed **17 tests**
